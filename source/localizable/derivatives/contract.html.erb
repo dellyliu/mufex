@@ -1,0 +1,50 @@
+---
+title: Bybit API Docs
+
+logo:
+  link: https://bybit-exchange.github.io/docs-legacy/derivatives/contract
+  target: _self
+
+
+language_tabs: # must be one of https://git.io/vQNgJ
+  - console
+  - python--pybit: python
+
+toc_footers:
+  - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
+
+includes:
+  - derivatives/intro                                # Introduce
+  - derivatives/contract/changelog                   # Changelog
+  - derivatives/faq                                  # FAQ
+  - derivatives/api_auth                             # Authentication
+  - derivatives/market_data                          # Market Data Endpoints
+  - derivatives/contract/_account_data               # Account Data Endpoints
+  - derivatives/contract/rate_limits_per_endpoint
+  - derivatives/rate_limits/rate_limits
+  - derivatives/contract/websockets                           # Websocket data
+  - derivatives/contract/enums                                # ENUM Definitions
+  - derivatives/contract/errors                               # Errors
+
+
+search: true
+code_clipboard: true
+---
+
+<!---
+Clipboard script
+-->
+
+<script src="../../dist/clipboard.min.js"></script>
+
+<script>
+var clipboard = new ClipboardJS('.clipboard_button');
+
+clipboard.on('success', function(e) {
+    console.log(e);
+});
+
+clipboard.on('error', function(e) {
+    console.log(e);
+});
+</script>
