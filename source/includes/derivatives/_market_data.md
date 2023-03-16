@@ -5,7 +5,7 @@ t(:market_para_auth_v3)
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/order-book/L2?category=linear&symbol=BTCUSDT'
+curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/order-book?category=linear&symbol=BTCUSDT'
 ```
 
 ```python--pybit
@@ -55,7 +55,7 @@ t(:market_aside_orderbook)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvOrderbook>/derivatives/v3/public/order-book/L2</span></code>
+<code><span id=dvOrderbook>/fapi/public/v1/market/order-book</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvOrderbook"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -79,7 +79,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/kline?category=linear&symbol=BTCUSDT&interval=D&start=1652112000000&end=1652544000000'
+curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/kline?category=linear&symbol=BTCUSDT&interval=D&start=1652112000000&end=1652544000000'
 ```
 
 ```python--pybit
@@ -113,7 +113,7 @@ t(:market_para_querykline)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvkline>/derivatives/v3/public/kline</span></code>
+<code><span id=dvkline>/fapi/public/v1/market/kline</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvkline"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -138,7 +138,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/tickers?category=linear&symbol=BTCUSDT'
+curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/tickers?category=linear&symbol=BTCUSDT'
 ```
 
 ```python--pybit
@@ -171,51 +171,14 @@ curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/tickers?category=l
                 "turnover24h": "4686694853.047006",
                 "volume24h": "243730.252",
                 "fundingRate": "0.0001",
-                "nextFundingTime": "1663689600000",
-                "predictedDeliveryPrice": "",
-                "basisRate": "",
-                "deliveryFeeRate": "",
-                "deliveryTime": "0"
+                "nextFundingTime": "1663689600000"
             }
         ]
     },
     "retExtInfo": {},
     "time": 1663670053454
 }
-// option response
-{
-    "retCode": 0,
-    "retMsg": "SUCCESS",
-    "result": {
-        "category": "option",
-        "symbol": "BTC-30SEP22-35000-P",
-        "bidPrice": "14600",
-        "bidSize": "0.3",
-        "bidIv": "0",
-        "askPrice": "15180",
-        "askSize": "25.6",
-        "askIv": "0.8958",
-        "lastPrice": "14260",
-        "highPrice24h": "0",
-        "lowPrice24h": "0",
-        "markPrice": "14884.94173491",
-        "indexPrice": "20236.14",
-        "markPriceIv": "0.7185",
-        "underlyingPrice": "20301.31",
-        "openInterest": "1824.98",
-        "turnover24h": "0",
-        "volume24h": "0",
-        "totalVolume": "40712",
-        "totalTurnover": "280958807",
-        "delta": "-0.92947392",
-        "gamma": "0.00002001",
-        "vega": "12.68819848",
-        "theta": "-5.82971932",
-        "predictedDeliveryPrice": "0",
-        "change24h": "0"
-    },
-    "time": 1657770000604
-}
+
 
 ```
 
@@ -223,7 +186,7 @@ t(:dv_marketTickerPara)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvtickers>/derivatives/v3/public/tickers</span></code>
+<code><span id=dvtickers>/fapi/public/v1/market/tickers</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvtickers"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -237,18 +200,14 @@ GET
 |t(:column_parameter)|t(:column_type)|t(:column_comments)|
 |:----- |:-----|----- |
 | category |string |t(:dv_category) |
-| askIv |string |t(:askIv) |
-| deliveryTime |string |t(:deliveryTime) |
 | price24hPcnt |string |t(:row_comment_resp_price_24h_pcnt) |
 | nextFundingTime |string |t(:row_comment_resp_next_funding_time) |
-| predictedDeliveryPrice |string |t(:dv_tickPredictedDeliveryPrice) |
 | indexPrice |string |t(:row_comment_resp_index_price) |
 | prevPrice24h |string |t(:row_comment_resp_prev_price_24h) |
 | openInterest |string |t(:row_comment_resp_open_interest) |
 | underlyingPrice |string |t(:usdcUnderlyingPrice) |
 | volume24h |string |t(:row_comment_resp_volume_24h) |
 | symbol |string |t(:row_comment_symbol) |
-| vega |string |t(:vega) |
 | lastTickDirection | string |t(:row_comment_tick_direction) |
 | lastPrice |string |t(:row_comment_resp_last_price) |
 | totalVolume |string |t(:row_comment_resp_total_volume) |
@@ -258,25 +217,19 @@ GET
 | askPrice |string |t(:askPrice) |
 | fundingRate |string |t(:row_comment_funding_rate) |
 | bidSize |string |t(:bidSize) |
-| bidIv |string |t(:bidIv) |
 | highPrice24h |string |t(:row_comment_resp_high_price_24h) |
-| delta |string |t(:delta) |
-| theta |string |t(:theta) |
 | askSize |string |t(:askSize) |
 | prevPrice1h |string |t(:row_comment_resp_prev_price_1h) |
 | markPrice |string |t(:row_comment_resp_mark_price) |
-| gamma |string |t(:gamma) |
-| deliveryFeeRate |string |t(:dv_tickDeliveryFeeRate) |
 | lowPrice24h |string |t(:row_comment_resp_low_price_24h) |
-| markPriceIv |string |t(:markPriceIv) |
-| basisRate |string |t(:dv_tickBasisRate) |
+
 
 
 ### t(:dv_instrHead)
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/instruments-info?category=linear&symbol=BTCUSDT'
+curl GET 'https://api-testnet.mufex.com/fapi/public/v1/instruments?category=linear&symbol=BTCUSDT'
 ```
 
 ```python--pybit
@@ -329,47 +282,13 @@ curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/instruments-info?c
     "time": 1670838442302
 }
 
-// option response
-{
-    "retCode": 0,
-    "retMsg": "success",
-    "result": {
-        "resultTotalSize": 1,
-        "cursor": "",
-        "dataList": [
-            {
-                "category": "option",
-                "symbol": "BTC-30SEP22-35000-P",
-                "status": "ONLINE",
-                "baseCoin": "BTC",
-                "quoteCoin": "USD",
-                "settleCoin": "USDC",
-                "optionsType": "Put",
-                "launchTime": "1649923200000",
-                "deliveryTime": "1664524800000",
-                "deliveryFeeRate": "0.00015",
-                "priceFilter": {
-                    "minPrice": "5",
-                    "maxPrice": "10000000",
-                    "tickSize": "5"
-                },
-                "lotSizeFilter": {
-                    "maxOrderQty": "200",
-                    "minOrderQty": "0.01",
-                    "qtyStep": "0.01"
-                }
-            }
-        ]
-    },
-    "time": 1657777124431
-}
 ```
 
 t(:dv_marketInstrPara)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvinstru>/derivatives/v3/public/instruments-info</span></code>
+<code><span id=dvinstru>/fapi/public/v1/instruments</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvinstru"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -415,7 +334,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.bybit.com/derivatives/v3/public/mark-price-kline?category=linear&symbol=BTCUSDT&interval=D&start=1652112000000&end=1652544000000'
+curl --location --request GET 'https://api-testnet.mufex.com/fapi/public/v1/market/mark-price-kline?category=linear&symbol=BTCUSDT&interval=D&start=1652112000000&end=1652544000000'
 ```
 
 ```python--pybit
@@ -447,7 +366,7 @@ t(:linear_query_mark_price_kline_v3)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvmarkkline>/derivatives/v3/public/mark-price-kline</span></code>
+<code><span id=dvmarkkline>/fapi/public/v1/market/mark-price-kline</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvmarkkline"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -471,7 +390,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.bybit.com/derivatives/v3/public/index-price-kline?category=linear&symbol=BTCUSDT&interval=D&start=1652112000000&end=1652544000000'
+curl --location --request GET 'https://api-testnet.mufex.com/fapi/public/v1/market/index-price-kline?category=linear&symbol=BTCUSDT&interval=D&start=1652112000000&end=1652544000000'
 ```
 
 ```python--pybit
@@ -504,7 +423,7 @@ t(:queryindexpricekline)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvindexkline>/derivatives/v3/public/index-price-kline</span></code>
+<code><span id=dvindexkline>/fapi/public/v1/market/index-price-kline</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvindexkline"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -530,7 +449,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/funding/history-funding-rate?category=linear&symbol=BTCUSDT&startTime=1652112000000&endTime=1652198400000'
+curl GET 'https://api-testnet.mufex.com//fapi/public/v1/funding-rate-history?category=linear&symbol=BTCUSDT&startTime=1652112000000&endTime=1652198400000'
 ```
 
 ```python--pybit
@@ -565,7 +484,7 @@ t(:market_para_fundingRate)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvhistfundrate>/derivatives/v3/public/funding/history-funding-rate</span></code>
+<code><span id=dvhistfundrate>/fapi/public/v1/funding-rate-history</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvhistfundrate"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -591,7 +510,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/risk-limit/list?category=linear&symbol=BTCUSDT'
+curl GET 'https://api-testnet.mufex.com/fapi/public/v1/position-risk?category=linear&symbol=BTCUSDT'
 ```
 
 ```python--pybit
@@ -635,7 +554,7 @@ t(:dv_riskLimitHead)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvrisklimit>/derivatives/v3/public/risk-limit/list</span></code>
+<code><span id=dvrisklimit>fapi/public/v1/position-risk</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvrisklimit"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -657,72 +576,11 @@ GET
 |isLowestRisk |number |t(:row_comment_is_lowest_risk) |
 |maxLeverage |string |t(:row_comment_max_leverage) |
 
-
-### t(:dv_optionDeliveryHead)
-> t(:codequote_curlExample)
-
-```console
-curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/delivery-price?symbol=BTC-14JUL22-18000-C&category=option'
-```
-
-```python--pybit
-
-```
-
-> t(:codequote_responseExample)
-
-```javascript
-{
-    "retCode": 0,
-    "retMsg": "success",
-    "result": {
-        "resultTotalSize": 1,
-        "cursor": "",
-        "dataList": [
-            {
-                "category": "option",
-                "symbol": "BTC-14JUL22-18000-C",
-                "deliveryPrice": "19967.372502790",
-                "deliveryTime": "1657785600000"
-            }
-        ]
-    },
-    "time": 1657797556994
-}
-```
-
-t(:dv_market_option_para)
-
-<p class="fake_header">t(:httprequest)</p>
-GET
-<code><span id=dvdeliveryprice>/derivatives/v3/public/delivery-price</span></code>
-<button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvdeliveryprice"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
-
-<p class="fake_header">t(:requestparameters)</p>
-|t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
-|:----- |:-------|:-----|----- |
-|category |false |string |t(:dv_category)t(:dv_categorySuffix_8) |
-|symbol |false |string |t(:row_comment_symbol) |
-|baseCoin |false |string |t(:unified_baseCoin_param) |
-|direction |false |string |t(:row_comment_direction_v3) |
-|limit|false |string |t(:row_comment_limit_50_200) |
-|cursor|false |string |t(:dv_cursor) |
-
-<p class="fake_header">t(:responseparameters)</p>
-|t(:column_parameter)|t(:column_type)|t(:column_comments)|
-|:----- |:-----|----- |
-|category |string |t(:dv_category)t(:dv_categorySuffix_8) |
-|symbol |string |t(:row_comment_symbol) |
-|deliveryPrice |string |t(:deliveryPrice) |
-|deliveryTime |string |t(:deliveryTime) |
-|cursor |string |t(:dv_cursor) |
-
-
 ### t(:dv_publictradingrecords)
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/recent-trade?category=linear&symbol=BTCUSDT&limit=1'
+curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/trades?category=linear&symbol=BTCUSDT&limit=1'
 ```
 
 ```python--pybit
@@ -745,8 +603,7 @@ curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/recent-trade?categ
                 "price": "16871.00",
                 "size": "0.006",
                 "side": "Buy",
-                "time": "1669802293550",
-                "isBlockTrade": false
+                "time": "1669802293550"
             }
         ]
     },
@@ -759,7 +616,7 @@ t(:market_para_records)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvrecentrades>/derivatives/v3/public/recent-trade</span></code>
+<code><span id=dvrecentrades>/fapi/public/v1/market/trades</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvrecentrades"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -781,14 +638,13 @@ GET
 |size |number |t(:row_response_comment_execqty) |
 |t(:row_parameter_side) |string |t(:dv_recentSide) |
 |time |string |t(:dv_recentTime) |
-|isBlockTrade |boolean |t(:dv_recentBlockTradeId) |
 
 
 ### t(:dv_marketopeninterest)
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/open-interest?category=linear&symbol=BTCUSDT&interval=1h&startTime=1657555200000&endTime=1657641600000'
+curl GET 'https://api-testnet.mufex.com/fapi/public/v1/open-interest?category=linear&symbol=BTCUSDT&interval=1h&startTime=1657555200000&endTime=1657641600000'
 ```
 
 ```python--pybit
@@ -823,7 +679,7 @@ t(:market_para_marketopeninterest)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvopeninterest>/derivatives/v3/public/open-interest</span></code>
+<code><span id=dvopeninterest>/fapi/public/v1/open-interest</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvopeninterest"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -843,57 +699,3 @@ GET
 |symbol |string |t(:row_comment_symbol) |
 |openInterest |string |t(:row_comment_resp_open_interest) |
 |timestamp |string |t(:dv_openInterTimestamp) |
-
-
-### t(:dv_insurance)
-> t(:codequote_curlExample)
-
-```console
-curl GET 'https://api-testnet.bybit.com/derivatives/v3/public/insurance?coin=BTC'
-```
-
-```python--pybit
-
-```
-
-> t(:codequote_responseExample)
-
-```javascript
-{
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
-        "updateTime": "1670284800000",
-        "list": [
-            {
-                "coin": "BTC",
-                "balance": "5044.45074186",
-                "value": "85819120.39999999"
-            }
-        ]
-    },
-    "retExtInfo": {},
-    "time": 1670311057711
-}
-```
-
-t(:insurance_para)
-
-<p class="fake_header">t(:httprequest)</p>
-GET
-<code><span id=dvinsurance>/derivatives/v3/public/insurance</span></code>
-<button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvinsurance"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
-
-<p class="fake_header">t(:requestparameters)</p>
-|parameter|t(:column_required)|t(:column_type)|t(:column_comments)|
-|:----- |:-------|:-----|----- |
-|coin |false |string |t(:coin_info_coin) |
-
-<p class="fake_header">t(:responseparameters)</p>
-|t(:column_parameter)|t(:column_type)|t(:column_comments)|
-|:----- |:-----|----- |
-|updatedTime |string |t(:insurance_resp_updatedTime) |
-|list |array |Object |
-|> coin |string |t(:insurance_resp_coin) |
-|> balance |string |t(:insurance_resp_balance) |
-|> value |string |t(:insurance_resp_value) |

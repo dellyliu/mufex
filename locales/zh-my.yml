@@ -765,7 +765,7 @@ zh-my:
     <ul>
     <p>
       <li>測試網:<br/>
-        <span id="testnet">https://api-testnet.bybit.com</span>
+        <span id="testnet">https://api-testnet.mufex.com</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
     </p>
@@ -784,7 +784,7 @@ zh-my:
     <ul>
     <p>
       <li>測試網:<br/>
-        <span id="testnet">https://api-testnet.bybit.com</span>
+        <span id="testnet">https://api-testnet.mufex.com</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
     </p>
@@ -802,7 +802,7 @@ zh-my:
     Domains:
     <ul>
       <li>
-        <span id=testnet><a href="https://api-testnet.bybit.com">https://api-testnet.bybit.com</a></span>
+        <span id=testnet><a href="https://api-testnet.mufex.com">https://api-testnet.mufex.com</a></span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
       <li>

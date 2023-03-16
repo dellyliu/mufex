@@ -1,17 +1,17 @@
 # t(:accountdata)
 t(:account_para)
 
-## t(:order)
+## t(:trade)
 ### t(:dv_placeOrder)
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.bybit.com/contract/v3/private/order/create' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: f02a18137c25c40d64b2c474f575c01a62ba076124946d38619238e19c86a2f2' \
---header 'X-BAPI-API-KEY: XXXXXXXXXX' \
---header 'X-BAPI-TIMESTAMP: 1658884339826' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/trade/create' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: f02a18137c25c40d64b2c474f575c01a62ba076124946d38619238e19c86a2f2' \
+--header 'MF-ACCESS-API-KEY: XXXXXXXXXX' \
+--header 'MF-ACCESS-TIMESTAMP: 1658884339826' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "symbol": "ETHUSDT",
@@ -59,7 +59,7 @@ t(:account_aside_placeOrder_positionIdx)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=vpoCreate>/contract/v3/private/order/create</span></code>
+<code><span id=vpoCreate>/fapi/private/v1/trade/create</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpoCreate"><img src="/images/copy_to_clipboard.png" height=zh5 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -95,12 +95,12 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.bybit.com/contract/v3/private/order/list?symbol=DOGEUSDT&orderStatus=Filled' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: 61df2c2de39cfce40fe334e503de4a61e26a95aebec690b9b482e4feb31cb088' \
---header 'X-BAPI-API-KEY: {api key}' \
---header 'X-BAPI-TIMESTAMP: 1658899014497' \
---header 'X-BAPI-RECV-WINDOW: 5000'
+curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/trade/orders?symbol=DOGEUSDT&orderStatus=Filled' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: 61df2c2de39cfce40fe334e503de4a61e26a95aebec690b9b482e4feb31cb088' \
+--header 'MF-ACCESS-API-KEY: {api key}' \
+--header 'MF-ACCESS-TIMESTAMP: 1658899014497' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000'
 ```
 
 ```python--pybit
@@ -156,7 +156,7 @@ t(:contract_para_getOrder)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=oaoList>/contract/v3/private/order/list</span></code>
+<code><span id=oaoList>/fapi/private/v1/trade/orders</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#oaoList"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -208,12 +208,12 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.bybit.com/contract/v3/private/order/cancel' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: c9f2c118e40040fc3a12c9400816a26e475ce2f7995248a3625d92be3454b9f1' \
---header 'X-BAPI-API-KEY: {api key}' \
---header 'X-BAPI-TIMESTAMP: 1658900794413' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/trade/cancel' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: c9f2c118e40040fc3a12c9400816a26e475ce2f7995248a3625d92be3454b9f1' \
+--header 'MF-ACCESS-API-KEY: {api key}' \
+--header 'MF-ACCESS-TIMESTAMP: 1658900794413' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw '{
   "symbol": "XRPUSDT",
@@ -245,7 +245,7 @@ t(:contract_para_cancelOrder)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=vpoCancel>/contract/v3/private/order/cancel</span></code>
+<code><span id=vpoCancel>/fapi/private/v1/trade/cancel</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpoCancel"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -267,12 +267,12 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.bybit.com/contract/v3/private/order/cancel-all' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: ee5af51734abed24925af73badbce8ef06f0dd34a3b35fcd5a829c892f565aed' \
---header 'X-BAPI-API-KEY: {api key}' \
---header 'X-BAPI-TIMESTAMP: 1658901358435' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/trade/cancel-all' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: ee5af51734abed24925af73badbce8ef06f0dd34a3b35fcd5a829c892f565aed' \
+--header 'MF-ACCESS-API-KEY: {api key}' \
+--header 'MF-ACCESS-TIMESTAMP: 1658901358435' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw '{
   "symbol": "XRPUSDT"
@@ -306,7 +306,7 @@ t(:contract_para_cancelAllOrders)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=vpoCancelAll>/contract/v3/private/order/cancel-all</span></code>
+<code><span id=vpoCancelAll>/fapi/private/v1/trade/cancel-all</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpoCancelAll"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -326,12 +326,12 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.bybit.com/contract/v3/private/order/replace' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: 78c358649d431bb30dfc35e5a3cd99128b5f23faf04c15765b3d894f2930e8f5' \
---header 'X-BAPI-API-KEY: {api key}' \
---header 'X-BAPI-TIMESTAMP: 1658902610018' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/trade/replace' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: 78c358649d431bb30dfc35e5a3cd99128b5f23faf04c15765b3d894f2930e8f5' \
+--header 'MF-ACCESS-API-KEY: {api key}' \
+--header 'MF-ACCESS-TIMESTAMP: 1658902610018' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "symbol":"XRPUSDT",
@@ -371,7 +371,7 @@ t(:account_aside_replaceActive)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=oaoReplace>/contract/v3/private/order/replace</span></code>
+<code><span id=oaoReplace>/fapi/private/v1/trade/replace</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#oaoReplace"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -396,16 +396,16 @@ POST
 |orderLinkId |string |t(:row_comment_orderLinkId)  |
 
 
-### t(:contract_getRealtimeOrder)
+### t(:contract_getOpenOrder)
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.bybit.com/contract/v3/private/order/unfilled-orders?symbol=XRPUSDT' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: e3a1e4b88dfc2730c987fb3253dd3e09bc05cf68ae4d9d9d71a8235c44cb1f02' \
---header 'X-BAPI-API-KEY: {api key}' \
---header 'X-BAPI-TIMESTAMP: 1658902846749' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/trade/activity-orders?symbol=XRPUSDT' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: e3a1e4b88dfc2730c987fb3253dd3e09bc05cf68ae4d9d9d71a8235c44cb1f02' \
+--header 'MF-ACCESS-API-KEY: {api key}' \
+--header 'MF-ACCESS-TIMESTAMP: 1658902846749' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json'
 ```
 
@@ -461,7 +461,7 @@ t(:contract_para_getRealtimeOrder)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=vpOrder>/contract/v3/private/order/unfilled-orders</span></code>
+<code><span id=vpOrder>/fapi/private/v1/trade/activity-orders</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpOrder"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -504,18 +504,139 @@ GET
 |list> leavesValue |string |t(:row_comment_leaves_value)  |
 |nextPageCursor |string |t(:row_comment_query_nextPageCursor_v3)  |
 
+### t(:usertraderecords)
+> t(:codequote_curlExample)
 
-## t(:position)
+```console
+curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/trade/fills?symbol=XRPUSDT' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: a7358fb068bf66570e7ecf063e39a6dbd11f1d5572ba79a63d5996221d864585' \
+--header 'MF-ACCESS-API-KEY: XXXXXXXXXXXX' \
+--header 'MF-ACCESS-TIMESTAMP: 1658911518042' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000'
+```
+
+```python--pybit
+
+```
+
+> t(:codequote_responseExample)
+
+```javascript
+{
+    "retCode": 0,
+    "retMsg": "OK",
+    "result": {
+        "list": [
+            {
+                "symbol": "BITUSDT",
+                "execFee": "0.001356",
+                "execId": "499e1a2a-c664-55db-bbf0-78ad31b7b033",
+                "execPrice": "0.452",
+                "execQty": "5.0",
+                "execType": "Trade",
+                "execValue": "2.26",
+                "feeRate": "0.0006",
+                "lastLiquidityInd": "RemovedLiquidity",
+                "leavesQty": "0.0",
+                "orderId": "1d40db82-b1f6-4340-9190-650eeddd440b",
+                "orderLinkId": "",
+                "orderPrice": "0.430",
+                "orderQty": "5.0",
+                "orderType": "Market",
+                "stopOrderType": "UNKNOWN",
+                "side": "Sell",
+                "execTime": "1657269236943",
+                "closedSize": "5.0"
+            },
+            {
+                "symbol": "BITUSDT",
+                "execFee": "0.004068",
+                "execId": "ed090e6a-afc0-5cb5-b51d-039592a44ec5",
+                "execPrice": "0.452",
+                "execQty": "15.0",
+                "execType": "Trade",
+                "execValue": "6.78",
+                "feeRate": "0.0006",
+                "lastLiquidityInd": "RemovedLiquidity",
+                "leavesQty": "0.0",
+                "orderId": "d34d40a1-2475-4552-9e54-347a27282ec0",
+                "orderLinkId": "",
+                "orderPrice": "0.429",
+                "orderQty": "15.0",
+                "orderType": "Market",
+                "stopOrderType": "UNKNOWN",
+                "side": "Sell",
+                "execTime": "1657268340170",
+                "closedSize": "15.0"
+            }
+        ],
+        "nextPageCursor": ""
+    },
+    "retExtInfo": {},
+    "time": 1658911518442
+}
+```
+
+t(:linear_private_trade_records)
+
+<aside class="notice">
+t(:wallet_aside_tradeRecords)
+</aside>
+
+<p class="fake_header">t(:httprequest)</p>
+GET
+<code><span id=vpeList>/fapi/private/v1/trade/fills</span></code>
+<button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpeList"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
+
+<p class="fake_header">t(:requestparameters)</p>
+|t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
+|:----- |:-------|:-----|----- |
+|orderId |false |string |t(:contract_comment_orderId) |
+|t(:row_parameter_symbol) |<b>true</b> |string |t(:row_comment_symbol) |
+|startTime |false |number |t(:contract_comment_startTime) |
+|endTime |false |number |t(:contract_comment_endTime) |
+|<a href="#exec-type-exectype">execType</a> |false |string |t(:linear_exec_type) |
+|limit |false |integer |t(:linear_row_comment_limit_50_200) |
+|cursor |false |string |t(:row_comment_resp_cursor)    |
+
+
+<p class="fake_header">t(:responseparameters)</p>
+|t(:column_parameter)|t(:column_type)|t(:column_comments)|
+|:----- |:-----|----- |
+|list> t(:row_parameter_symbol) |string |t(:row_comment_symbol)  |
+|list> execFee |string |t(:row_comment_exec_fee)    |
+|list> execId |string |t(:row_comment_exec_id)  |
+|list> execPrice |string |t(:row_comment_exec_price)    |
+|list> execQty |string |t(:row_comment_exec_qty)  |
+|list> execType |string |t(:row_comment_exec_type) |
+|list> execValue |string |t(:row_comment_exec_value)  |
+|list> feeRate |string |t(:row_comment_fee_rate)  |
+|list> <a href="#liquidity-type-lastliquidityind">lastLiquidityInd</a> |string |t(:row_comment_last_liquidity_ind) |
+|list> leavesQty |string |t(:row_comment_leaves_qty)  |
+|list> orderId |string |t(:row_comment_order_id)  |
+|list> orderLinkId |string |t(:row_comment_orderLinkId)  |
+|list> orderPrice |string |t(:row_comment_order_price)  |
+|list> orderQty |string |t(:row_comment_order_qty)  |
+|list> orderType |string |t(:row_comment_order_type)  |
+|list> <a href="#stop-order-type-stopordertype">stopOrderType</a> |string |t(:row_comment_stopOrderType)  |
+|list> t(:row_parameter_side) |string |t(:row_comment_side)  |
+|list> execTime |string |t(:row_comment_query_execTime_v3)  |
+|list> closedSize |string |t(:row_comment_closedSize_v3)  |
+|nextPageCursor |string |t(:contract_comment_nextPageCursor)  |
+
+
+## t(:account)
 ### t(:dv_myposition)
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.bybit.com/contract/v3/private/position/list?symbol=XRPUSDT' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: b0818cb2f91264ffd712db0c8f8648041b2c5eed643200aa63e4141c7aa12500' \
---header 'X-BAPI-API-KEY: {api key}' \
---header 'X-BAPI-TIMESTAMP: 1658904877491' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/account/positions?symbol=XRPUSDT' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: b0818cb2f91264ffd712db0c8f8648041b2c5eed643200aa63e4141c7aa12500' \
+--header 'MF-ACCESS-API-KEY: {api key}' \
+--header 'MF-ACCESS-TIMESTAMP: 1658904877491' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw ''
 ```
@@ -580,7 +701,7 @@ t(:account_aside_queryPosition)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=pList>/contract/v3/private/position/list</span></code>
+<code><span id=pList>/fapi/private/v1/account/positions</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pList"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -629,12 +750,12 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.bybit.com/contract/v3/private/position/set-auto-add-margin' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: 504e85b59fb0ee7c2c70d7cf2d82fc717258d67a3c3cdf631b4c4c68b43843b3' \
---header 'X-BAPI-API-KEY: {api key}' \
---header 'X-BAPI-TIMESTAMP: 1658908220837' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/set-auto-add-margin' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: 504e85b59fb0ee7c2c70d7cf2d82fc717258d67a3c3cdf631b4c4c68b43843b3' \
+--header 'MF-ACCESS-API-KEY: {api key}' \
+--header 'MF-ACCESS-TIMESTAMP: 1658908220837' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "symbol": "XRPUSDT",
@@ -664,7 +785,7 @@ t(:linear_account_para_setAutoAddMargin)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=pSetAutoAddMargin>/contract/v3/private/position/set-auto-add-margin</span></code>
+<code><span id=pSetAutoAddMargin>/fapi/private/v1/account/set-auto-add-margin</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pSetAutoAddMargin"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -683,12 +804,12 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.bybit.com/contract/v3/private/position/switch-isolated' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: f178bda84f8a3fa971338b7424cce2204824c0114f196650b2516962371e3902' \
---header 'X-BAPI-API-KEY: XXXXXXXXXX' \
---header 'X-BAPI-TIMESTAMP: 1658908531694' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/set-isolated' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: f178bda84f8a3fa971338b7424cce2204824c0114f196650b2516962371e3902' \
+--header 'MF-ACCESS-API-KEY: XXXXXXXXXX' \
+--header 'MF-ACCESS-TIMESTAMP: 1658908531694' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "symbol":"XRPUSDT",
@@ -718,7 +839,7 @@ t(:contract_para_switchIsolated)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=pSwitchIsolated>/contract/v3/private/position/switch-isolated</span></code>
+<code><span id=pSwitchIsolated>/fapi/private/v1/account/set-isolated</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pSwitchIsolated"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -737,12 +858,12 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.bybit.com/contract/v3/private/position/switch-mode' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: b07d38c9719187a8a9a0cee739f465edd05a1c7a30618e02a1f1dc9fc3639d97' \
---header 'X-BAPI-API-KEY: XXXXXXXXXX' \
---header 'X-BAPI-TIMESTAMP: 1658909270602' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/set-position-mode' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: b07d38c9719187a8a9a0cee739f465edd05a1c7a30618e02a1f1dc9fc3639d97' \
+--header 'MF-ACCESS-API-KEY: XXXXXXXXXX' \
+--header 'MF-ACCESS-TIMESTAMP: 1658909270602' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "symbol":"BTCUSDT",
@@ -829,7 +950,7 @@ t(:position_ability_para)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=ulSwitchMode>/contract/v3/private/position/switch-mode</span></code>
+<code><span id=ulSwitchMode>/fapi/private/v1/account/set-position-mode</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#ulSwitchMode"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -848,12 +969,12 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.bybit.com/contract/v3/private/position/switch-tpsl-mode' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: 018fd4ae872bdb5a90e849dc324eeab4157a047de05250bb74efb7c3434d0597' \
---header 'X-BAPI-API-KEY: XXXXXXXXXX' \
---header 'X-BAPI-TIMESTAMP: 1658909568597' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/switch-tpsl-mode' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: 018fd4ae872bdb5a90e849dc324eeab4157a047de05250bb74efb7c3434d0597' \
+--header 'MF-ACCESS-API-KEY: XXXXXXXXXX' \
+--header 'MF-ACCESS-TIMESTAMP: 1658909568597' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "symbol":"XRPUSDT",
@@ -885,7 +1006,7 @@ t(:switchmode_aside)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=pltcList>/contract/v3/private/position/switch-tpsl-mode</span></code>
+<code><span id=pltcList>/fapi/private/v1/account/switch-tpsl-mode</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pltcList"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -903,12 +1024,12 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.bybit.com/contract/v3/private/position/set-leverage' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: 6d17e6aa3a7c362b05071c737dc0904bd731fea1d04e9b46ee188749d17a7ce6' \
---header 'X-BAPI-API-KEY: {api key}' \
---header 'X-BAPI-TIMESTAMP: 1658910157065' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/set-leverage' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: 6d17e6aa3a7c362b05071c737dc0904bd731fea1d04e9b46ee188749d17a7ce6' \
+--header 'MF-ACCESS-API-KEY: {api key}' \
+--header 'MF-ACCESS-TIMESTAMP: 1658910157065' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "symbol":"XRPUSDT",
@@ -937,7 +1058,7 @@ t(:linear_account_para_setLeverage)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=pSetLeverage>/contract/v3/private/position/set-leverage</span></code>
+<code><span id=pSetLeverage>/fapi/private/v1/account/set-leverage</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pSetLeverage"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -955,12 +1076,12 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.bybit.com/contract/v3/private/position/trading-stop' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: 4c0406d6e31e30f5c37295627abefa980c248bc25170fa7158e47d8a46425d74' \
---header 'X-BAPI-API-KEY: {api key}' \
---header 'X-BAPI-TIMESTAMP: 1658910815488' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/trading-stop' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: 4c0406d6e31e30f5c37295627abefa980c248bc25170fa7158e47d8a46425d74' \
+--header 'MF-ACCESS-API-KEY: {api key}' \
+--header 'MF-ACCESS-TIMESTAMP: 1658910815488' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "symbol": "XRPUSDT",
@@ -1000,7 +1121,7 @@ t(:account_aside_tradingStop)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=pSetTpSlTs>/contract/v3/private/position/trading-stop</span></code>
+<code><span id=pSetTpSlTs>/fapi/private/v1/account/trading-stop</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pSetTpSlTs"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1027,12 +1148,12 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.bybit.com/contract/v3/private/position/set-risk-limit' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: 82904cc14df4bb278722d4212bdb76dc7e1ec7a77e0e761d2e09b3361059a25c' \
---header 'X-BAPI-API-KEY: XXXXXXXXXX' \
---header 'X-BAPI-TIMESTAMP: 1658911327616' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
+curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/set-position-risk' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: 82904cc14df4bb278722d4212bdb76dc7e1ec7a77e0e761d2e09b3361059a25c' \
+--header 'MF-ACCESS-API-KEY: XXXXXXXXXX' \
+--header 'MF-ACCESS-TIMESTAMP: 1658911327616' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "symbol":"XRPUSDT",
@@ -1063,7 +1184,7 @@ t(:account_aside_getRisk_linear)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=plpSetRisk>/contract/v3/private/position/set-risk-limit</span></code>
+<code><span id=plpSetRisk>/fapi/private/v1/account/set-position-risk</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#plpSetRisk"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1078,138 +1199,17 @@ POST
 |:----- |:-----|----- |
 
 
-### t(:usertraderecords)
-> t(:codequote_curlExample)
-
-```console
-curl --location --request GET 'https://api-testnet.bybit.com/contract/v3/private/execution/list?symbol=XRPUSDT' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: a7358fb068bf66570e7ecf063e39a6dbd11f1d5572ba79a63d5996221d864585' \
---header 'X-BAPI-API-KEY: XXXXXXXXXXXX' \
---header 'X-BAPI-TIMESTAMP: 1658911518042' \
---header 'X-BAPI-RECV-WINDOW: 5000'
-```
-
-```python--pybit
-
-```
-
-> t(:codequote_responseExample)
-
-```javascript
-{
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
-        "list": [
-            {
-                "symbol": "BITUSDT",
-                "execFee": "0.001356",
-                "execId": "499e1a2a-c664-55db-bbf0-78ad31b7b033",
-                "execPrice": "0.452",
-                "execQty": "5.0",
-                "execType": "Trade",
-                "execValue": "2.26",
-                "feeRate": "0.0006",
-                "lastLiquidityInd": "RemovedLiquidity",
-                "leavesQty": "0.0",
-                "orderId": "1d40db82-b1f6-4340-9190-650eeddd440b",
-                "orderLinkId": "",
-                "orderPrice": "0.430",
-                "orderQty": "5.0",
-                "orderType": "Market",
-                "stopOrderType": "UNKNOWN",
-                "side": "Sell",
-                "execTime": "1657269236943",
-                "closedSize": "5.0"
-            },
-            {
-                "symbol": "BITUSDT",
-                "execFee": "0.004068",
-                "execId": "ed090e6a-afc0-5cb5-b51d-039592a44ec5",
-                "execPrice": "0.452",
-                "execQty": "15.0",
-                "execType": "Trade",
-                "execValue": "6.78",
-                "feeRate": "0.0006",
-                "lastLiquidityInd": "RemovedLiquidity",
-                "leavesQty": "0.0",
-                "orderId": "d34d40a1-2475-4552-9e54-347a27282ec0",
-                "orderLinkId": "",
-                "orderPrice": "0.429",
-                "orderQty": "15.0",
-                "orderType": "Market",
-                "stopOrderType": "UNKNOWN",
-                "side": "Sell",
-                "execTime": "1657268340170",
-                "closedSize": "15.0"
-            }
-        ],
-        "nextPageCursor": ""
-    },
-    "retExtInfo": {},
-    "time": 1658911518442
-}
-```
-
-t(:linear_private_trade_records)
-
-<aside class="notice">
-t(:wallet_aside_tradeRecords)
-</aside>
-
-<p class="fake_header">t(:httprequest)</p>
-GET
-<code><span id=vpeList>/contract/v3/private/execution/list</span></code>
-<button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpeList"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
-
-<p class="fake_header">t(:requestparameters)</p>
-|t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
-|:----- |:-------|:-----|----- |
-|orderId |false |string |t(:contract_comment_orderId) |
-|t(:row_parameter_symbol) |<b>true</b> |string |t(:row_comment_symbol) |
-|startTime |false |number |t(:contract_comment_startTime) |
-|endTime |false |number |t(:contract_comment_endTime) |
-|<a href="#exec-type-exectype">execType</a> |false |string |t(:linear_exec_type) |
-|limit |false |integer |t(:linear_row_comment_limit_50_200) |
-|cursor |false |string |t(:row_comment_resp_cursor)    |
-
-
-<p class="fake_header">t(:responseparameters)</p>
-|t(:column_parameter)|t(:column_type)|t(:column_comments)|
-|:----- |:-----|----- |
-|list> t(:row_parameter_symbol) |string |t(:row_comment_symbol)  |
-|list> execFee |string |t(:row_comment_exec_fee)    |
-|list> execId |string |t(:row_comment_exec_id)  |
-|list> execPrice |string |t(:row_comment_exec_price)    |
-|list> execQty |string |t(:row_comment_exec_qty)  |
-|list> execType |string |t(:row_comment_exec_type) |
-|list> execValue |string |t(:row_comment_exec_value)  |
-|list> feeRate |string |t(:row_comment_fee_rate)  |
-|list> <a href="#liquidity-type-lastliquidityind">lastLiquidityInd</a> |string |t(:row_comment_last_liquidity_ind) |
-|list> leavesQty |string |t(:row_comment_leaves_qty)  |
-|list> orderId |string |t(:row_comment_order_id)  |
-|list> orderLinkId |string |t(:row_comment_orderLinkId)  |
-|list> orderPrice |string |t(:row_comment_order_price)  |
-|list> orderQty |string |t(:row_comment_order_qty)  |
-|list> orderType |string |t(:row_comment_order_type)  |
-|list> <a href="#stop-order-type-stopordertype">stopOrderType</a> |string |t(:row_comment_stopOrderType)  |
-|list> t(:row_parameter_side) |string |t(:row_comment_side)  |
-|list> execTime |string |t(:row_comment_query_execTime_v3)  |
-|list> closedSize |string |t(:row_comment_closedSize_v3)  |
-|nextPageCursor |string |t(:contract_comment_nextPageCursor)  |
-
 
 ### t(:dv_closedprofitandloss)
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.bybit.com/contract/v3/private/position/closed-pnl?symbol=XRPUSDT&startTime=1658764800000&endTime=1658937600000' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: eb16a696924a92a3a47d769caf44d7373eca9ed6a644384ff6e8cd729ee9f7b1' \
---header 'X-BAPI-API-KEY: XXXXXXXXXXXX' \
---header 'X-BAPI-TIMESTAMP: 1658914264517' \
---header 'X-BAPI-RECV-WINDOW: 5000'
+curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/account/closed-pnl?symbol=XRPUSDT&startTime=1658764800000&endTime=1658937600000' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: eb16a696924a92a3a47d769caf44d7373eca9ed6a644384ff6e8cd729ee9f7b1' \
+--header 'MF-ACCESS-API-KEY: XXXXXXXXXXXX' \
+--header 'MF-ACCESS-TIMESTAMP: 1658914264517' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000'
 ```
 
 ```python--pybit
@@ -1254,7 +1254,7 @@ t(:linear_private_closed_pnl_records)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=pltcLpnl>/contract/v3/private/position/closed-pnl</span></code>
+<code><span id=pltcLpnl>/fapi/private/v1/account/closed-pnl</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pltcLpnl"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1289,20 +1289,19 @@ GET
 |nextPageCursor |string |t(:contract_comment_nextPageCursor)  |
 
 
-## t(:contract_account)
-t(:contract_accountPara)
+
 
 
 ### t(:balance)
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.bybit.com/contract/v3/private/account/wallet/balance?coin=BTC' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: f8f516355e0c59b28d429b13b4ea6a350d02f9c96e2f9fd1be235863e8c1834c' \
---header 'X-BAPI-API-KEY: {api key}' \
---header 'X-BAPI-TIMESTAMP: 1658736635286' \
---header 'X-BAPI-RECV-WINDOW: 5000'
+curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/account/balance?coin=BTC' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: f8f516355e0c59b28d429b13b4ea6a350d02f9c96e2f9fd1be235863e8c1834c' \
+--header 'MF-ACCESS-API-KEY: {api key}' \
+--header 'MF-ACCESS-TIMESTAMP: 1658736635286' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000'
 ```
 
 ```python--pybit
@@ -1346,7 +1345,7 @@ t(:wallet_aside_walletBalance)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=vpwBalance>/contract/v3/private/account/wallet/balance</span></code>
+<code><span id=vpwBalance>/fapi/private/v1/account/balance</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpwBalance"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1377,12 +1376,12 @@ t(:contract_tradingFeeRate_para)
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.bybit.com/contract/v3/private/account/fee-rate?symbol=ETHUSDT' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: e65aad8dd5459774ad21aaca77420947332fdbfe433bef959c6507ce2379999f' \
---header 'X-BAPI-API-KEY: XXXXXXXXXXXX' \
---header 'X-BAPI-TIMESTAMP: 1658739026859' \
---header 'X-BAPI-RECV-WINDOW: 5000'
+curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/account/trade-fee?symbol=ETHUSDT' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: e65aad8dd5459774ad21aaca77420947332fdbfe433bef959c6507ce2379999f' \
+--header 'MF-ACCESS-API-KEY: XXXXXXXXXXXX' \
+--header 'MF-ACCESS-TIMESTAMP: 1658739026859' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000'
 ```
 
 ```python--pybit
@@ -1411,7 +1410,7 @@ curl --location --request GET 'https://api-testnet.bybit.com/contract/v3/private
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=tradingFeeRate>/contract/v3/private/account/fee-rate</span></code>
+<code><span id=tradingFeeRate>/fapi/private/v1/account/trade-fee</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#tradingFeeRate"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1431,12 +1430,12 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.bybit.com/contract/v3/private/account/wallet/fund-records?coin=USDT&walletFundType=AccountTransfer&limit=1' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: 591a44021fff458a6dfbba517755e1105066864d94c38a0ce84619ae51cf2313' \
---header 'X-BAPI-API-KEY: {api key}' \
---header 'X-BAPI-TIMESTAMP: 1658737208933' \
---header 'X-BAPI-RECV-WINDOW: 5000'
+curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/account/bills?coin=USDT&walletFundType=AccountTransfer&limit=1' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: 591a44021fff458a6dfbba517755e1105066864d94c38a0ce84619ae51cf2313' \
+--header 'MF-ACCESS-API-KEY: {api key}' \
+--header 'MF-ACCESS-TIMESTAMP: 1658737208933' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000'
 ```
 
 ```python--pybit
@@ -1482,7 +1481,7 @@ t(:wallet_aside_walletRecords2)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=oawfRecordsNew>/contract/v3/private/account/wallet/fund-records</span></code>
+<code><span id=oawfRecordsNew>/fapi/private/v1/account/bills</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#oawfRecordsNew"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1506,49 +1505,3 @@ GET
 |list> exec_time |string |t(:row_comment_exec_timestamp)  |
 |nextPageCursor |string |t(:contract_accountNextPageCursor)  |
 
-
-### t(:dv_setMarginMode)
-> t(:codequote_curlExample)
-
-```console
-curl --location --request POST 'https://api-testnet.bybit.com/contract/v3/private/account/setMarginMode' \
---header 'X-BAPI-SIGN-TYPE: 2' \
---header 'X-BAPI-SIGN: a1487d336f003c389651fc89aa88cc9b19be6e2b12eb75b70180b61b0a03fd96' \
---header 'X-BAPI-API-KEY: CYZHHQAUQVHCGTHJPX' \
---header 'X-BAPI-TIMESTAMP: 1670481748474' \
---header 'X-BAPI-RECV-WINDOW: 5000' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "setMarginMode":"PORTFOLIO_MARGIN"
-}'
-```
-
-```python--pybit
-
-```
-
-> t(:codequote_responseExample)
-
-```javascript
-{
-    "retCode": 0,
-    "retMsg": "Request accepted",
-    "result": {
-        "reasons": []
-    }
-}
-```
-
-<p class="fake_header">t(:httprequest)</p>
-POST
-<code><span id=setMarginModeContractV3>/contract/v3/private/account/setMarginMode</span></code>
-<button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#setMarginModeContractV3"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
-
-<p class="fake_header">t(:requestparameters)</p>
-|t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
-|:----- |:-------|:-----|----- |
-|setMarginMode |<b>true</b> |string |t(:row_comment_set_margin_mode)   |
-
-<p class="fake_header">t(:responseparameters)</p>
-|t(:column_parameter)|t(:column_type)|t(:column_comments)|
-|:----- |:-----|----- |

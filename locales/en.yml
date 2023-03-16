@@ -745,21 +745,11 @@ en:
   # introduction in index.html.md
   introduction: Group And Resources
   intro_para:
-    <p><a href="https://www.bybit.com/">Bybit</a> API and WebSocket documentation provides guidance to help you access Bybit's endpoints, their expected outputs, and common errors.</p>
-    <p>For further assistance or feedback, please join the <a href="https://t.me/BybitAPI">API Telegram chat</a>! API discussion group on Telegram.</p>
-
+    <p><a href="https://www.mufex.com/">Mufex</a> API and WebSocket documentation provides guidance to help you access MuFex's endpoints, their expected outputs, and common errors.</p>
+    
   resources: API Resources and Support Channels
-  intro_para_resources:
-    <ul class="bybit-community">
-    <li><img src="/images/favicon.ico" height="14", width="14"> <a href="https://www.bybit.com/en-US/help-center/?language=en_US"><strong>Help Center</strong></a> - <strong>Learn more about exchange mechanisms here!</strong>
-    <li><img src="/images/github_logo_icon.png" height="14", width="14"> <a href="https://pypi.org/project/pybit/"><strong>pybit</strong></a> - <strong>Official Python SDK</strong>
-    <li><img src="/images/github_logo_icon.png" height="14", width="14"> <a href="https://www.npmjs.com/package/bybit-api"><strong>bybit-api</strong></a> - <strong>Community NodeJS SDK</strong>
-    <li><img src="/images/github_logo_icon.png" height="14", width="14"> <a href="https://github.com/bybit-exchange/QuickStartWithPostman"><strong>QuickStartWithPostman</strong></a> - <strong>Postman API Collection</strong>
-    <li><img src="/images/telegram_logo_icon.png" height="14", width="14"></a> <a href="https://t.me/BybitAPI"><strong>API Discussion Group</strong></a> - <strong>get English help here!</strong>
-    <li><img src="/images/telegram_logo_icon.png" height="14", width="14"> <a href="https://t.me/BybitChineseAPI"><strong>API Discussion Group (Chinese)</strong></a> - <strong>get Chinese help here!</strong>
-    <li><img src="/images/telegram_logo_icon.png" height="14", width="14"> <a href="https://t.me/Bybit_API_Announcements"><strong>Bybit API Announcement </strong></a> - <strong>subscribe for changes to the API!</strong>
-    <li><img src="/images/survey_ico.png" height="14", width="14"> <a href="https://forms.gle/ZfCKRTVen1VExj478"><strong>Bybit Open API Survey </strong></a> - <strong>The survey should take no more than 5 minutes to complete.</strong>
-    </ul>
+  intro_para_resources: source
+
 
   shared_endpoint_desc: Please see the shared endpoint.
 
@@ -913,22 +903,22 @@ en:
   # api_auth
   # t(:authentication)
   authentication: Authentication
-  auth_aside_key: Please visit Bybit's <a href="https://testnet.bybit.com/app/user/api-management"> <b>testnet</b></a> or <a href="https://www.bybit.com/app/user/api-management"> <b>mainnet</b></a> to generate an API key
+  auth_aside_key: Please visit Mufex's <a href="https://testnet.mufex.com/app/user/api-management"> <b>testnet</b></a> or <a href="https://www.mufex.com/app/user/api-management"> <b>mainnet</b></a> to generate an API key
   auth_aside_env: |
     REST Base Endpoint:
      <ul>
       <p>
         <li>Testnet:<br/>
-          <span id="testnet">https://api-testnet.bybit.com</span>
+          <span id="testnet">https:xxxxx</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         </li>
       </p>
       <p>
         <li>Mainnet(both endpoints are available):<br/>
-          <span id="mainnet_1">https://api.bybit.com</span>
+          <span id="mainnet_1">xxxxxx</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_1"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           <br/>
-          <span id="mainnet_2">https://api.bytick.com</span>
+          <span id="mainnet_2">xxxxx</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         </li>
       </p>
@@ -938,7 +928,7 @@ en:
      <ul>
       <p>
         <li>Testnet:<br/>
-          <span id="testnet">https://api-testnet.bybit.com</span>
+          <span id="testnet">https://api-testnet.mufex.com</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         </li>
       </p>
@@ -956,7 +946,7 @@ en:
     Domains:
     <ul>
       <li>
-        <span id=testnet><a href="https://api-testnet.bybit.com">https://api-testnet.bybit.com</a></span>
+        <span id=testnet><a href="https://api-testnet.mufex.com">https://api-testnet.mufex.com</a></span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
       <li>
@@ -1041,7 +1031,7 @@ en:
   orderbook: Order Book
   dv_orderbook: Get Order Book
   market_para_orderbook: Get the orderbook. Each side has a depth of 25.<br>
-  market_para_orderbook_500: Get the orderbook. Each side has a depth of 500.<br>
+  market_para_orderbook_500: Get the orderbook. Each side has a depth of 200.<br>
   market_aside_orderbook: The response is in the snapshot format.
   ### Query Kline
   querykline: Query Kline
@@ -2307,7 +2297,7 @@ en:
   ## Transaction-log Type (`type`)
   transfer_in: ""
   transfer_out: ""
-  trade: ""
+  trade: Trade
   settlement: ""
   delivery: ""
   liquidation: ""
@@ -5714,6 +5704,7 @@ en:
   contract_para_replaceOrder: |
     <p>Replace order can modify/amend your orders.</p>
   contract_getRealtimeOrder: Get Order (real-time)
+  contract_getOpenOrder: Get Open Order
   contract_para_getRealtimeOrder: |
     <p>Query real-time order information. If only <code>orderId</code> or <code>orderLinkId</code> are passed, a single order will be returned; otherwise, <b>returns up to <a href="#t-orderlimits">500</a> unfilled orders</b></p>.
     <p>Ordered by <code>createdTime</code> in descending order.</p>
