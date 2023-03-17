@@ -1985,7 +1985,7 @@ en:
     <p>Get latest information for symbol.</p>
     <p>Push frequency: <b>100ms</b>(Futures), <b>200ms</b>(Option)</p>
     <p><b>Topic:</b></p>
-    <p><code>tickers.{symbol}</code></p>
+    <p><code>instrument_info.H.{symbol}</code></p>
   websocket_para_ticker_contract: |
     <p>Get latest information for symbol.</p>
     <p>Push frequency: <b>100ms</b></p>
