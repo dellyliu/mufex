@@ -297,7 +297,8 @@ t(:websocket_para_trade_ud)
 |ts|long |t(:row_comment_dv3_ts)  |
 |d |array| trade list |
 |type|string | snapshot|
-
+|t (trade list )|
+|:----- |:-----|----- |:-----|
 |0 |string |t(:row_comment_position_tick_direction)  |
 |1 |string |t(:row_response_comment_price)  |
 |2 |string |t(:row_comment_position_size)  |
@@ -404,38 +405,10 @@ t(:websocket_aside_instrumentInfo_contract)
 |ask1Price|string|t(:row_comment_resp_ask_price) |a1|
 |ask1Size|string|t(:row_comment_resp_ask_size) |-|
 |prevPrice1h |string |t(:row_comment_resp_prev_price_1h_v3)  |p1|
-|deliveryTime |string |t(:deliveryTime_v3)  |
+|deliveryTime |string |t(:deliveryTime_v3)  |-|
 |cs |long |t(:row_comment_tickers_cs)  |
 |ts |long |t(:row_comment_dv3_ts)  |
 
-<p class="fake_header">t(:optionResponseParameters)</p>
-|t(:column_parameter)|t(:column_type)|t(:column_comments)|
-|:----- |:-----|----- |
-| t(:row_parameter_symbol) |string |t(:usdcSymbol) |
-| bidPrice |string |t(:bidPrice) |
-| bidSize |string |t(:bidSize) |
-| bidIv |string |t(:bidIv) |
-| askPrice |string |t(:askPrice) |
-| askSize |string |t(:askSize) |
-| askIv |string |t(:askIv) |
-| lastPrice |string |t(:usdcLastPrice) |
-| highPrice24h |string |t(:highPrice24h) |
-| lowPrice24h |string |t(:lowPrice24h) |
-| markPrice |string |t(:usdcMarkPrice) |
-| indexPrice |string |t(:usdcIndexPrice) |
-| markPriceIv |string |t(:markPriceIv) |
-| underlyingPrice |string |t(:underlying) |
-| openInterest |string |t(:openInterest) |
-| turnover24h |string |t(:turnover24h) |
-| volume24h |string |t(:volume24h) |
-| totalVolume |string |t(:totalVolume) |
-| totalTurnOver |string |t(:totalTurnOver) |
-| delta |string |t(:delta) |
-| gamma |string |t(:gamma) |
-| theta |string |t(:theta) |
-| vega |string |t(:vega) |
-| predictedDeliveryPrice |string |t(:predictedDeliveryPrice) |
-| change24h |string |t(:price24Pcnt) |
 
 
 ### t(:websocketkline)
@@ -487,7 +460,7 @@ t(:websocket_aside_klineV2)
 |end|integer |t(:row_comment_endTime)    |
 |period|string|t(:row_comment_interval) |
 |open|number |t(:row_comment_open)    |
-|close|v |t(:row_comment_close)    |
+|close|number |t(:row_comment_close)    |
 |high|number |t(:row_comment_high)    |
 |low|number |t(:row_comment_low)    |
 |volume|string |t(:row_comment_resp_volume)    |
