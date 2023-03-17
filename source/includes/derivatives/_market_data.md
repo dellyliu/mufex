@@ -42,7 +42,9 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/order-book?categor
         ],
         "ts": 1653638043149,
         "u": 4912426
-    }
+    },
+    "ext_info": {},
+    "time": 1679034720118
 }
 ```
 
@@ -61,7 +63,6 @@ GET
 <p class="fake_header">t(:requestparameters)</p>
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|------ |
-|category |false|string |t(:dv_category)t(:dv_categorySuffix_2)|
 |symbol |<b>true</b> |string |t(:row_comment_symbol) |
 |limit |false |int |t(:dv_orderbookLimit) |
 
@@ -90,7 +91,7 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/kline?category=lin
 
 ```javascript
 {
-    "retCode": 0,
+    "code": 0,
     "message": "OK",,
     "data": {
       "category":"linear",
@@ -105,7 +106,9 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/kline?category=lin
       "1451.59",
       "2.4343353100000003"
     ]
-  }
+    },
+    "ext_info": {},
+    "time": 1669802294719
 }
 ```
 
@@ -357,7 +360,9 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/public/v1/mark
       "49342.37",
       "49349.42",
     ]
-  }
+    },
+    "ext_info": {},
+    "time": 1669802294719
 }
 ```
 
@@ -548,7 +553,8 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/position-risk?category=li
             }
         ]
     },
-    "time": 1657797260220
+    "ext_info": {},
+    "time": 1669802294719
 }
 ```
 
@@ -626,8 +632,6 @@ GET
 |:----- |:-------|:-----|----- |
 |category |<b>true</b> |string |t(:dv_category)t(:dv_categorySuffix_1) |
 |symbol |<b>true</b> |string |t(:row_comment_symbol) |
-|baseCoin |false |string |t(:unified_baseCoin_param) |
-|optionType |false |string |t(:dv_OptionType) |
 |limit |false |int |t(:row_comment_limit_500_1000)|
 
 <p class="fake_header">t(:responseparameters)</p>
@@ -673,7 +677,8 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/open-interest?category=li
             }
         ]
     },
-    "time": 1657797822839
+    "ext_info": {},
+    "time": 1669802294719
 }
 ```
 
