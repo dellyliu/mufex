@@ -16,9 +16,9 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/order-book?categor
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "success",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "s": "BTCUSDT",
         "b": [
             [
@@ -90,9 +90,9 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/kline?category=lin
 
 ```javascript
 {
-  "retCode": 0,
-    "retMsg":"success",
-    "result":{
+    "retCode": 0,
+    "message": "OK",,
+    "data": {
       "category":"linear",
       "symbol":"BTCUSDT",
       "interval":"1",
@@ -149,9 +149,9 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/tickers?category=l
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "category": "linear",
         "list": [
             {
@@ -175,7 +175,7 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/tickers?category=l
             }
         ]
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1663670053454
 }
 
@@ -240,9 +240,9 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/instruments?category=line
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "category": "linear",
         "list": [
             {
@@ -278,7 +278,7 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/instruments?category=line
         ],
         "nextPageCursor": ""
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1670838442302
 }
 
@@ -296,7 +296,6 @@ GET
 |:----- |:-------|:-----|----- |
 |category |<b>true</b> |string |t(:dv_category)t(:dv_categorySuffix_2) |
 |symbol |false |string |t(:row_comment_symbol) |
-|baseCoin |false |string |t(:unified_baseCoin_param) |
 |limit |false |string |t(:row_comment_limit_500_1000) |
 |cursor |false |string |t(:dv_cursor) |
 
@@ -345,10 +344,10 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/public/v1/mark
 
 ```javascript
 {
-  "retCode": 0,
-    "retMsg":"success",
-    "result":{
-     "category":"linear",
+    "code": 0,
+    "message":"OK",
+    "data": {
+      "category":"linear",
       "symbol":"BTCUSDT",
       "interval":"1",
       "list":[
@@ -401,9 +400,9 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/public/v1/mark
 
 ```javascript
 {
-  "retCode": 0,
-    "retMsg":"success",
-    "result":{
+    "code": 0,
+    "message": "OK",
+    "data": {
       "category":"linear",
       "symbol":"BTCUSDT",
       "interval":"1",
@@ -416,7 +415,9 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/public/v1/mark
       "1451.59",
       "2.4343353100000003"
     ]
-  }
+  },
+  "ext_info": {},
+  "time": 1679025663662
 }
 ```
 t(:queryindexpricekline)
@@ -460,9 +461,9 @@ curl GET 'https://api-testnet.mufex.com//fapi/public/v1/funding-rate-history?cat
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "category": "linear",
         "list": [
             {
@@ -477,6 +478,7 @@ curl GET 'https://api-testnet.mufex.com//fapi/public/v1/funding-rate-history?cat
             }
         ]
     },
+    "ext_info": {},
     "time": 1657782323371
 }
 ```
@@ -521,9 +523,9 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/position-risk?category=li
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "category": "linear",
         "list": [
             {
@@ -592,9 +594,9 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/trades?category=li
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "category": "linear",
         "list": [
             {
@@ -607,7 +609,7 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/trades?category=li
             }
         ]
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1669802294719
 }
 ```
@@ -655,9 +657,9 @@ curl GET 'https://api-testnet.mufex.com/fapi/public/v1/open-interest?category=li
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "symbol": "BTCUSDT",
         "category": "linear",
         "list": [

@@ -42,11 +42,11 @@ curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/tr
 {
     "retCode":0,
     "retMsg":"OK",
-    "result":{
+    "data": {
         "orderId":"a09a43f1-7a65-4255-8758-034103447a4e",
         "orderLinkId":""
   },
-    "retExtInfo":null,
+    "ext_info":null,
     "time":1658850321861
 }
 ```
@@ -111,9 +111,9 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/tra
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "list": [
             {
                 "symbol": "XRPUSDT",
@@ -147,7 +147,7 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/tra
         ],
         "nextPageCursor": "K0crQkZRL0MyQVpiN0tVSDFTS0RlMk9DemNCWHZaRHp3aFZ4Y1Yza2MyWT0="
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1658899014975
 }
 ```
@@ -232,11 +232,11 @@ curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/tr
 {
   "retCode":0,
     "retMsg":"OK",
-    "result":{
+    "data": {
       "orderId": "4030430d-1dba-4134-ac77-3d81c14aaa00",
       "orderLinkId": ""
   },
-  "retExtInfo":null,
+  "ext_info":null,
     "time":1658850321861
 }
 ```
@@ -287,9 +287,9 @@ curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/tr
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "list": [
             {
                 "orderId": "4030430d-1dba-4134-ac77-3d81c14aaa00",
@@ -297,7 +297,7 @@ curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/tr
             }
         ]
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1658901359225
 }
 ```
@@ -352,13 +352,13 @@ curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/tr
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "orderId": "db8b74b3-72d3-4264-bf3f-52d39b41956e",
         "orderLinkId": "x002"
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1658902610749
 }
 ```
@@ -417,9 +417,9 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/tra
 
 ```json
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "list": [
             {
                 "symbol": "XRPUSDT",
@@ -451,7 +451,7 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/tra
         ],
         "nextPageCursor": ""
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1658902847238
 }
 ```
@@ -524,9 +524,9 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/tra
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "list": [
             {
                 "symbol": "BITUSDT",
@@ -573,7 +573,7 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/tra
         ],
         "nextPageCursor": ""
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1658911518442
 }
 ```
@@ -649,9 +649,9 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/acc
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "list": [
             {
                 "positionIdx": 0,
@@ -688,7 +688,7 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/acc
         "category": "linear",
         "nextPageCursor": ""
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1670836410404
 }
 ```
@@ -773,10 +773,10 @@ curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/ac
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {},
-    "retExtInfo": {},
+    "code": 0,
+    "message": "OK",
+    "data":  {},
+    "ext_info": {},
     "time": 1658908221642
 }
 ```
@@ -826,10 +826,10 @@ curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/ac
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {},
-    "retExtInfo": {},
+    "code": 0,
+    "message": "OK",
+    "data":  {},
+    "ext_info": {},
     "time": 1658908532580
 }
 ```
@@ -880,10 +880,10 @@ curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/ac
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {},
-    "retExtInfo": {},
+    "code": 0,
+    "message": "OK",
+    "data":  {},
+    "ext_info": {},
     "time": 1658909271272
 }
 ```
@@ -990,10 +990,10 @@ curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/ac
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {},
-    "retExtInfo": {},
+    "code": 0,
+    "message": "OK",
+    "data":  {},
+    "ext_info": {},
     "time": 1658909569340
 }
 ```
@@ -1046,10 +1046,10 @@ curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/ac
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {},
-    "retExtInfo": {},
+    "code": 0,
+    "message": "OK",
+    "data":  {},
+    "ext_info": {},
     "time": 1658910157755
 }
 ```
@@ -1105,10 +1105,10 @@ curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/ac
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {},
-    "retExtInfo": {},
+    "code": 0,
+    "message": "OK",
+    "data":  {},
+    "ext_info": {},
     "time": 1658910815936
 }
 ```
@@ -1168,10 +1168,10 @@ curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/ac
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {},
-    "retExtInfo": {},
+    "code": 0,
+    "message": "OK",
+    "data":  {},
+    "ext_info": {},
     "time": 1658911328063
 }
 ```
@@ -1220,9 +1220,9 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/acc
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "list": [
             {
                 "symbol": "XRPUSDT",
@@ -1245,7 +1245,7 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/acc
         ],
         "nextPageCursor": "R21aYkRjQ0haRmcxeFJBanZNYm1Db01RWWdyV3YzZmdkUVNXUmtXdGpMMD0="
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1658914264892
 }
 ```
@@ -1312,9 +1312,9 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/acc
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "list": [
             {
                 "coin": "BTC",
@@ -1332,7 +1332,7 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/acc
             }
         ]
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1658736635763
 }
 ```
@@ -1392,9 +1392,9 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/acc
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "list": [
             {
                 "symbol": "ETHUSDT",
@@ -1403,7 +1403,7 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/acc
             }
         ]
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1658739027301
 }
 ```
@@ -1446,9 +1446,9 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/acc
 
 ```javascript
 {
-    "retCode": 0,
-    "retMsg": "OK",
-    "result": {
+    "code": 0,
+    "message": "OK",
+    "data":  {
         "list": [
             {
                 "coin": "USDT",
@@ -1460,7 +1460,7 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/acc
         ],
         "nextPageCursor": "elZpeUVCSCtFRk5pZjMrMU9reDdMdkpJS2VZdEpqczNHaExPUU5CazA0Yz0="
     },
-    "retExtInfo": {},
+    "ext_info": {},
     "time": 1658737209400
 }
 ```
