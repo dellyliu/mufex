@@ -122,12 +122,12 @@ t(:websocket_para_filter_resp)
 
 ```javascript
 // Unsubscribing from the trade data for ETHUSD
-ws.send('{"op":"unsubscribe","args":["publicTrade.ETHUSD"],"req_id": "customised_id"}')
+ws.send('{{"op":"subscribe","args":["books-25.BTCUSDT"]}')
 ```
 
 t(:websocket_para_unsubfilters)
 
-`ws.send('{"op": "unsubscribe", "args": ["topic.filter", "topic.filter"],"req_id": "customised_id"}');`
+`ws.send('{"op": "unsubscribe", "args": ["topic.filter", "topic.filter"]});`
 
 ### t(:intervals)
 t(:websocket_para_intervals)
@@ -139,9 +139,13 @@ t(:websocket_para_intervals)
 {
   "success": true,
   "ret_msg": "",
-  "conn_id": "fd79c21d-df3c-4439-aaab-c802bcb60e02",
-  "req_id": "customize_00001",
-  "op": "subscribe"
+  "conn_id": "0b12f925-0ab7-4ff8-afd4-c9661456b8fc",
+  "request": {
+    "op": "subscribe",
+    "args": [
+      "books-25.BTCUSDT"
+    ]
+  }
 }
 ```
 
@@ -191,10 +195,9 @@ ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["books-25.BTCUSDT","
                 "17166.50",
                 "0.049"
             ]
-        ],
-        "u": 3083181,
-        "seq": 7545268447
-    }
+        ]
+    },
+    "cs": 17550368
 }
 ```
 
@@ -218,9 +221,9 @@ ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["books-25.BTCUSDT","
                 "17070.00",
                 "0"
             ]
-        ],
-    }
-    cs: 16249981
+        ]
+    },
+    "cs": 17550368,
 
 }
 ```
