@@ -1968,7 +1968,7 @@ en:
     After subscription, you will be pushed delta trade message in real-time once there is an order filled.<br><br>
     Push frequency: <b>real-time</b><br><br>
     <b>Topic:</b><br>
-    <code>recently_trade.{symbol}</code>
+    <code>trades-100.{symbol}</code>
   ### insurance
   websocketinsurance: insurance
   websocket_para_insurance: |
