@@ -326,33 +326,33 @@ ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["tickers-100.BTCUSDT
 
 ```javascript
 {
-  "topic": "tickers-100.BTCUSDT",
-  "type": "snapshot",
-  "data": {
-    "s": "BTCUSDT",
-    "p": "26577.50",
-    "b1": "26589.50",
-    "a1": "27075.00",
-    "td": "0-",
-    "p2": "24612.50",
-    "pr": 79837,
-    "h": "27195.00",
-    "l": "24597.00",
-    "p1": "26621.50",
-    "to": "1618114874.7449994",
-    "v": "63581.73699999",
-    "ft": "2023-03-17T16:00:00Z",
-    "mp": "26565.77",
-    "xp": "26566.05",
-    "o": "0",
-    "frgs": "0",
-    "fr": 100,
-    "pf": 100,
-    "nh": 8,
-    "ds": "0"
-  },
-  "cs": 16250028,
-  "ts": 1679059921485225
+    "topic": "tickers-100.BTCUSDT",
+    "type": "snapshot",
+    "data": {
+        "s": "BTCUSDT",
+        "p": "28214.50",
+        "b1": "26754.00",
+        "a1": "28201.00",
+        "td": "0+",
+        "p24": "27000.00",
+        "pP": 44981,
+        "h": "28580.00",
+        "l": "27000.00",
+        "p1": "28210.00",
+        "to": "1482841986.627001",
+        "v": "52683.009",
+        "ft": "2023-03-22T16:00:00Z",
+        "mp": "28179.66",
+        "ip": "28179.66",
+        "o": "0",
+        "frgs": "0",
+        "fr": 100,
+        "pf": 100,
+        "nh": 8,
+        "ds": "0"
+    },
+    "cs": 17652420,
+    "ts": 1679490241132846
 }
 ```
 
@@ -407,6 +407,7 @@ t(:websocket_aside_instrumentInfo_contract)
 |ask1Price|string|t(:row_comment_resp_ask_price) |a1|
 |ask1Size|string|t(:row_comment_resp_ask_size) |-|
 |prevPrice1h |string |t(:row_comment_resp_prev_price_1h_v3)  |p1|
+|ReduceOnly  |string |  ReduceOnly Status | ro|
 |cs |long |t(:row_comment_tickers_cs)  |
 |ts |long |t(:row_comment_dv3_ts)  |
 

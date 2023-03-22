@@ -6,7 +6,7 @@ t(:account_para)
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/trade/create' \
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/trade/create' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: f02a18137c25c40d64b2c474f575c01a62ba076124946d38619238e19c86a2f2' \
 --header 'MF-ACCESS-API-KEY: XXXXXXXXXX' \
@@ -59,7 +59,7 @@ t(:account_aside_placeOrder_positionIdx)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=vpoCreate>/fapi/private/v1/trade/create</span></code>
+<code><span id=vpoCreate>/private/v1/trade/create</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpoCreate"><img src="/images/copy_to_clipboard.png" height=zh5 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -95,7 +95,7 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/trade/orders?symbol=DOGEUSDT&orderStatus=Filled' \
+curl --location --request GET 'https://api-testnet.betterbitfinance.com/private/v1/trade/orders?symbol=DOGEUSDT&orderStatus=Filled' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: 61df2c2de39cfce40fe334e503de4a61e26a95aebec690b9b482e4feb31cb088' \
 --header 'MF-ACCESS-API-KEY: {api key}' \
@@ -156,7 +156,7 @@ t(:contract_para_getOrder)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=oaoList>/fapi/private/v1/trade/orders</span></code>
+<code><span id=oaoList>/private/v1/trade/orders</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#oaoList"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -208,7 +208,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/trade/cancel' \
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/trade/cancel' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: c9f2c118e40040fc3a12c9400816a26e475ce2f7995248a3625d92be3454b9f1' \
 --header 'MF-ACCESS-API-KEY: {api key}' \
@@ -245,7 +245,7 @@ t(:contract_para_cancelOrder)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=vpoCancel>/fapi/private/v1/trade/cancel</span></code>
+<code><span id=vpoCancel>/private/v1/trade/cancel</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpoCancel"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -267,7 +267,7 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/trade/cancel-all' \
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/trade/cancel-all' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: ee5af51734abed24925af73badbce8ef06f0dd34a3b35fcd5a829c892f565aed' \
 --header 'MF-ACCESS-API-KEY: {api key}' \
@@ -306,7 +306,7 @@ t(:contract_para_cancelAllOrders)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=vpoCancelAll>/fapi/private/v1/trade/cancel-all</span></code>
+<code><span id=vpoCancelAll>/private/v1/trade/cancel-all</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpoCancelAll"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -326,7 +326,7 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/trade/replace' \
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/trade/replace' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: 78c358649d431bb30dfc35e5a3cd99128b5f23faf04c15765b3d894f2930e8f5' \
 --header 'MF-ACCESS-API-KEY: {api key}' \
@@ -371,7 +371,7 @@ t(:account_aside_replaceActive)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=oaoReplace>/fapi/private/v1/trade/replace</span></code>
+<code><span id=oaoReplace>/private/v1/trade/replace</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#oaoReplace"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -400,7 +400,7 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/trade/activity-orders?symbol=XRPUSDT' \
+curl --location --request GET 'https://api-testnet.betterbitfinance.com/private/v1/trade/activity-orders?symbol=XRPUSDT' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: e3a1e4b88dfc2730c987fb3253dd3e09bc05cf68ae4d9d9d71a8235c44cb1f02' \
 --header 'MF-ACCESS-API-KEY: {api key}' \
@@ -461,7 +461,7 @@ t(:contract_para_getRealtimeOrder)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=vpOrder>/fapi/private/v1/trade/activity-orders</span></code>
+<code><span id=vpOrder>/private/v1/trade/activity-orders</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpOrder"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -508,7 +508,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/trade/fills?symbol=XRPUSDT' \
+curl --location --request GET 'https://api-testnet.betterbitfinance.com/private/v1/trade/fills?symbol=XRPUSDT' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: a7358fb068bf66570e7ecf063e39a6dbd11f1d5572ba79a63d5996221d864585' \
 --header 'MF-ACCESS-API-KEY: XXXXXXXXXXXX' \
@@ -586,7 +586,7 @@ t(:wallet_aside_tradeRecords)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=vpeList>/fapi/private/v1/trade/fills</span></code>
+<code><span id=vpeList>/private/v1/trade/fills</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpeList"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -631,7 +631,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/account/positions?symbol=XRPUSDT' \
+curl --location --request GET 'https://api-testnet.betterbitfinance.com/private/v1/account/positions?symbol=XRPUSDT' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: b0818cb2f91264ffd712db0c8f8648041b2c5eed643200aa63e4141c7aa12500' \
 --header 'MF-ACCESS-API-KEY: {api key}' \
@@ -700,7 +700,7 @@ t(:account_aside_queryPosition)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=pList>/fapi/private/v1/account/positions</span></code>
+<code><span id=pList>/private/v1/account/positions</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pList"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -748,7 +748,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/set-auto-add-margin' \
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/account/set-auto-add-margin' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: 504e85b59fb0ee7c2c70d7cf2d82fc717258d67a3c3cdf631b4c4c68b43843b3' \
 --header 'MF-ACCESS-API-KEY: {api key}' \
@@ -783,7 +783,7 @@ t(:linear_account_para_setAutoAddMargin)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=pSetAutoAddMargin>/fapi/private/v1/account/set-auto-add-margin</span></code>
+<code><span id=pSetAutoAddMargin>/private/v1/account/set-auto-add-margin</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pSetAutoAddMargin"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -802,7 +802,7 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/set-isolated' \
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/account/set-isolated' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: f178bda84f8a3fa971338b7424cce2204824c0114f196650b2516962371e3902' \
 --header 'MF-ACCESS-API-KEY: XXXXXXXXXX' \
@@ -837,7 +837,7 @@ t(:contract_para_switchIsolated)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=pSwitchIsolated>/fapi/private/v1/account/set-isolated</span></code>
+<code><span id=pSwitchIsolated>/private/v1/account/set-isolated</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pSwitchIsolated"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -856,7 +856,7 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/set-position-mode' \
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/account/set-position-mode' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: b07d38c9719187a8a9a0cee739f465edd05a1c7a30618e02a1f1dc9fc3639d97' \
 --header 'MF-ACCESS-API-KEY: XXXXXXXXXX' \
@@ -948,7 +948,7 @@ t(:position_ability_para)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=ulSwitchMode>/fapi/private/v1/account/set-position-mode</span></code>
+<code><span id=ulSwitchMode>/private/v1/account/set-position-mode</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#ulSwitchMode"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -967,7 +967,7 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/switch-tpsl-mode' \
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/account/switch-tpsl-mode' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: 018fd4ae872bdb5a90e849dc324eeab4157a047de05250bb74efb7c3434d0597' \
 --header 'MF-ACCESS-API-KEY: XXXXXXXXXX' \
@@ -1004,7 +1004,7 @@ t(:switchmode_aside)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=pltcList>/fapi/private/v1/account/switch-tpsl-mode</span></code>
+<code><span id=pltcList>/private/v1/account/switch-tpsl-mode</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pltcList"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1022,7 +1022,7 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/set-leverage' \
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/account/set-leverage' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: 6d17e6aa3a7c362b05071c737dc0904bd731fea1d04e9b46ee188749d17a7ce6' \
 --header 'MF-ACCESS-API-KEY: {api key}' \
@@ -1056,7 +1056,7 @@ t(:linear_account_para_setLeverage)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=pSetLeverage>/fapi/private/v1/account/set-leverage</span></code>
+<code><span id=pSetLeverage>/private/v1/account/set-leverage</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pSetLeverage"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1074,7 +1074,7 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/trading-stop' \
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/account/trading-stop' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: 4c0406d6e31e30f5c37295627abefa980c248bc25170fa7158e47d8a46425d74' \
 --header 'MF-ACCESS-API-KEY: {api key}' \
@@ -1119,7 +1119,7 @@ t(:account_aside_tradingStop)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=pSetTpSlTs>/fapi/private/v1/account/trading-stop</span></code>
+<code><span id=pSetTpSlTs>/private/v1/account/trading-stop</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pSetTpSlTs"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1146,7 +1146,7 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request POST 'https://api-testnet.mufex.com/fapi/private/v1/account/set-position-risk' \
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/account/set-position-risk' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: 82904cc14df4bb278722d4212bdb76dc7e1ec7a77e0e761d2e09b3361059a25c' \
 --header 'MF-ACCESS-API-KEY: XXXXXXXXXX' \
@@ -1182,7 +1182,7 @@ t(:account_aside_getRisk_linear)
 
 <p class="fake_header">t(:httprequest)</p>
 POST
-<code><span id=plpSetRisk>/fapi/private/v1/account/set-position-risk</span></code>
+<code><span id=plpSetRisk>/private/v1/account/set-position-risk</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#plpSetRisk"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1202,7 +1202,7 @@ POST
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/account/closed-pnl?symbol=XRPUSDT&startTime=1658764800000&endTime=1658937600000' \
+curl --location --request GET 'https://api-testnet.betterbitfinance.com/private/v1/account/closed-pnl?symbol=XRPUSDT&startTime=1658764800000&endTime=1658937600000' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: eb16a696924a92a3a47d769caf44d7373eca9ed6a644384ff6e8cd729ee9f7b1' \
 --header 'MF-ACCESS-API-KEY: XXXXXXXXXXXX' \
@@ -1252,7 +1252,7 @@ t(:linear_private_closed_pnl_records)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=pltcLpnl>/fapi/private/v1/account/closed-pnl</span></code>
+<code><span id=pltcLpnl>/private/v1/account/closed-pnl</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#pltcLpnl"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1294,7 +1294,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/account/balance?coin=BTC' \
+curl --location --request GET 'https://api-testnet.betterbitfinance.com/private/v1/account/balance?coin=BTC' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: f8f516355e0c59b28d429b13b4ea6a350d02f9c96e2f9fd1be235863e8c1834c' \
 --header 'MF-ACCESS-API-KEY: {api key}' \
@@ -1343,7 +1343,7 @@ t(:wallet_aside_walletBalance)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=vpwBalance>/fapi/private/v1/account/balance</span></code>
+<code><span id=vpwBalance>/private/v1/account/balance</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpwBalance"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1374,7 +1374,7 @@ t(:contract_tradingFeeRate_para)
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/account/trade-fee?symbol=ETHUSDT' \
+curl --location --request GET 'https://api-testnet.betterbitfinance.com/private/v1/account/trade-fee?symbol=ETHUSDT' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: e65aad8dd5459774ad21aaca77420947332fdbfe433bef959c6507ce2379999f' \
 --header 'MF-ACCESS-API-KEY: XXXXXXXXXXXX' \
@@ -1408,7 +1408,7 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/acc
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=tradingFeeRate>/fapi/private/v1/account/trade-fee</span></code>
+<code><span id=tradingFeeRate>/private/v1/account/trade-fee</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#tradingFeeRate"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -1428,7 +1428,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/account/bills?coin=USDT&walletFundType=AccountTransfer&limit=1' \
+curl --location --request GET 'https://api-testnet.betterbitfinance.com/private/v1/account/bills?coin=USDT&walletFundType=AccountTransfer&limit=1' \
 --header 'MF-ACCESS-SIGN-TYPE: 2' \
 --header 'MF-ACCESS-SIGN: 591a44021fff458a6dfbba517755e1105066864d94c38a0ce84619ae51cf2313' \
 --header 'MF-ACCESS-API-KEY: {api key}' \
@@ -1479,7 +1479,7 @@ t(:wallet_aside_walletRecords2)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=oawfRecordsNew>/fapi/private/v1/account/bills</span></code>
+<code><span id=oawfRecordsNew>/private/v1/account/bills</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#oawfRecordsNew"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>

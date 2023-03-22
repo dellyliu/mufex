@@ -56,7 +56,7 @@ t(:auth_para_dv3_construct2)
 > t(:auth_codequote_construct2_v3)
 
 ```http
-GET /fapi/private/v1/trade/orders?category=option&symbol=BTC-29JUL22-25000-C HTTP/1.1
+GET /private/v1/trade/orders?category=option&symbol=BTC-29JUL22-25000-C HTTP/1.1
 Host: api-testnet.mufex.com
 -H 'MF-ACCESS-SIGN-TYPE: 2' \
 -H 'MF-ACCESS-SIGN: eb431d99a1a203a434a82ac3ea8e107b5f94a967e9aaf922c41e84fb3ec9df78' \
@@ -68,7 +68,7 @@ Host: api-testnet.mufex.com
 > t(:auth_codequote_construct3)
 
 ```http
-POST /fapi/private/v1/trade/cancel HTTP/1.1
+POST /private/v1/trade/cancel HTTP/1.1
 Host: api-testnet.mufex.com
 -H 'MF-ACCESS-SIGN-TYPE: 2' \
 -H 'MF-ACCESS-SIGN: c822337e76e30505e41b87a55af291e074f59f9496ba12ca2a57dc04fe65a178' \

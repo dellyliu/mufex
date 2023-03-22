@@ -5,7 +5,7 @@ t(:market_para_auth_v3)
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/order-book?category=linear&symbol=BTCUSDT'
+curl GET 'https://api-testnet.betterbitfinance.com/public/v1/market/order-book?category=linear&symbol=BTCUSDT'
 ```
 
 ```python--pybit
@@ -57,7 +57,7 @@ t(:market_aside_orderbook)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvOrderbook>/fapi/public/v1/market/order-book</span></code>
+<code><span id=dvOrderbook>/public/v1/market/order-book</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvOrderbook"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -80,7 +80,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/kline?category=linear&symbol=BTCUSDT&interval=D&start=1652112000000&end=1652544000000'
+curl GET 'https://api-testnet.betterbitfinance.com/public/v1/market/kline?category=linear&symbol=BTCUSDT&interval=D&start=1652112000000&end=1652544000000'
 ```
 
 ```python--pybit
@@ -116,7 +116,7 @@ t(:market_para_querykline)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvkline>/fapi/public/v1/market/kline</span></code>
+<code><span id=dvkline>/public/v1/market/kline</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvkline"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -141,7 +141,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/tickers?category=linear&symbol=BTCUSDT'
+curl GET 'https://api-testnet.betterbitfinance.com/public/v1/market/tickers?category=linear&symbol=BTCUSDT'
 ```
 
 ```python--pybit
@@ -189,7 +189,7 @@ t(:dv_marketTickerPara)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvtickers>/fapi/public/v1/market/tickers</span></code>
+<code><span id=dvtickers>/public/v1/market/tickers</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvtickers"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -232,7 +232,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.mufex.com/fapi/public/v1/instruments?category=linear&symbol=BTCUSDT'
+curl GET 'https://api-testnet.betterbitfinance.com/public/v1/instruments?category=linear&symbol=BTCUSDT'
 ```
 
 ```python--pybit
@@ -291,7 +291,7 @@ t(:dv_marketInstrPara)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvinstru>/fapi/public/v1/instruments</span></code>
+<code><span id=dvinstru>/public/v1/instruments</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvinstru"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -336,7 +336,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.mufex.com/fapi/public/v1/market/mark-price-kline?category=linear&symbol=BTCUSDT&interval=D&start=1652112000000&end=1652544000000'
+curl --location --request GET 'https://api-testnet.betterbitfinance.com/public/v1/market/mark-price-kline?category=linear&symbol=BTCUSDT&interval=D&start=1652112000000&end=1652544000000'
 ```
 
 ```python--pybit
@@ -370,7 +370,7 @@ t(:linear_query_mark_price_kline_v3)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvmarkkline>/fapi/public/v1/market/mark-price-kline</span></code>
+<code><span id=dvmarkkline>/public/v1/market/mark-price-kline</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvmarkkline"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -394,7 +394,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl --location --request GET 'https://api-testnet.mufex.com/fapi/public/v1/market/index-price-kline?category=linear&symbol=BTCUSDT&interval=D&start=1652112000000&end=1652544000000'
+curl --location --request GET 'https://api-testnet.betterbitfinance.com/public/v1/market/index-price-kline?category=linear&symbol=BTCUSDT&interval=D&start=1652112000000&end=1652544000000'
 ```
 
 ```python--pybit
@@ -429,7 +429,7 @@ t(:queryindexpricekline)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvindexkline>/fapi/public/v1/market/index-price-kline</span></code>
+<code><span id=dvindexkline>/public/v1/market/index-price-kline</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvindexkline"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -455,7 +455,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.mufex.com//fapi/public/v1/funding-rate-history?category=linear&symbol=BTCUSDT&startTime=1652112000000&endTime=1652198400000'
+curl GET 'https://api-testnet.mufex.com//public/v1/funding-rate-history?category=linear&symbol=BTCUSDT&startTime=1652112000000&endTime=1652198400000'
 ```
 
 ```python--pybit
@@ -491,7 +491,7 @@ t(:market_para_fundingRate)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvhistfundrate>/fapi/public/v1/funding-rate-history</span></code>
+<code><span id=dvhistfundrate>/public/v1/funding-rate-history</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvhistfundrate"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -517,7 +517,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.mufex.com/fapi/public/v1/position-risk?category=linear&symbol=BTCUSDT'
+curl GET 'https://api-testnet.betterbitfinance.com/public/v1/position-risk?category=linear&symbol=BTCUSDT'
 ```
 
 ```python--pybit
@@ -588,7 +588,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.mufex.com/fapi/public/v1/market/trades?category=linear&symbol=BTCUSDT&limit=1'
+curl GET 'https://api-testnet.betterbitfinance.com/public/v1/market/trades?category=linear&symbol=BTCUSDT&limit=1'
 ```
 
 ```python--pybit
@@ -624,7 +624,7 @@ t(:market_para_records)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvrecentrades>/fapi/public/v1/market/trades</span></code>
+<code><span id=dvrecentrades>/public/v1/market/trades</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvrecentrades"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
@@ -650,7 +650,7 @@ GET
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.mufex.com/fapi/public/v1/open-interest?category=linear&symbol=BTCUSDT&interval=1h&startTime=1657555200000&endTime=1657641600000'
+curl GET 'https://api-testnet.betterbitfinance.com/public/v1/open-interest?category=linear&symbol=BTCUSDT&interval=1h&startTime=1657555200000&endTime=1657641600000'
 ```
 
 ```python--pybit
@@ -686,7 +686,7 @@ t(:market_para_marketopeninterest)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvopeninterest>/fapi/public/v1/open-interest</span></code>
+<code><span id=dvopeninterest>/public/v1/open-interest</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvopeninterest"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>
