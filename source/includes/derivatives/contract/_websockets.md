@@ -159,13 +159,13 @@ t(:websocket_aside_orderbook_L1)
 > t(:codequote_subscribe)
 
 ```javascript
-ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["orderBook_25.H.BTCUSDT","orderbook.200.BTCUSDT"]}')
+ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["books-25.BTCUSDT","books-200.BTCUSDT"]}')
 ```
 > t(:codequote_snapshot)
 
 ```javascript
 {
-    "topic": "orderBook_25.H.BTCUSDT",
+    "topic": "books-25.BTCUSDT",
     "type": "snapshot",
     "ts": 1668748553479,
     "data": {
@@ -203,7 +203,7 @@ ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["orderBook_25.H.BTCU
 
 ```javascript
 {
-    "topic": "orderBook_25.H.BTCUSDT",
+    "topic": "books-25.BTCUSDT",
     "type": "delta",
     "ts": 1668748553556,
     "data": {
@@ -244,7 +244,7 @@ t(:websocketOrderBook_contract)
 > t(:codequote_subscribe)
 
 ```javascript
-ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["recently_trade.H.BTCUSDT"]}')
+ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["trades-100.BTCUSDT"]}')
 ```
 
 ```python--pybit
@@ -257,7 +257,7 @@ ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["recently_trade.H.BT
 ```javascript
 {
 {
-  "topic": "recently_trade.H.BTCUSDT",
+  "topic": "trades-100.BTCUSDT",
   "type": "delta",
   "data": {
     "s": "BTCUSDT",
@@ -312,7 +312,7 @@ t(:websocket_para_trade_ud)
 > t(:codequote_subscribe)
 
 ```javascript
-ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["instrument_info.H.BTCUSDT"]}')
+ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["tickers-100.BTCUSDT"]}')
 ```
 
 ```python--pybit
@@ -323,7 +323,7 @@ ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["instrument_info.H.B
 
 ```javascript
 {
-  "topic": "instrument_info.H.BTCUSDT",
+  "topic": "tickers-100.BTCUSDT",
   "type": "snapshot",
   "data": {
     "s": "BTCUSDT",
@@ -357,7 +357,7 @@ ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["instrument_info.H.B
 
 ```javascript
 {
-  "topic": "instrument_info.H.BTCUSDT",
+  "topic": "tickers-100.BTCUSDT",
   "type": "delta",
   "data": {
     "s": "BTCUSDT",
@@ -388,13 +388,13 @@ t(:websocket_aside_instrumentInfo_contract)
 |:----- |:-----|----- |:-----|
 |symbol |string |t(:row_comment_symbol)  |s|
 |tickDirection|string |t(:row_comment_position_tick_direction)  |td|
-|price24hPcnt|string|t(:row_comment_resp_price_24h_pcnt) |pr|
+|price24hPcnt|string|t(:row_comment_resp_price_24h_pcnt) |pP|
 |lastPrice |string |t(:row_comment_resp_last_price)  |p|
-|prevPrice24h |string |t(:row_comment_resp_prev_price_24h)  |p2|
+|prevPrice24h |string |t(:row_comment_resp_prev_price_24h)  |p24|
 |highPrice24h |string |t(:row_comment_resp_high_price_24h)  |h|
 |lowPrice24h |string |t(:row_comment_resp_low_price_24h)  |l|
 |markPrice |string |t(:row_comment_resp_mark_price)  |mp|
-|indexPrice |string |t(:row_comment_resp_index_price)  |xp|
+|indexPrice |string |t(:row_comment_resp_index_price)  |ip|
 |openInterest |string |t(:row_comment_resp_open_interest). t(:row_comment_slow_update)  |o|
 |turnover24h |string |t(:row_comment_resp_turnover_24h)  |to|
 |volume24h |string |t(:row_comment_resp_volume_24h)  |v|
@@ -405,7 +405,6 @@ t(:websocket_aside_instrumentInfo_contract)
 |ask1Price|string|t(:row_comment_resp_ask_price) |a1|
 |ask1Size|string|t(:row_comment_resp_ask_size) |-|
 |prevPrice1h |string |t(:row_comment_resp_prev_price_1h_v3)  |p1|
-|deliveryTime |string |t(:deliveryTime_v3)  |-|
 |cs |long |t(:row_comment_tickers_cs)  |
 |ts |long |t(:row_comment_dv3_ts)  |
 
@@ -439,11 +438,9 @@ ws.send('{"op":"subscribe","req_id": "10110001", "args":["candle.60.BTCUSDT"]}')
       "volume": "1579.69",
       "turnover": "41925473.635",
       "confirm": false,
-      "cross_seq": 16262506,
-      "timestamp": 1679063665196390
     }
   ],
-  "timestamp_e6": 1679063665196390
+  "ts": 1679063665196390
 }
 ```
 
@@ -465,9 +462,8 @@ t(:websocket_aside_klineV2)
 |low|number |t(:row_comment_low)    |
 |volume|string |t(:row_comment_resp_volume)    |
 |turnover|string |t(:row_comment_resp_turnover)    |
-|confirm|boolean |t(:row_comment_confirm)    |
-|timestamp|long |t(:row_comment_kline_timestamp)    |
-|timestamp_e6|long |t(:row_comment_dv3_ts)    |
+|confirm|boolean |t(:row_comment_confirm)|
+|ts|long |t(:row_comment_dv3_ts)    |
 
 
 ### t(:websocketliquidation)

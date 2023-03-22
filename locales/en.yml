@@ -5574,11 +5574,8 @@ en:
     100 level data<br/>
     <br>
     <b>Topic: (note. option has 25 & 100 level only)</b><br>
-    <code>orderbook.1.{symbol}</code><br>
-    <code>orderbook.25.{symbol}</code><br>
-    <code>orderbook.50.{symbol}</code><br>
-    <code>orderbook.100.{symbol}</code><br>
-    <code>orderbook.200.{symbol}</code><br>
+    <code>books.25.{symbol}</code><br>
+    <code>books.200.{symbol}</code><br>
   websocketOrderBook_contract: |
     <b>instruction: </b>
     Get different depth.<br>

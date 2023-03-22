@@ -682,7 +682,6 @@ curl --location --request GET 'https://api-testnet.mufex.com/fapi/private/v1/acc
                 "positionIM": "",
                 "positionStatus": "Normal",
                 "sessionAvgPrice": "0.00",
-                "occClosingFee": "0"
             }
         ],
         "category": "linear",
@@ -732,7 +731,6 @@ GET
 |bustPrice |string |t(:linear_resp_field_bust_price)  |
 |positionStatus |string |t(:row_comment_updated_at)  |
 |sessionAvgPrice |string |t(:row_comment_query_sessionAvgPrice_v3)  |
-|occClosingFee |string |t(:row_comment_occ_closing_fee)  |
 |takeProfit |string |t(:row_comment_take_profit)  |
 |stopLoss |string |t(:row_comment_stop_loss)  |
 |trailingStop |string |t(:row_comment_trailing_stop)  |
