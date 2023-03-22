@@ -376,7 +376,6 @@ ws.send('{"op": "subscribe", "req_id": "10110001", "args": ["tickers-100.BTCUSDT
 }
 ```
 
-> t(:codequote_option)
 
 
 t(:websocket_para_ticker_contract)

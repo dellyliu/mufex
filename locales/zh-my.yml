@@ -1797,7 +1797,7 @@ zh-my:
     <p>獲取合約的最新數據.</p>
     <p>推送頻率: <b>100ms</b></p>
     <p><b>Topic:</b></p>
-    <p><code>tickers.{symbol}</code></p>
+    <p><code>tickers-100.{symbol}</code></p>
   websocket_aside_instrumentInfo1: |
     註意，該topic只會推送<code>update</code>數據. <code>delete</code>和<code>insert</code>數據都為空. 如果<code>update</code>數據也為空,則表明信息沒有發生變化.
   websocket_aside_instrumentInfo2: |
@@ -5144,12 +5144,8 @@ zh-my:
     100檔數據<br/>
     <br>
     <b>Topic: (備註：Option只有25和100檔)</b><br>
-    <code>orderbook.1.{symbol}</code><br>
-    <code>orderbook.25.{symbol}</code><br>
-    <code>orderbook.50.{symbol}</code><br>
-    <code>orderbook.100.{symbol}</code><br>
-    <code>orderbook.200.{symbol}</code><br>
-    <code>orderbook.500.{symbol}</code><br>
+    <code>books.25.{symbol}</code><br>
+    <code>books.200.{symbol}</code><br>
   websocketOrderBook_contract: |
     <b>說明: </b>
     獲取不同檔位的orderbook數據.<br>

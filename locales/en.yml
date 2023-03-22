@@ -1990,7 +1990,7 @@ en:
     <p>Get latest information for symbol.</p>
     <p>Push frequency: <b>100ms</b></p>
     <p><b>Topic:</b></p>
-    <p><code>tickers.{symbol}</code></p>
+    <p><code>tickers-100.{symbol}</code></p>
   websocket_aside_instrumentInfo1: |
     This topic only utilises the <code>update</code> field. Both the <code>delete</code> and <code>insert</code> fields are null. If a key is not found in the <code>update</code> field, its value has not changed.
   websocket_aside_instrumentInfo2: |
@@ -5588,8 +5588,8 @@ en:
   
     <br>
     <b>Topic: </b><br>
-    <code>orderBook_25.H.{symbol}</code><br>
-    <code>orderBook_200.H.{symbol}</code><br>
+    <code>books.25.{symbol}</code><br>
+    <code>books.200.{symbol}</code><br>
 
   predicatedFundingRate_v3: Predicated funding rate. usdt perp, inverse perp and inverse futures is <code>""</code>
   row_comment_resp_next_funding_time_v3: Next settlement time of capital cost (ms). Inverse futures is <code>""</code>
