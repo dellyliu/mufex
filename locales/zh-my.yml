@@ -5209,7 +5209,7 @@ zh-my:
     <p><p><b>說明：</b></p>
     <p>獲取我的倉位列表。通過該接口可以獲取當前用戶的持倉信息，如持倉數量、賬戶余額等信息。<b>仅推增量</b></p>
     <p><b>Topic：</b></p>
-    <p>user.position.contractAccount</p></p>
+    <p>contract.position</p></p>
   contract_position_riskLimitValue: 當前風險限額ID對應的持倉上限
   contract_position_tradeMode: 交易模式：<code>0</code>：全倉; <code>1</code>：逐倉
   contract_position_autoAddMargin: 自動追加保證金模式. <code>0</code>代表關閉, <code>1</code>代表開啟. <b>全倉</b>模式下該字段無效
@@ -5220,16 +5220,16 @@ zh-my:
     <p><p><b>說明：</b></p>
     <p>獲取用戶成交記錄，按時間降序排列。</p>
     <p><b>Topic：</b></p>
-    <p>user.execution.contractAccount</p></p>
+    <p>contract.execution</p></p>
   contract_executionClosedSize: 減倉數量
   contract_websocketOrder: |
     <p><p><b>說明：</b></p>
     <p><b>仅推增量</b>. 订单与条件单合并成一个Topic</p>
     <p><b>Topic：</b></p>
-    <p>user.order.contractAccount</p></p>
+    <p>contract.order</p></p>
   contract_websocketWallet: |
     <p><b>Topic：</b></p>
-    <p>user.wallet.contractAccount</p></p>
+    <p>contract.wallet</p></p>
   contract_walletAvailableBalance: 可用餘額
   contract_walletPositionMargin: 倉位保證金
   contract_walletOrderMargin: 當前委託訂單佔用的保證金
