@@ -5639,7 +5639,7 @@ en:
     <p>Pushing the incremental volume only</p>
     <p>Accessing personal position list. Current user's position holding information can be accessed through this interface, such as the quantity of position owned and wallet balance.</p>
     <p><b>Topic: </b></p>
-    <p>user.position.contractAccount</p></p>
+    <p>contract.position</p></p>
   contract_position_riskLimitValue: Position upper limit corresponding to the current risk limit ID
   contract_position_tradeMode: |
     Trade mode: <code>0</code>: cross margin; <code>1</code>: isolated margin
@@ -5652,19 +5652,19 @@ en:
     <p><b>Instruction:</b></p>
     <p>Get the user's filled history ranked by time in ascending order.</p>
     <p><b>Topic: </b></p>
-    <p>user.execution.contractAccount</p></p>
+    <p>contract.execution</p></p>
   contract_executionClosedSize: Closed size
   contract_websocketOrder: |
     <p><p><b>Instruction:</b></p>
     <p>Pushing incremental orders only. Merge active order with conditional order into one topic.</p>
     <p><b>Topic: </b></p>
-    <p>user.order.contractAccount</p></p>
+    <p>contract.order</p></p>
   contract_param_executionTpTriggerBy: <a href="#trigger-price-type-triggerby">tpTriggerBy</a>
   contract_parm_executionSlTriggerBy: <a href="#trigger-price-type-triggerby">slTriggerBy</a>
   contract_param_executionTriggerBy: <a href="#trigger-price-type-triggerby">triggerBy</a>
   contract_websocketWallet: |
     <p><b>Topic: </b></p>
-    <p>user.wallet.contractAccount</p></p>
+    <p>contract.wallet</p></p>
   contract_walletAvailableBalance: Available balance
   contract_walletPositionMargin: Position margin
   contract_walletOrderMargin: Margin occupied by the current order
