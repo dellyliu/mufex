@@ -5,7 +5,7 @@ t(:market_para_auth_v3)
 > t(:codequote_curlExample)
 
 ```console
-curl GET 'https://api-testnet.betterbitfinance.com/public/v1/market/order-book?category=linear&symbol=BTCUSDT'
+curl GET 'https://api-testnet.betterbitfinance.com/public/v1/market/order-book?symbol=BTCUSDT'
 ```
 
 ```python--pybit
@@ -562,7 +562,7 @@ t(:dv_riskLimitHead)
 
 <p class="fake_header">t(:httprequest)</p>
 GET
-<code><span id=dvrisklimit>fapi/public/v1/position-risk</span></code>
+<code><span id=dvrisklimit>/public/v1/position-risk</span></code>
 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#dvrisklimit"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
 
 <p class="fake_header">t(:requestparameters)</p>

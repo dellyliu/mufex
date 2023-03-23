@@ -5553,8 +5553,8 @@ en:
     100 level data<br/>
     <br>
     <b>Topic: (note. option has 25 & 100 level only)</b><br>
-    <code>books.25.{symbol}</code><br>
-    <code>books.200.{symbol}</code><br>
+    <code>books-25.{symbol}</code><br>
+    <code>books-200.{symbol}</code><br>
   websocketOrderBook_contract: |
     <b>instruction: </b>
     Get different depth.<br>
@@ -5567,8 +5567,8 @@ en:
   
     <br>
     <b>Topic: </b><br>
-    <code>books.25.{symbol}</code><br>
-    <code>books.200.{symbol}</code><br>
+    <code>books-25.{symbol}</code><br>
+    <code>books-200.{symbol}</code><br>
 
   predicatedFundingRate_v3: Predicated funding rate. usdt perp, inverse perp and inverse futures is <code>""</code>
   row_comment_resp_next_funding_time_v3: Next settlement time of capital cost (ms). Inverse futures is <code>""</code>
