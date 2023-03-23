@@ -428,22 +428,23 @@ ws.send('{"op":"subscribe","req_id": "10110001", "args":["candle.60.BTCUSDT"]}')
 
 ```javascript
 {
-  "topic": "candle.60.BTCUSDT",
-  "data": [
-    {
-      "start": 1679061600,
-      "end": 1679065200,
-      "period": "60",
-      "open": 26452,
-      "close": 26457.5,
-      "high": 26638.5,
-      "low": 26383.5,
-      "volume": "1579.69",
-      "turnover": "41925473.635",
-      "confirm": false,
-    }
-  ],
-  "ts": 1679063665196390
+    "topic": "candle.1.BTCUSDT",
+    "data": [
+        {
+            "start": 1679544960,
+            "end": 1679545020,
+            "period": "1",
+            "open": 27398,
+            "close": 27409,
+            "high": 27409,
+            "low": 27390,
+            "volume": "5.07",
+            "turnover": "138909.63",
+            "confirm": false,
+            "cs": 17657145
+        }
+    ],
+    "ts": 1679544971586546
 }
 ```
 
@@ -466,6 +467,7 @@ t(:websocket_aside_klineV2)
 |volume|string |t(:row_comment_resp_volume)    |
 |turnover|string |t(:row_comment_resp_turnover)    |
 |confirm|boolean |t(:row_comment_confirm)|
+|cs|number |cross_seq|
 |ts|long |t(:row_comment_dv3_ts)    |
 
 

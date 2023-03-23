@@ -11,49 +11,9 @@ t(:auth_para_privatepublic)
 
 ## t(:authenticationparameters)
 
-t(:auth_para_params)
-
-t(:auth_para_recv)
-
-<aside class="warning">
-t(:auth_aside_timestamp)
-</aside>
-
 ## t(:constructingtherequest)
 > t(:auth_codequote_construct1a_v3)
 
-```console
-GET
-rule: timestamp+api_key+recv_window+queryString
-
-param_str = "1658384314791XXXXXXXXXX5000category=option&symbol=BTC-29JUL22-25000-C"
-
-POST
-rule: timestamp+api_key+recv_window+raw_request_body
-
-param_str = "1658385579423PXOXCIFKHCWCAJTPKW5000{
-  "category": "option"
-}"
-```
-```python
-param_str = "1658384314791XXXXXXXXXX5000category=option&symbol=BTC-29JUL22-25000-C"
-
-# timestamp: 1658384314791
-# api_key: XXXXXXXXXX
-# recv_window: 5000
-# category=option&
-# symbol=BTC-29JUL22-25000-C
-```
-
-<aside class="notice">
-t(:auth_para_cdn_request_id)
-</aside>
-
-t(:auth_para_dv3_construct1)
-<div></div>
-
-t(:auth_para_dv3_construct2)
-> t(:auth_codequote_construct2_v3)
 
 ```http
 GET /private/v1/trade/orders?category=option&symbol=BTC-29JUL22-25000-C HTTP/1.1
