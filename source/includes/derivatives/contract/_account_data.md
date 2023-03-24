@@ -40,8 +40,8 @@ curl --location --request POST 'https://api-testnet.betterbitfinance.com/private
 
 ```javascript
 {
-    "retCode":0,
-    "retMsg":"OK",
+    "code":0,
+    "message":"OK",
     "data": {
         "orderId":"a09a43f1-7a65-4255-8758-034103447a4e",
         "orderLinkId":""
@@ -230,8 +230,8 @@ curl --location --request POST 'https://api-testnet.betterbitfinance.com/private
 
 ```javascript
 {
-  "retCode":0,
-    "retMsg":"OK",
+    "code":0,
+    "message":"OK",
     "data": {
       "orderId": "4030430d-1dba-4134-ac77-3d81c14aaa00",
       "orderLinkId": ""
