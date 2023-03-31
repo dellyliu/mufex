@@ -623,6 +623,7 @@ GET
 |list> t(:row_parameter_side) |string |t(:row_comment_side)  |
 |list> execTime |string |t(:row_comment_query_execTime_v3)  |
 |list> closedSize |string |t(:row_comment_closedSize_v3)  |
+|list> crossSeq| int64| cross seq|
 |nextPageCursor |string |t(:contract_comment_nextPageCursor)  |
 
 
