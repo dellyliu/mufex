@@ -45,11 +45,11 @@ zh-my:
   row_comment_position_value: 倉位價值
   row_comment_entry_price: 平均入場價
   row_comment_isolated: 是否逐倉，true-逐倉 false-全倉
-  row_comment_auto_add_margin: 是否 <a href="https://help.bybit.com/hc/en-us/articles/900000394403-Introduction-to-Auto-Margin-Replenishment-USDT-Contract-),">自動追加保證金</a>
+  row_comment_auto_add_margin: 是否 <a href="https://help.mufex.com/hc/en-us/articles/900000394403-Introduction-to-Auto-Margin-Replenishment-USDT-Contract-),">自動追加保證金</a>
   row_comment_position_margin: 倉位保證金
   row_comment_effective_leverage: 有效杠桿
   row_comment_liq_price: 強平價格
-  row_comment_bust_price: <a href="https://help.bybit.com/hc/en-us/articles/360039749813-What-is-Bankruptcy-Price-Inverse-Contract-">破產價格</a>
+  row_comment_bust_price: <a href="https://help.mufex.com/hc/en-us/articles/360039749813-What-is-Bankruptcy-Price-Inverse-Contract-">破產價格</a>
   row_comment_occ_closing_fee: 倉位占用的平倉手續費
   row_comment_occ_funding_fee: 倉位size和當前資金費率預占用資金費用
   row_comment_take_profit: 止盈價格
@@ -95,8 +95,8 @@ zh-my:
   row_comment_coin_type: 幣種
   row_comment_risk_limit: 風險限額
   row_comment_maintain_margin: 維持保證金
-  row_comment_starting_margin_inverse: 起始保證金。與風險限額表中<a href="https://help.bybit.com/hc/en-us/articles/360039749753-Risk-Limit-Inverse-Contract-">中顯示的"初始保證金百分比"相同 </a>
-  row_comment_starting_margin_linear: 起始保證金。與風險限額表中<a href="https://help.bybit.com/hc/en-us/articles/900000170023-Risk-Limit-USDT-Contract-">中顯示的"初始保證金百分比"相同 </a>
+  row_comment_starting_margin_inverse: 起始保證金。與風險限額表中<a href="https://help.mufex.com/hc/en-us/articles/360039749753-Risk-Limit-Inverse-Contract-">中顯示的"初始保證金百分比"相同 </a>
+  row_comment_starting_margin_linear: 起始保證金。與風險限額表中<a href="https://help.mufex.com/hc/en-us/articles/900000170023-Risk-Limit-USDT-Contract-">中顯示的"初始保證金百分比"相同 </a>
   row_comment_section: 區間點
   row_comment_is_lowest_risk: 是否最低風險限額0:不是 1:是
   row_comment_funding_rate: 資金費率
@@ -163,7 +163,7 @@ zh-my:
   row_comment_stopOrderPrice: 條件委托執行價格。如果條件委托是限價單，則price為必傳字段
   row_comment_basePrice: 當前市價。用於和stop_px值進行比較，確定當前條件委托是看空到<code>stop_px</code>時觸發還是看多到stop_px觸發。主要是用來標識當前條件單預期的方向
   row_comment_stopPx: 觸發價格. 如果您期望價格上漲时觸發您的條件訂單，請確保 stop_px > max(market price, base_price) 否則 stop_px < min(market price, base_price)
-  row_comment_timeInForce: <a href="https://www.bybit.com/zh-TW/help-center/bybitHC_Article?language=zh_TW&id=000001044">執行策略</a>
+  row_comment_timeInForce: <a href="https://www.mufex.com/zh-TW/help-center/bybitHC_Article?language=zh_TW&id=000001044">執行策略</a>
   row_comment_triggerBy: 觸發價格類型. 默認為最新市價
   row_comment_tick_direction: 價格變化方向
   row_comment_linear_triggerBy: 觸發價格類型
@@ -189,7 +189,7 @@ zh-my:
   row_comemnt_pRTriggerPrice: 修改後的條件單的觸發價格或止盈止損的價格。如果不修改這個字段，請不要傳這個參數。
   row_comemnt_replace_take_profit: 修改後的止盈價格。如果不修改這個字段，請不要傳這個參數。
   row_comemnt_replace_stop_loss: 修改後的止損價格。如果不修改這個字段，請不要傳這個參數。
-  row_comment_leverage_old: leverage必須大於0且小於最大可設置杠桿 <a href="https://help.bybit.com/hc/en-us/articles/360039749753-What-is-Risk-Limit-What-effect-does-the-Risk-Limit-have-on-Margin-Inverse-Contract-">risk limit leverage</a>,如果你想切換全逐倉，請使用 <a href="#t-marginswitch">全倉/逐倉切換</a>
+  row_comment_leverage_old: leverage必須大於0且小於最大可設置杠桿 <a href="https://help.mufex.com/hc/en-us/articles/360039749753-What-is-Risk-Limit-What-effect-does-the-Risk-Limit-have-on-Margin-Inverse-Contract-">risk limit leverage</a>,如果你想切換全逐倉，請使用 <a href="#t-marginswitch">全倉/逐倉切換</a>
   row_comment_leverage_only: 該字段表明一個兼容邏輯。
           <br>若該字段為<code>false</code>,當<code>leverage </code>等於<code>0</code>時將會切換至全倉,當<code>leverage</code>大於<code>0</code>將切換至逐倉，此時無法在全倉下設置杠桿;<br>若該字段為<code>true</code>則表示在當前倉位模式下切換杠桿，此時<code>leverage</code>需要大於<code>0</code>,並可以使用全倉切換杠桿功能。</br>我們建議用戶<code>leverage</code>設置為<code>true</code>
   row_comment_startDate: 起始時間點
@@ -684,19 +684,19 @@ zh-my:
   # introduction in index.html.md
   introduction: 中文社區和參考資料
   intro_para:
-    <p>歡迎使用 <a href="https://www.bybit.com/">Bybit</a> APIs 和 Websocket官方文檔！</p>
+    <p>歡迎使用 <a href="https://www.mufex.com/">Bybit</a> APIs 和 Websocket官方文檔！</p>
     <p>如果您在使用API的過程中遇到問題需要幫助，請加入我們的 <a href="https://t.me/Bybitapi">官方Telegram API討論群</a>！</p>
   spot_intro_para:
-    <p>歡迎使用 <a href="https://www.bybit.com/">Bybit</a> APIs 和 Websocket官方文檔！</p>
+    <p>歡迎使用 <a href="https://www.mufex.com/">Bybit</a> APIs 和 Websocket官方文檔！</p>
     <p>該文檔旨在提供指導，以幫助您快速訪問Bybit的API接口，了解參數說明和常見錯誤碼等。
     若您有任何疑問或需要幫助，請加入我們的 <a href="https://t.me/Bybitapi">官方Telegram API討論群</a>！</p>
   resources: 中文社區和參考資料
   intro_para_resources:
-    <ul class="bybit-community">
-      <li><img src="/images/favicon.ico" height="14", width="14"> <a href="https://www.bybit.com/zh-TW/help-center/?language=zh_TW"><strong>幫助中心</strong></a> - <strong>在這裏了解合約交易</strong>
+    <ul class="mufex-community">
+      <li><img src="/images/favicon.ico" height="14", width="14"> <a href="https://www.mufex.com/zh-TW/help-center/?language=zh_TW"><strong>幫助中心</strong></a> - <strong>在這裏了解合約交易</strong>
       <li><img src="/images/github_logo_icon.png" height="14", width="14"> <a href="https://pypi.org/project/pybit/"><strong>pybit</strong></a> - <strong>官方Python SDK</strong>
-      <li><img src="/images/github_logo_icon.png" height="14", width="14"> <a href="https://www.npmjs.com/package/bybit-api"><strong>bybit-api</strong></a> - <strong>社區NodeJS SDK</strong>
-      <li><img src="/images/github_logo_icon.png" height="14", width="14"> <a href="https://github.com/bybit-exchange/QuickStartWithPostman"><strong>QuickStartWithPostman</strong></a> - <strong>Postman接口集合</strong>
+      <li><img src="/images/github_logo_icon.png" height="14", width="14"> <a href="https://www.npmjs.com/package/mufex-api"><strong>mufex-api</strong></a> - <strong>社區NodeJS SDK</strong>
+      <li><img src="/images/github_logo_icon.png" height="14", width="14"> <a href="https://github.com/mufex-exchange/QuickStartWithPostman"><strong>QuickStartWithPostman</strong></a> - <strong>Postman接口集合</strong>
       <li><img src="/images/telegram_logo_icon.png" height="14", width="14"> <a href="https://t.me/BybitAPI"><strong>API Discussion Group</strong></a> - <strong>API英文討論群</strong>
       <li><img src="/images/telegram_logo_icon.png" height="14", width="14"> <a href="https://t.me/BybitChineseAPI"><strong>Chinese API Discussion Group</strong></a> - <strong>API中文討論群</strong>
       <li><img src="/images/telegram_logo_icon.png" height="14", width="14"> <a href="https://t.me/Bybit_API_Announcements"><strong>API Announcements Channel</strong></a> - <strong>API公告群</strong>
@@ -759,7 +759,7 @@ zh-my:
 
   # api_auth
   authentication: 鑒權/認證
-  auth_aside_key: 請先生成<a href="https://testnet.bybit.com/app/user/api-management"><b>測試網</b></a> 或 <a href="https://www.bybit.com/app/user/api-management"<b>主網</b></a>API KEY。
+  auth_aside_key: 請先生成<a href="https://testnet.mufex.com/app/user/api-management"><b>測試網</b></a> 或 <a href="https://www.mufex.com/app/user/api-management"<b>主網</b></a>API KEY。
   auth_aside_env: |
     REST接口根URL:
     <ul>
@@ -771,7 +771,7 @@ zh-my:
     </p>
     <p>
       <li>主網(請根據您的網絡情況選擇以下任意一個地址使用):<br/>
-        <span id="mainnet_1">https://api.bybit.com</span>
+        <span id="mainnet_1">https://api.mufex.com</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_1"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
         <span id="mainnet_2">https://api.bytick.com</span>
@@ -790,7 +790,7 @@ zh-my:
     </p>
     <p>
       <li>主網(請根據您的網絡情況選擇以下任意一個地址使用):<br/>
-        <span id="mainnet_1">https://api.bybit.com</span>
+        <span id="mainnet_1">https://api.mufex.com</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_1"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
         <span id="mainnet_2">https://api.bytick.com</span>
@@ -806,7 +806,7 @@ zh-my:
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
       <li>
-        <span id=mainnet><a href="https://api.bybit.com">https://api.bybit.com</a></span>
+        <span id=mainnet><a href="https://api.mufex.com">https://api.mufex.com</a></span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
     </ul>
@@ -863,9 +863,9 @@ zh-my:
   auth_para_construct3_dv3:
     <p>3. 將<code>sign</code>參數加到請求頭中即可；註意<code>GET</code>和<code>POST</code>請求參數格式不同，詳見右邊示例。</p>
   auth_aside_signature:
-    <a href="https://github.com/bybit-exchange/api-usage-examples">簽名計算示例</a>.
+    <a href="https://github.com/mufex-exchange/api-usage-examples">簽名計算示例</a>.
   spot_auth_aside_signature:
-    <a href="https://github.com/bybit-exchange/api-usage-examples">簽名計算示例</a>.
+    <a href="https://github.com/mufex-exchange/api-usage-examples">簽名計算示例</a>.
   spot_auth_codequote_construct1a:
     拼接參數示例（以查詢賬號余額接口為例）：
   spot_auth_codequote_construct1b:
@@ -900,11 +900,11 @@ zh-my:
   ### Public Trading Recordsmarketfundingrate
   publictradingrecords: 平臺交易歷史數據
   dv_publictradingrecords: 平臺交易歷史數據
-  market_para_records: 獲取Bybit的最近成交數據。如果您想獲取歷史所有的成交記錄，請通過<a href="https://public.bybit.com">這裏</a>下載歷史行情。
+  market_para_records: 獲取Bybit的最近成交數據。如果您想獲取歷史所有的成交記錄，請通過<a href="https://public.mufex.com">這裏</a>下載歷史行情。
   ### Get the Last Funding Rate
   fundingRate: 查詢上個周期的資金費率
   market_para_fundingRate: UTC時間每天0點、8點、16點產生一個資金費率。 假設當前時間是UTC12點，則返回的是上一次結算即UTC8點產生的資金費率。
-  fundingRate_notice: 歷史資金費率無法通過API獲得。但是，您可以使用"導出"按鈕獲取此數據的CSV文件 <a href="https://www.bybit.com/data/basic/inverse/funding-history?symbol=BTCUSD">here</a>.
+  fundingRate_notice: 歷史資金費率無法通過API獲得。但是，您可以使用"導出"按鈕獲取此數據的CSV文件 <a href="https://www.mufex.com/data/basic/inverse/funding-history?symbol=BTCUSD">here</a>.
   ### Query Symbol
   querysymbol: 查詢合約信息
   market_para_querySymbol: 獲取合約信息.
@@ -1023,7 +1023,7 @@ zh-my:
       <li><code>ext_code</code> 詳情參閱 <a href="#t-errors">Errors</a></li>
     </ul>
   getOrderList_warning: |
-    該接口僅支持查詢近<b>10,000</b>筆訂單（單用戶的單個交易對）。若需要查詢更遠歷史訂單，請使用合約v3的<a href="https://bybit-exchange.github.io/docs-legacy/zh-my/derivativesV3/contract/#t-contract_getorder">接口</a>, 該接口支持查詢近7天全狀態的訂單及7天前有成交紀錄的訂單。
+    該接口僅支持查詢近<b>10,000</b>筆訂單（單用戶的單個交易對）。若需要查詢更遠歷史訂單，請使用合約v3的<a href="https://mufex-exchange.github.io/docs-legacy/zh-my/derivativesV3/contract/#t-contract_getorder">接口</a>, 該接口支持查詢近7天全狀態的訂單及7天前有成交紀錄的訂單。
 
   ### Get Conditional Order
   getcond: 查詢條件委托
@@ -1071,7 +1071,7 @@ zh-my:
   ### Change Margin
   changemargin: 更新保證金
   account_para_changeMargin: 更新保證金。
-  account_aside_changeMargin: 修改保證金不能低於<a href="https://help.bybit.com/hc/zh-cn/articles/360039261174-%E8%B5%B7%E5%A7%8B%E4%BF%9D%E8%AF%81%E9%87%91%E8%AE%A1%E7%AE%97-%E5%8F%8D%E5%90%91%E6%B0%B8%E7%BB%AD-">起始保證金</a>，如果當前為全倉模式則不能調整保證金。請查看<a href="#t-setleverage">修改杠桿</a>了解更多信息。
+  account_aside_changeMargin: 修改保證金不能低於<a href="https://help.mufex.com/hc/zh-cn/articles/360039261174-%E8%B5%B7%E5%A7%8B%E4%BF%9D%E8%AF%81%E9%87%91%E8%AE%A1%E7%AE%97-%E5%8F%8D%E5%90%91%E6%B0%B8%E7%BB%AD-">起始保證金</a>，如果當前為全倉模式則不能調整保證金。請查看<a href="#t-setleverage">修改杠桿</a>了解更多信息。
   ### Set Trading-Stop
   tradingstop: 設置止盈止損
   account_para_tradingStop: 設置倉位止盈止損、追蹤止損。
@@ -1111,17 +1111,17 @@ zh-my:
   balance: 獲取錢包余額
   wallet_para_walletBalance: 獲取錢包余額
   wallet_aside_walletBalance: |
-    接口返回值中的<code>position_margin</code> 不同於 <a href="https://www.bybit.com/app/wallet/money">網站上的倉位保證金</a>
+    接口返回值中的<code>position_margin</code> 不同於 <a href="https://www.mufex.com/app/wallet/money">網站上的倉位保證金</a>
     <p>網站倉位保證金計算公式: <code>position_margin</code> + <code>occ_funding_fee</code> + loss(當你的可用余額不足時)</p>
   ### 資金記錄
   walletrecords: 資金記錄
   dv_walletrecords: 錢包資金紀錄
   wallet_para_walletRecords: |
-    <p>查詢資金記錄。這個接口還展示來自網頁上<a href="https://testnet.bybit.com/app/assets/assets-exchange">資產兌換</a>下的兌換紀錄, 其中對應的<code>type</code>兌換類型是<code>ExchangeOrderWithdraw</code>和<code>ExchangeOrderDeposit</code>。</p>
-    <p>這個接口返回的關於衍生品帳戶下的劃轉紀錄的內容是不完整的。推薦使用<a href="https://bybit-exchange.github.io/docs-legacy/zh-my/account_asset/v3/#t-transfer_api">帳戶資產API</a>完成資產劃轉的操作和紀錄檢索。
+    <p>查詢資金記錄。這個接口還展示來自網頁上<a href="https://testnet.mufex.com/app/assets/assets-exchange">資產兌換</a>下的兌換紀錄, 其中對應的<code>type</code>兌換類型是<code>ExchangeOrderWithdraw</code>和<code>ExchangeOrderDeposit</code>。</p>
+    <p>這個接口返回的關於衍生品帳戶下的劃轉紀錄的內容是不完整的。推薦使用<a href="https://mufex-exchange.github.io/docs-legacy/zh-my/account_asset/v3/#t-transfer_api">帳戶資產API</a>完成資產劃轉的操作和紀錄檢索。
   wallet_aside_walletRecords: 關於<code>Withdraw</code>和<code>Refund</code>類型數據的說明，請參考<a href="#t-withdrawrecords">提幣記錄</a>接口
   wallet_aside_walletRecords1: 如果用戶不通過<code>coin</code>傳入<code>USDT</code>，USDT記錄將不會被返回給用戶。
-  wallet_aside_walletRecords2: 該接口不顯示2021-07-15之後發生的充值提現記錄。要在此日期之後獲取記錄，您應該調用 <a href="https://bybit-exchange.github.io/docs-legacy/zh-my/account_asset/v3/#t-depositsrecordquery">查詢充值記錄</a> 和 <a href="https://bybit-exchange.github.io/docs-legacy/zh-my/account_asset/v3/#t-withdrawrecordquery">查詢提現記錄</a>端點。這是由於此時引入了現貨錢包。
+  wallet_aside_walletRecords2: 該接口不顯示2021-07-15之後發生的充值提現記錄。要在此日期之後獲取記錄，您應該調用 <a href="https://mufex-exchange.github.io/docs-legacy/zh-my/account_asset/v3/#t-depositsrecordquery">查詢充值記錄</a> 和 <a href="https://mufex-exchange.github.io/docs-legacy/zh-my/account_asset/v3/#t-withdrawrecordquery">查詢提現記錄</a>端點。這是由於此時引入了現貨錢包。
   ### Withdraw Records
   withdrawrecords: 提幣記錄
   wallet_para_withdrawRecords: |
@@ -1137,14 +1137,14 @@ zh-my:
   ### User Trade Records
   usertraderecords: 用戶成交記錄
   userhistorytraderecords: 用戶曆史成交記錄
-  wallet_para_tradeRecords: 獲取用戶成交記錄，按時間升序排列。若想獲取近2年的交易紀錄，請使用合約v3<a href="https://bybit-exchange.github.io/docs-legacy/zh-my/derivativesV3/contract/#t-usertraderecords">接口</a>
+  wallet_para_tradeRecords: 獲取用戶成交記錄，按時間升序排列。若想獲取近2年的交易紀錄，請使用合約v3<a href="https://mufex-exchange.github.io/docs-legacy/zh-my/derivativesV3/contract/#t-usertraderecords">接口</a>
   wallet_aside_tradeRecords: 一個訂單可能有多筆成交記錄。
   wallet_row_comment_orderId: 訂單號，如果沒有填寫訂單號，將返回用戶交易記錄
   ## Get Risk Limit
   getrisklimit: 查詢風險限額表
   account_para_getRisk: 查詢風險限額表。
-  account_aside_getRisk_inverse: 關於風險限額，點擊<a href="https://www.bybit.com/zh-MY/help-center/bybitHC_Article?language=zh_MY&id=000001095">這裏</a>了解更多。
-  account_aside_getRisk_linear: 關於風險限額，點擊<a href="https://www.bybit.com/zh-MY/help-center/HelpCenterKnowledge/bybitHC_Article/?language=en_US&id=000001164">這裏</a>了解更多。
+  account_aside_getRisk_inverse: 關於風險限額，點擊<a href="https://www.mufex.com/zh-MY/help-center/bybitHC_Article?language=zh_MY&id=000001095">這裏</a>了解更多。
+  account_aside_getRisk_linear: 關於風險限額，點擊<a href="https://www.mufex.com/zh-MY/help-center/HelpCenterKnowledge/bybitHC_Article/?language=en_US&id=000001164">這裏</a>了解更多。
   ## Set Risk Limit
   setrisklimit: 設置風險限額
   account_para_setRisk: 設置風險限額。
@@ -1212,7 +1212,7 @@ zh-my:
 
   linear_private_setrisklimit_v3: |
     <p><p><b>接口說明：</b></p>
-    <p>關於風險限額，點擊<a href="https://www.bybit.com/zh-MY/help-center/HelpCenterKnowledge/bybitHC_Article?language=en_US&id=000001164">這裏</a>了解更多。</p></p>
+    <p>關於風險限額，點擊<a href="https://www.mufex.com/zh-MY/help-center/HelpCenterKnowledge/bybitHC_Article?language=en_US&id=000001164">這裏</a>了解更多。</p></p>
 
   account_para_tradingStop_v3: |
     <p><p><b>接口說明：</b></p>
@@ -1436,7 +1436,7 @@ zh-my:
   rate_para_raise: |
     <ul>
     <li>請先閱讀<a href="#t-raisemylimit">如何滿足提高頻率限製條件</a></li>
-    <li>請發送郵件到 <a href="mailto:api@bybit.com">api@bybit.com</a>，我們會在 1-4 個工作日內答復。郵件內容必須包含以下內容：</li>
+    <li>請發送郵件到 <a href="mailto:api@mufex.com">api@mufex.com</a>，我們會在 1-4 個工作日內答復。郵件內容必須包含以下內容：</li>
     <ol>
       <li>您的姓名和公司名稱和簡介</li>
       <li>您的bybit 賬號uid或註冊郵箱手機號,以及您要申請提頻的交易對</li>
@@ -1447,7 +1447,7 @@ zh-my:
     </ul>
   rate_para_raise_v3: |
     <ul>
-    請發送郵件到 <a href="mailto:api@bybit.com">api@bybit.com</a>，我們會在 1-4 個工作日內答復。郵件內容必須包含以下內容：
+    請發送郵件到 <a href="mailto:api@mufex.com">api@mufex.com</a>，我們會在 1-4 個工作日內答復。郵件內容必須包含以下內容：
     <ol>
       <li>您的姓名和公司名稱和簡介</li>
       <li>您的bybit 賬號uid或註冊郵箱手機號,以及您要申請提頻的交易對</li>
@@ -1584,31 +1584,31 @@ zh-my:
     方法2: 建立連接後發送auth請求驗證.
   websocket_codequote_auth_spot: |
     <p>建立連接後發送auth請求驗證</p>
-    <p>注意：如果您正在使用 <a href="https://github.com/bybit-exchange/pybit">pybit</a> 或其他高級庫，你可以忽略這段代碼 - 因為身份驗證已經為您處理。</p>
+    <p>注意：如果您正在使用 <a href="https://github.com/mufex-exchange/pybit">pybit</a> 或其他高級庫，你可以忽略這段代碼 - 因為身份驗證已經為您處理。</p>
   websocket_endpoints_aside: |
     <b>請注意，以下接口僅適用於 <i>反向永續/反向交割</i></b>. 要監聽其他 websocket，請轉到:
     <ul>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/linear/#t-websocketauthentication">USDT (正向) 永續</a></li>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/zh-my/spot/v3/#t-websocketauthentication">現貨</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/linear/#t-websocketauthentication">USDT (正向) 永續</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/zh-my/spot/v3/#t-websocketauthentication">現貨</a></li>
     </ul>
   websocket_endpoints_aside_copytrading: |
     <b>請注意，目前copytrading只支持正向永續，以下接口僅適用於 <i>正向永續</i></b>. 要監聽其他 websocket，請轉到:
     <ul>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/inverse/#t-websocketauthentication">Inverse Perpetual</a></li>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/zh-my/spot/v3/#t-websocketauthentication">Spot</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/inverse/#t-websocketauthentication">Inverse Perpetual</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/zh-my/spot/v3/#t-websocketauthentication">Spot</a></li>
     </ul>
   websocket_para_endpoint: |
     <p>Websocket服務器地址:</p>
     <ul>
     <p>
       <li>測試網:
-        <span id="testnet_address">wss://stream-testnet.bybit.com/realtime</span>
+        <span id="testnet_address">wss://stream-testnet.mufex.com/realtime</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
     </p>
     <p>
       <li>主網(請根據您的網絡情況選擇以下任意一個地址使用):<br/>
-        <span id="mainnet_address">wss://stream.bybit.com/realtime</span>
+        <span id="mainnet_address">wss://stream.mufex.com/realtime</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
         <span id="mainnet_address_2">wss://stream.bytick.com/realtime</span>
@@ -1621,16 +1621,16 @@ zh-my:
         <ul>
         <p>
         <li>測試網:<br/>
-            <span id="usdt_testnet_address">USDT永续: wss://stream-testnet.bybit.com/contract/usdt/public/v3</span>
+            <span id="usdt_testnet_address">USDT永续: wss://stream-testnet.mufex.com/contract/usdt/public/v3</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#usdt_testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
             <br/>
-            <span id="inverse_testnet_address">反向永续: wss://stream-testnet.bybit.com/contract/inverse/public/v3</span>
+            <span id="inverse_testnet_address">反向永续: wss://stream-testnet.mufex.com/contract/inverse/public/v3</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#inverse_testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         </li>
          </p>
         <p>
           <li>主網:<br/>
-            <span id="usdt_mainnet_address">USDT永续: wss://stream.bybit.com/contract/usdt/public/v3</span>
+            <span id="usdt_mainnet_address">USDT永续: wss://stream.mufex.com/contract/usdt/public/v3</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#usdt_mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
             <br/>
             <span id="inverse_mainnet_address">反向永续: wss://stream.bytick.com/contract/inverse/public/v3</span>
@@ -1641,33 +1641,33 @@ zh-my:
   spot_websocket_endpoints_aside: |
     <b>請注意，以下接口僅適用於 <i>現貨</i></b>. 要監聽其他 websocket，請轉到:
     <ul>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/inverse/#t-websocketauthentication">反向永續/反向交割</a></li>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/linear/#t-websocketauthentication">USDT (正向) 永續</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/inverse/#t-websocketauthentication">反向永續/反向交割</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/linear/#t-websocketauthentication">USDT (正向) 永續</a></li>
     </ul>
   spot_websocket_para_endpoint: |
     Websocket服務器地址:
     <ul>
     <p>
       <li>測試網:
-        <span id="testnet_address">公共Topics: wss://stream-testnet.bybit.com/spot/quote/ws/v1</span>
+        <span id="testnet_address">公共Topics: wss://stream-testnet.mufex.com/spot/quote/ws/v1</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
-        <span id="testnet_address">公共Topics2: wss://stream-testnet.bybit.com/spot/quote/ws/v2</span>
+        <span id="testnet_address">公共Topics2: wss://stream-testnet.mufex.com/spot/quote/ws/v2</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
-        <span id="testnet_address_2">私有Topics: wss://stream-testnet.bybit.com/spot/ws</span>
+        <span id="testnet_address_2">私有Topics: wss://stream-testnet.mufex.com/spot/ws</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
     </p>
     <p>
       <li>主網(請根據您的網絡情況選擇以下任意一個地址使用):<br/>
-        <span id="mainnet_address">公共Topics: wss://stream.bybit.com/spot/quote/ws/v1</span>
+        <span id="mainnet_address">公共Topics: wss://stream.mufex.com/spot/quote/ws/v1</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
-        <span id="mainnet_address">公共Topics2: wss://stream.bybit.com/spot/quote/ws/v2</span>
+        <span id="mainnet_address">公共Topics2: wss://stream.mufex.com/spot/quote/ws/v2</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
-        <span id="mainnet_address_2">私有Topics: wss://stream.bybit.com/spot/ws</span>
+        <span id="mainnet_address_2">私有Topics: wss://stream.mufex.com/spot/ws</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
     </p>
@@ -1678,19 +1678,19 @@ zh-my:
         <ul>
         <p>
           <li><b>測試網</b>:</br>
-            公共Topics: <span id="testnet_public_address">wss://stream-testnet.bybit.com/spot/public/v3</span>
+            公共Topics: <span id="testnet_public_address">wss://stream-testnet.mufex.com/spot/public/v3</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_public_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
             </br>
-            私有Topics: <span id="testnet_private_address">wss://stream-testnet.bybit.com/spot/private/v3</span>
+            私有Topics: <span id="testnet_private_address">wss://stream-testnet.mufex.com/spot/private/v3</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_private_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           </li>
         </p>
         <p>
           <li><b>主網</b>:<br/>
-            公共Topics: <span id="mainnet_public_address">wss://stream.bybit.com/spot/public/v3</span>
+            公共Topics: <span id="mainnet_public_address">wss://stream.mufex.com/spot/public/v3</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_public_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
             </br>
-            私有Topics: <span id="mainnet_private_address">wss://stream.bybit.com/spot/private/v3</span>
+            私有Topics: <span id="mainnet_private_address">wss://stream.mufex.com/spot/private/v3</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_private_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           </li>
         </p>
@@ -1699,7 +1699,7 @@ zh-my:
   websocket_aside_auth: <b>公共類</b>topics不需要進行驗證. 以下部分只適用於 <b>私有</b> 類接口.
   websocket_aside_push_trigger: 通常，只有在發生更改時才會推送 websocket 消息。 除非另有說明，否則您不會在訂閱後立即收到快照消息。 這意味著當訂閱您的 <code>position</code> 時，例如您的頭寸規模發生變化之前，您不會收到任何頭寸消息。
   websocket_para_methods: 驗證示例如右側代碼區所示
-  websocket_aside_signature: 點擊查看 <a href="https://github.com/bybit-exchange/api-usage-examples">示例加密算法</a>.
+  websocket_aside_signature: 點擊查看 <a href="https://github.com/mufex-exchange/api-usage-examples">示例加密算法</a>.
   websocket_best_practices: 由於網絡的復雜性，您和Bybit的websocket鏈接隨時可能會斷開，為了保證您能及時收到websocket推送消息，強烈建議您按照以下建議處理網絡異常：
     <p>1. 通過<a href="#t-heartbeat">發送心跳包</a>保持連接</p>
     <p>2. 一旦發現連接斷開，應該立刻重新建立連接。</p>
@@ -1850,7 +1850,7 @@ zh-my:
   privatetopics: 私有 Topics
   ### position
   websocketposition: 持倉
-  websocketposition_aside: 請注意，對 <code>unrealised_pnl</code> 的更改不會觸發新消息推送，因為它會隨著最後交易價格不斷變化。 您可以參考<a href="https://help.bybit.com/hc/en-us/articles/900000404726-PL-calculations-Inverse-Contracts-">這些公式</a>自行計算未實現盈虧。
+  websocketposition_aside: 請注意，對 <code>unrealised_pnl</code> 的更改不會觸發新消息推送，因為它會隨著最後交易價格不斷變化。 您可以參考<a href="https://help.mufex.com/hc/en-us/articles/900000404726-PL-calculations-Inverse-Contracts-">這些公式</a>自行計算未實現盈虧。
   ### execution
   websocketexecution: 個人成交
   websocket_execution_aside: 本主題推送所有執行 <i>除了</i> <a href="#exec-type-exec_type"><code>Funding</code></a>。
@@ -1873,7 +1873,7 @@ zh-my:
   # Archive Data
   archivedata: 歸檔數據
   historicalmarketdata: 歷史行情
-  archive_data_intro: 您可以在這裏獲取Bybit <a href="https://public.bybit.com">歷史行情數據</a>。
+  archive_data_intro: 您可以在這裏獲取Bybit <a href="https://public.mufex.com">歷史行情數據</a>。
 
   # Error Definitions
   errors: 錯誤碼
@@ -2320,7 +2320,7 @@ zh-my:
   spotV3_err_12012: ETP_NAV_IS_ABNORMAL
   spotV3_err_12017: CROSS_MARGIN_PRE_BUY_QUOTA_FAILED
   spotV3_err_10020: CROSS_MARGIN_PRE_SELL_QUOTA_FAILED
-  spotV3_err_12019: 您的帳戶被限制交易。如有疑問，請聯繫support@bybit.com
+  spotV3_err_12019: 您的帳戶被限制交易。如有疑問，請聯繫support@mufex.com
   spotV3_err_12124: 訂單金額過大
   spotV3_err_12031: 交易对未开放
   spotV3_err_12105: 参数为空
@@ -2569,7 +2569,7 @@ zh-my:
   err_30075: 無法創建條件單，由<code>base_price</code>和<code>stop_px</code>比較可知預期跌至<code>stop_px</code>時觸發條件單，而此時<code>LastPrice</code>(或<code>IndexPrice</code>、<code>MarkPrice</code>，由<code>trigger_by</code>指定)已經達到或低於<code>stop_px</code>
   err_33004: apikey已過期
   err_34026: 風險限額沒有變化
-  err_35014: <a href="https://www.bybit.com/en-US/help-center/HelpCenterKnowledge/bybitHC_Article?language=en_US&id=000001086">未平倉合約數量</code>受限.</a>
+  err_35014: <a href="https://www.mufex.com/en-US/help-center/HelpCenterKnowledge/bybitHC_Article?language=en_US&id=000001086">未平倉合約數量</code>受限.</a>
   err_90063: 用戶強平中
   err_90066: 對賬中
   err_90067: 對賬失敗
@@ -2777,8 +2777,8 @@ zh-my:
 
   ### LinearPosition
   linear_row_comment_qty: 委托數量(加密貨幣)
-  linear_row_comment_reduceOnly:  <a href="https://help.bybit.com/hc/zh-cn/articles/360039260574-%E4%BB%80%E4%B9%88%E6%98%AF%E5%8F%AA%E5%87%8F%E4%BB%93-"> 什麽是 reduce-only order?</a>,true-平倉 false-開倉,ture時止盈止損設置不生效
-  linear_row_comment_closeOnTrigger: <a href="https://help.bybit.com/hc/zh-cn/articles/360039260534-%E4%BB%80%E4%B9%88%E6%98%AF%E8%A7%A6%E5%8F%91%E5%90%8E%E5%B9%B3%E4%BB%93-"> 什麽是 close on trigger order?</a>只會減少您的倉位而不會增加您的倉位。如果當平倉委托被觸發時，賬戶上的余額不足，那麽該合約的其他委托將被取消或者降低委托數量。使用此選項可以確保您的止損單被用於減倉而非加倉。
+  linear_row_comment_reduceOnly:  <a href="https://help.mufex.com/hc/zh-cn/articles/360039260574-%E4%BB%80%E4%B9%88%E6%98%AF%E5%8F%AA%E5%87%8F%E4%BB%93-"> 什麽是 reduce-only order?</a>,true-平倉 false-開倉,ture時止盈止損設置不生效
+  linear_row_comment_closeOnTrigger: <a href="https://help.mufex.com/hc/zh-cn/articles/360039260534-%E4%BB%80%E4%B9%88%E6%98%AF%E8%A7%A6%E5%8F%91%E5%90%8E%E5%B9%B3%E4%BB%93-"> 什麽是 close on trigger order?</a>只會減少您的倉位而不會增加您的倉位。如果當平倉委托被觸發時，賬戶上的余額不足，那麽該合約的其他委托將被取消或者降低委托數量。使用此選項可以確保您的止損單被用於減倉而非加倉。
   linear_account_para_placeActive: |
     <p>市價活動委托: 一個傳統的市場價格訂單,會以當前的最優價格為您成交訂單。當且僅當選擇市價單時，<code>price</code>可為空！</p>
     <p>限價活動委托: 您可以為您的訂單設置一個執行價格，當市場價格達到您的設置價格時，系統會為您成交訂單。</p>
@@ -2858,8 +2858,8 @@ zh-my:
   linear_websocket_endpoints_aside: |
     <b>請注意，以下接口僅適用於 <i>USDT (正向) 永續</i></b>. 要監聽其他 websocket，請轉到:
       <ul>
-        <li><a href="https://bybit-exchange.github.io/docs-legacy/inverse/#t-websocketauthentication">反向永續/反向交割</a></li>
-        <li><a href="https://bybit-exchange.github.io/docs-legacy/zh-my/spot/v3/#t-websocketauthentication">現貨</a></li>
+        <li><a href="https://mufex-exchange.github.io/docs-legacy/inverse/#t-websocketauthentication">反向永續/反向交割</a></li>
+        <li><a href="https://mufex-exchange.github.io/docs-legacy/zh-my/spot/v3/#t-websocketauthentication">現貨</a></li>
       </ul>
 
 
@@ -2869,17 +2869,17 @@ zh-my:
     <ul>
     <p>
       <li>測試網公共topic地址:
-        <span id="testnet_address">wss://stream-testnet.bybit.com/realtime_public</span>
+        <span id="testnet_address">wss://stream-testnet.mufex.com/realtime_public</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
       <li>測試網私有topic地址:
-        <span id="testnet_address">wss://stream-testnet.bybit.com/realtime_private</span>
+        <span id="testnet_address">wss://stream-testnet.mufex.com/realtime_private</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
     </p>
     <p>
       <li>主網公共topic地址(請根據您的網絡情況選擇以下任意一個地址使用):<br/>
-        <span id="mainnet_address">wss://stream.bybit.com/realtime_public</span>
+        <span id="mainnet_address">wss://stream.mufex.com/realtime_public</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
         <span id="mainnet_address_2">wss://stream.bytick.com/realtime_public</span>
@@ -2888,7 +2888,7 @@ zh-my:
     </p>
      <p>
       <li>主網私有topic地址(請根據您的網絡情況選擇以下任意一個地址使用):<br/>
-        <span id="mainnet_address">wss://stream.bybit.com/realtime_private</span>
+        <span id="mainnet_address">wss://stream.mufex.com/realtime_private</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
         <span id="mainnet_address_2">wss://stream.bytick.com/realtime_private</span>
@@ -3090,7 +3090,7 @@ zh-my:
   restapi_update_20201231_9_9: 新增：<code>/v2/private/funding/predicted-funding</code>
   restapi_update_20210125_0: <code>/v2/private/funding/prev-funding-rate</code> <code>此接口不再推薦使用。</code>
   restapi_update_20210125_0_1: 新增：<code>/v2/public/funding/prev-funding-rate</code>
-  restapi_update_20210201_0_1: 階梯保證金升級為<a href="https://help.bybit.com/hc/zh-cn/articles/900000170023-%E9%A3%8E%E9%99%A9%E9%99%90%E9%A2%9D-USDT%E6%B0%B8%E7%BB%AD-">風險限額</a>，新增以下接口
+  restapi_update_20210201_0_1: 階梯保證金升級為<a href="https://help.mufex.com/hc/zh-cn/articles/900000170023-%E9%A3%8E%E9%99%A9%E9%99%90%E9%A2%9D-USDT%E6%B0%B8%E7%BB%AD-">風險限額</a>，新增以下接口
   restapi_update_20210225: 反向交割合約API發布
   restapi_update_20210301: 修改url前綴<code>future</code> 為 <code>futures</code>
   restapi_update_20210304: 修復參數<code>wallet_fund_type</code>過濾失效的問題
@@ -3107,7 +3107,7 @@ zh-my:
   restapi_update_20210617_1: 以參數<code>is_isolated</code>來判斷全逐倉，true是逐倉，false是全倉。
   restapi_update_20210617_2: 廢棄使用<code>auto_add_margin</code>來判斷全逐倉。
   restapi_update_20210617_3: 不推薦使用 <a href="#t-setleverage">Set Leverage</a>接口切換全逐倉
-  restapi_update_20210618_1: 2021年6月24日起，停止使用<code>leverage</code>切換全逐倉,必須大於0且小於最大可設置杠桿 <a href="https://help.bybit.com/hc/en-us/articles/360039749753-What-is-Risk-Limit-What-effect-does-the-Risk-Limit-have-on-Margin-Inverse-Contract-">risk limit leverage</a>.
+  restapi_update_20210618_1: 2021年6月24日起，停止使用<code>leverage</code>切換全逐倉,必須大於0且小於最大可設置杠桿 <a href="https://help.mufex.com/hc/en-us/articles/360039749753-What-is-Risk-Limit-What-effect-does-the-Risk-Limit-have-on-Margin-Inverse-Contract-">risk limit leverage</a>.
   restapi_update_20210628: 返回結果中增加<code>take_profit, stop_loss, trailing_stop</code>三個新字段。
   restapi_update_20210628_1: 修復<code>BCHUSDT</code> and <code>UNIUSDT</code>字段<code>min_price,tick_size</code>值不對的問題
   restapi_update_20210701: 新增字段<code>leverage_only</code>該字段表明一個兼容邏輯。
@@ -3142,7 +3142,7 @@ zh-my:
   restapi_update_20210315: 2020年12月31日前，市價單返回的訂單價格是下單時刻的最新市場價；自2020年12月31日起，市價單返回的訂單價格是修訂後的限價價格。詳情可見<a href="#t-activeorders">市價活動委托說明</a>。
   restapi_update_20210402: 增加錯誤碼描述：10016,10018,30074,30075
   linear_restapi_update_20210402: 增加錯誤碼描述：10016,10018,130145
-  restapi_update_20210407: 修復<a href="#t-query_liqrecords">查詢強平訂單數據</a>接口<code>price</code>字段取值，由<code>liq_price</code>改為<code>bust_price</code>，關於強平訂單，請參考<a href="https://help.bybit.com/hc/zh-cn/articles/360039261474-%E5%BC%BA%E5%88%B6%E5%B9%B3%E4%BB%93%E8%BF%87%E7%A8%8B-%E5%A6%82%E4%BD%95%E5%87%8F%E5%B0%91%E5%BC%BA%E5%B9%B3%E4%BA%8B%E4%BB%B6-%E5%8F%8D%E5%90%91%E6%B0%B8%E7%BB%AD-">強製平倉過程</a>
+  restapi_update_20210407: 修復<a href="#t-query_liqrecords">查詢強平訂單數據</a>接口<code>price</code>字段取值，由<code>liq_price</code>改為<code>bust_price</code>，關於強平訂單，請參考<a href="https://help.mufex.com/hc/zh-cn/articles/360039261474-%E5%BC%BA%E5%88%B6%E5%B9%B3%E4%BB%93%E8%BF%87%E7%A8%8B-%E5%A6%82%E4%BD%95%E5%87%8F%E5%B0%91%E5%BC%BA%E5%B9%B3%E4%BA%8B%E4%BB%B6-%E5%8F%8D%E5%90%91%E6%B0%B8%E7%BB%AD-">強製平倉過程</a>
   restapi_update_20210414_1: <a href="#t-getcond">查詢條件委托</a>,<a href="#t-querycond">實時查詢條件委托</a>,<a href="#t-getactive">查詢活動委托</a>,<a href="#t-queryactive">實時查詢活動委托</a>返回值新增 <code>position_idx</code>
   restapi_update_20210414_2: 修復雙倉模式下，不傳<code>symbol</code>參數情況下持倉列表數據不完整問題
   restapi_update_20210415: 修復<a href="#t-balance">獲取錢包余額</a>接口字段<code>used_margin、order_margin、position_margin、occ_closing_fee、unrealised_pnl</code> 未計算交割持倉的問題
@@ -3269,7 +3269,7 @@ zh-my:
   spotQuoteAssetVolume: 行情資產數量
   spotOrderLocked: 鎖定數量（如果為0，則說明該筆訂單的資金已完成結算）
 
-  spotId: 與 API 使用無關。 該字段反映了網站<a href="https://www.bybit.com/user/assets/order/spot-history/active">交易歷史</a>中“交易ID”的一部分
+  spotId: 與 API 使用無關。 該字段反映了網站<a href="https://www.mufex.com/user/assets/order/spot-history/active">交易歷史</a>中“交易ID”的一部分
   spotQty: 交易數量
   spotQtyPlaceOrder: |
     交易數量(<b>市價買單即<code>type=Market</code>且<code>side=Buy</code>時qty指的是quote currency；比如BTCUSDT的qty指的是USDT的qty, 而非市價買單時qty指向都是BTC</b>)
@@ -3286,7 +3286,7 @@ zh-my:
   spotTime: 撮合引擎中的創建時間
   spotExecutionTime: 訂單完成時間
   spotOrderLinkId: 特殊訂單ID，用戶自己生成
-  spotv3_orderCategory: 訂單類型. 默認為<code>0</code>：普通訂單; <code>1</code>：<a href="https://www.bybit.com/zh-CN/help-center/bybitHC_Article?language=zh_CN&id=000001736">止盈止損訂單</a>，若是止盈止損則<b>必傳</b>
+  spotv3_orderCategory: 訂單類型. 默認為<code>0</code>：普通訂單; <code>1</code>：<a href="https://www.mufex.com/zh-CN/help-center/bybitHC_Article?language=zh_CN&id=000001736">止盈止損訂單</a>，若是止盈止損則<b>必傳</b>
   spotv3_triggerPrice: 觸發價格
   spotTradeId: 交易ID
   spotIsWorking: 是否生效
@@ -3513,7 +3513,7 @@ zh-my:
   spot_websocket_lt_nav_desc_v1: Leveraged Token 淨值推送。300ms推送一次，最大延迟400ms
   spot_websocket_orderbook_delta_desc_v1: |
     <p>推送訂單簿的變化部分（如果有）。第一次推送的是全量的訂單簿（单邊推送 200 個深度信息），接下來推送增量部分。</p>
-    <p>有關使用此主題維護本地訂單簿的邏輯。请看Python 示例：<a href="https://github.com/bybit-exchange/pybit/blob/8a647208dbdce1519de3fbce172d3dcf2141ccaf/pybit/__init__.py#L2279"></a>.</p>
+    <p>有關使用此主題維護本地訂單簿的邏輯。请看Python 示例：<a href="https://github.com/mufex-exchange/pybit/blob/8a647208dbdce1519de3fbce172d3dcf2141ccaf/pybit/__init__.py#L2279"></a>.</p>
     <p>在增量深度信息中，數量不一定等於對應價格的數量。如果數量=0，這說明在上一條推送中的這個價格已經沒有了。如果數量>0，這時的數量為更新後的這個價格所對應的數量。</p>
     <p>假設我們收到的返回數據中有這樣一條：</p>
     <p>&nbsp;&nbsp;> ["0.00181860", "155.92000000"] // 價格，數量</p>
@@ -4090,14 +4090,14 @@ zh-my:
         <p>
           <li>測試網公共topic地址:
             <ul>
-              <li><span id="testnet_option_public_address">wss://stream-testnet.bybit.com/trade/option/usdc/public/v1</span>
+              <li><span id="testnet_option_public_address">wss://stream-testnet.mufex.com/trade/option/usdc/public/v1</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_option_public_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
             </ul>
           </li>
           <li>
             測試網私有topic地址:
             <ul>
-              <li><span id="testnet_option_private_address">wss://stream-testnet.bybit.com/trade/option/usdc/private/v1</span>
+              <li><span id="testnet_option_private_address">wss://stream-testnet.mufex.com/trade/option/usdc/private/v1</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_option_private_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
             </ul>
           </li>
@@ -4105,7 +4105,7 @@ zh-my:
         <p>
           <li>主網公共topic地址(請根據您的網絡情況選擇以下任意一個地址使用):<br/>
             <ul>
-              <li><span id="mainnet_option_public_address">wss://stream.bybit.com/trade/option/usdc/public/v1</span>
+              <li><span id="mainnet_option_public_address">wss://stream.mufex.com/trade/option/usdc/public/v1</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_option_public_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
               <li><span id="mainnet_option_public_address_2">wss://stream.bytick.com/trade/option/usdc/public/v1</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_option_public_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
@@ -4115,7 +4115,7 @@ zh-my:
         <p>
           <li>主網私有topic地址(請根據您的網絡情況選擇以下任意一個地址使用):<br/>
             <ul>
-              <li><span id="mainnet_option_private_address">wss://stream.bybit.com/trade/option/usdc/private/v1</span>
+              <li><span id="mainnet_option_private_address">wss://stream.mufex.com/trade/option/usdc/private/v1</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_option_private_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
               <li><span id="mainnet_option_private_address_2">wss://stream.bytick.com/trade/option/usdc/private/v1</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_option_private_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
@@ -4535,14 +4535,14 @@ zh-my:
         <p>
           <li>測試網公共topic地址:
             <ul>
-              <li><span id="testnet_address">wss://stream-testnet.bybit.com/perpetual/ws/v1/realtime_public</span>
+              <li><span id="testnet_address">wss://stream-testnet.mufex.com/perpetual/ws/v1/realtime_public</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
             </ul>
           </li>
           <li>
             測試網私有topic地址:
             <ul>
-              <li><span id="testnet_address_2">wss://stream-testnet.bybit.com/trade/option/usdc/private/v1</span>
+              <li><span id="testnet_address_2">wss://stream-testnet.mufex.com/trade/option/usdc/private/v1</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
             </ul>
           </li>
@@ -4550,7 +4550,7 @@ zh-my:
         <p>
           <li>主網公共topic地址(請根據您的網絡情況選擇以下任意一個地址使用):<br/>
             <ul>
-              <li><span id="mainnet_perpetual_public_address">wss://stream.bybit.com/perpetual/ws/v1/realtime_public</span>
+              <li><span id="mainnet_perpetual_public_address">wss://stream.mufex.com/perpetual/ws/v1/realtime_public</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_perpetual_public_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
               <li><span id="mainnet_perpetual_public_address_2">wss://stream.bytick.com/perpetual/ws/v1/realtime_public</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_perpetual_public_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
@@ -4560,7 +4560,7 @@ zh-my:
         <p>
           <li>主網私有topic地址(請根據您的網絡情況選擇以下任意一個地址使用):<br/>
             <ul>
-              <li><span id="mainnet_perpetual_private_address">wss://stream.bybit.com/trade/option/usdc/private/v1</span>
+              <li><span id="mainnet_perpetual_private_address">wss://stream.mufex.com/trade/option/usdc/private/v1</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_perpetual_private_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
               <li><span id="mainnet_perpetual_private_address_2">wss://stream.bytick.com/trade/option/usdc/private/v1</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_perpetual_private_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
@@ -4672,7 +4672,7 @@ zh-my:
     <p>做市商保護機制，旨在保護為平台提供流動性的做市商，防止在一定時間窗口內產生大量成交，導致流動性風險過度集中甚至擊穿某個做市商流動性。一旦某個賬戶在短時間內的總交易額超過了配置的限額，該賬戶的做市商保護將被觸發。</p>
     <p>當做市商保護被觸發時，賬戶現有的做市商保護訂單（被標記為做市商保護的訂單）將被交易引擎自動取消，而該賬戶新的做市商保護訂單將在未來一段時間（稱為凍結期）被拒絕（常規非MMP訂單不受影響）。用戶可以利用這段時間重新評估行情並修改報價。</p>
   enableMmpDesc: |
-    <p>您可通過郵件Bybit【financial.inst@bybit.com】或聯繫對應的客戶經理申請開通。</p>
+    <p>您可通過郵件Bybit【financial.inst@mufex.com】或聯繫對應的客戶經理申請開通。</p>
     <p></p>
   usdcMmpDefault: 開通後，MMP的默認配置為
   usdcMmpTriggerStatus: MMP觸發狀態
@@ -4763,7 +4763,7 @@ zh-my:
 
   #copytrade
   copy_trading: 跟單交易
-  copy_trading_user_notice: Bybit的跟單交易API目前僅適用於<a href="https://www.bybit.com/en-US/help-center/bybitHC_Article?language=en_US&id=000001554">交易達人</a>. 暫時沒有相關API提供給到跟隨者.
+  copy_trading_user_notice: Bybit的跟單交易API目前僅適用於<a href="https://www.mufex.com/en-US/help-center/bybitHC_Article?language=en_US&id=000001554">交易達人</a>. 暫時沒有相關API提供給到跟隨者.
   ct_symbol_list: 交易員獲取可帶單合約
   ct_order: 訂單
   ct_order_list: 查詢交易員帶單訂單
@@ -4808,7 +4808,7 @@ zh-my:
   borrowmarginloan: 申請借幣
   spotCrossMarginTradingEndpoint: 全倉槓桿接口支持以下幣種：
   spotCrossMarginCoins: |
-    您可以通過<a href="https://www.bybit.com/zh-MY/trade/spot/leverage/vip">這裡</a>查詢全倉槓桿所支持的幣種。
+    您可以通過<a href="https://www.mufex.com/zh-MY/trade/spot/leverage/vip">這裡</a>查詢全倉槓桿所支持的幣種。
   spotCurrency: 幣種
   spotBorrowQty: 借幣數量
   spotResult: 借款訂單id
@@ -5057,23 +5057,23 @@ zh-my:
     <ul>
     <p>
     <li><b>主網</b>:<br/>
-        USDT合約: <span id="usdt_mainnet_address">wss://stream.bybit.com/contract/usdt/public/v3</span>
+        USDT合約: <span id="usdt_mainnet_address">wss://stream.mufex.com/contract/usdt/public/v3</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#usdt_mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
-        USDC合約: <span id="usdc_mainnet_address">wss://stream.bybit.com/contract/usdc/public/v3</span>
+        USDC合約: <span id="usdc_mainnet_address">wss://stream.mufex.com/contract/usdc/public/v3</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#usdc_mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
-        USDC期權: <span id="option_mainnet_address">wss://stream.bybit.com/option/usdc/public/v3</span>
+        USDC期權: <span id="option_mainnet_address">wss://stream.mufex.com/option/usdc/public/v3</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#option_mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
     </li>
     <li><b>測試網</b>:<br/>
-        USDT合約: <span id="usdt_testnet_address">wss://stream-testnet.bybit.com/contract/usdt/public/v3</span>
+        USDT合約: <span id="usdt_testnet_address">wss://stream-testnet.mufex.com/contract/usdt/public/v3</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#usdt_testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
-        USDC合約: <span id="usdc_testnet_address">wss://stream-testnet.bybit.com/contract/usdc/public/v3</span>
+        USDC合約: <span id="usdc_testnet_address">wss://stream-testnet.mufex.com/contract/usdc/public/v3</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#usdc_testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
-        USDC期權: <span id="option_testnet_address">wss://stream-testnet.bybit.com/option/usdc/public/v3</span>
+        USDC期權: <span id="option_testnet_address">wss://stream-testnet.mufex.com/option/usdc/public/v3</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#option_testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
     </li>
      </p>
@@ -5082,11 +5082,11 @@ zh-my:
     <ul>
     <p>
     <li><b>主網</b>:<br/>
-        統一保證金帳戶: <span id="uma_mainnet_address">wss://stream.bybit.com/unified/private/v3</span>
+        統一保證金帳戶: <span id="uma_mainnet_address">wss://stream.mufex.com/unified/private/v3</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#uma_mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
     </li>
     <li><b>測試網</b>:<br/>
-        統一保證金帳戶: <span id="uma_testnet_address">wss://stream-testnet.bybit.com/unified/private/v3</span>
+        統一保證金帳戶: <span id="uma_testnet_address">wss://stream-testnet.mufex.com/unified/private/v3</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#uma_testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
     </li>
      </p>
@@ -5097,17 +5097,17 @@ zh-my:
     <ul>
     <p>
     <li><b>主網</b>:<br/>
-        USDT合約: <span id="usdt_mainnet_address">wss://stream.bybit.com/contract/usdt/public/v3</span>
+        USDT合約: <span id="usdt_mainnet_address">wss://stream.mufex.com/contract/usdt/public/v3</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#usdt_mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
-        反向合約: <span id="inverse_mainnet_address">wss://stream.bybit.com/contract/inverse/public/v3</span>
+        反向合約: <span id="inverse_mainnet_address">wss://stream.mufex.com/contract/inverse/public/v3</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#inverse_mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
     </li>
     <li><b>測試網</b>:<br/>
-        USDT合約: <span id="usdt_testnet_address">wss://stream-testnet.bybit.com/contract/usdt/public/v3</span>
+        USDT合約: <span id="usdt_testnet_address">wss://stream-testnet.mufex.com/contract/usdt/public/v3</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#usdt_testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <br/>
-        反向合約: <span id="inverse_testnet_address">wss://stream-testnet.bybit.com/contract/inverse/public/v3</span>
+        反向合約: <span id="inverse_testnet_address">wss://stream-testnet.mufex.com/contract/inverse/public/v3</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#inverse_testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
     </li>
      </p>
@@ -5116,11 +5116,11 @@ zh-my:
     <ul>
     <p>
     <li><b>主網</b>:<br/>
-        合约帳戶: <span id="ca_mainnet_address">wss://stream.bybit.com/contract/private</span>
+        合约帳戶: <span id="ca_mainnet_address">wss://stream.mufex.com/contract/private</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#ca_mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
     </li>
     <li><b>測試網</b>:<br/>
-        合约帳戶: <span id="ca_testnet_address">wss://stream-testnet.bybit.com/contract/private</span>
+        合约帳戶: <span id="ca_testnet_address">wss://stream-testnet.mufex.com/contract/private</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#ca_testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
     </li>
      </p>
@@ -5215,7 +5215,7 @@ zh-my:
   contract_position_autoAddMargin: 自動追加保證金模式. <code>0</code>代表關閉, <code>1</code>代表開啟. <b>全倉</b>模式下該字段無效
   contract_position_positionBalance: 倉位餘額
   contract_position_liqPrice: 強制平倉價格
-  contract_position_bustPrice: <a href="https://help.bybit.com/hc/en-us/articles/360039749813-What-is-Bankruptcy-Price-Inverse-Contract-">破產價格</a>
+  contract_position_bustPrice: <a href="https://help.mufex.com/hc/en-us/articles/360039749813-What-is-Bankruptcy-Price-Inverse-Contract-">破產價格</a>
   contract_websocketExecution: |
     <p><p><b>說明：</b></p>
     <p>獲取用戶成交記錄，按時間降序排列。</p>
@@ -5794,10 +5794,10 @@ zh-my:
   getDcp_dcpStatus: 斷線保護狀態. <code>ON</code>：開啟, <code>OFF</code>：關閉
   getDcp_timeWindow: 斷線保護時間窗口 (秒)
   DCP_notice: <ul><li><a href="#t-usdc_disconnect_protection">什麼是斷線保護機制</a></li><li>僅適用於期權交易</li></ul>
-  tax_v3_changelog_notice: 此文檔將不再更新稅務相關接口，請移步<a href="https://bybit-exchange.github.io/docs/zh-TW/v3/intro">新版接口文檔</a>
-  spot_v3_changelog_notice: 此文檔將不再更新現貨V3相關接口，請移步<a href="https://bybit-exchange.github.io/docs/zh-TW/v3/intro">新版接口文檔</a>
-  copyTrading_changelog_notice: 此文檔將不再更新跟單交易相關接口，請移步<a href="https://bybit-exchange.github.io/docs/zh-TW/v3/intro">新版接口文檔</a>
-  unified_v3_changelog_notice: 此文檔將不再更新統保V3相關接口，請移步<a href="https://bybit-exchange.github.io/docs/zh-TW/v3/intro">新版接口文檔</a>
-  contract_v3_changelog_notice: 此文檔將不再更新合約V3相關接口，請移步<a href="https://bybit-exchange.github.io/docs/zh-TW/v3/intro">新版接口文檔</a>
-  asset_v3_changelog_notice: 此文檔將不再更新資產V3相關接口，請移步<a href="https://bybit-exchange.github.io/docs/zh-TW/v3/intro">新版接口文檔</a>
+  tax_v3_changelog_notice: 此文檔將不再更新稅務相關接口，請移步<a href="https://mufex-exchange.github.io/docs/zh-TW/v3/intro">新版接口文檔</a>
+  spot_v3_changelog_notice: 此文檔將不再更新現貨V3相關接口，請移步<a href="https://mufex-exchange.github.io/docs/zh-TW/v3/intro">新版接口文檔</a>
+  copyTrading_changelog_notice: 此文檔將不再更新跟單交易相關接口，請移步<a href="https://mufex-exchange.github.io/docs/zh-TW/v3/intro">新版接口文檔</a>
+  unified_v3_changelog_notice: 此文檔將不再更新統保V3相關接口，請移步<a href="https://mufex-exchange.github.io/docs/zh-TW/v3/intro">新版接口文檔</a>
+  contract_v3_changelog_notice: 此文檔將不再更新合約V3相關接口，請移步<a href="https://mufex-exchange.github.io/docs/zh-TW/v3/intro">新版接口文檔</a>
+  asset_v3_changelog_notice: 此文檔將不再更新資產V3相關接口，請移步<a href="https://mufex-exchange.github.io/docs/zh-TW/v3/intro">新版接口文檔</a>
   account_withdraw_account_type: 設置出金帳戶. <ul><li><code>SPOT</code>：走現貨錢包出金 (默認)</li><li><code>FUND</code>：走資金錢包出金</li></ul>

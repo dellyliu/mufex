@@ -5,14 +5,14 @@
 > t(:websocket_codequote_auth2)
 
 ```python--pybit
-# based on: https://github.com/bybit-exchange/pybit/blob/master/pybit/_http_manager.py
+# based on: https://github.com/mufex-exchange/pybit/blob/master/pybit/_http_manager.py
 
 import hmac
 import json
 import time
 import websocket
 
-ws_url = "wss://stream.bybit.com/realtime"
+ws_url = "wss://stream.mufex.com/realtime"
 
 api_key = ""
 api_secret = ""

@@ -50,11 +50,11 @@ t(:auth_aside_signature)
 <!--
 ### Examples of the Signature Algorithm
 
-* [C#](https://github.com/bybit-exchange/bybit-official-api-docs/blob/master/en/example/Encryption.cs)
-* [Python](https://github.com/bybit-exchange/bybit-official-api-docs/blob/master/en/example/Encryption.py)
-* [C++](https://github.com/bybit-exchange/bybit-official-api-docs/blob/master/en/example/Encryption.cpp)
-* [Go](https://github.com/bybit-exchange/bybit-official-api-docs/blob/master/en/example/Encryption.go)
-* [PHP](https://github.com/bybit-exchange/bybit-official-api-docs/blob/master/en/example/Encryption.php)
+* [C#](https://github.com/mufex-exchange/mufex-official-api-docs/blob/master/en/example/Encryption.cs)
+* [Python](https://github.com/mufex-exchange/mufex-official-api-docs/blob/master/en/example/Encryption.py)
+* [C++](https://github.com/mufex-exchange/mufex-official-api-docs/blob/master/en/example/Encryption.cpp)
+* [Go](https://github.com/mufex-exchange/mufex-official-api-docs/blob/master/en/example/Encryption.go)
+* [PHP](https://github.com/mufex-exchange/mufex-official-api-docs/blob/master/en/example/Encryption.php)
 -->
 
 

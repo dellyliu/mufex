@@ -47,11 +47,11 @@ en:
   row_comment_position_value: Position value
   row_comment_entry_price: Average entry price
   row_comment_isolated: <code>true</code> means isolated margin mode; <code>false</code> means cross margin mode
-  row_comment_auto_add_margin: Whether or not <a href="https://help.bybit.com/hc/en-us/articles/900000394403-Introduction-to-Auto-Margin-Replenishment-USDT-Contract-),">auto-margin replenishment</a> is enabled
+  row_comment_auto_add_margin: Whether or not <a href="https://help.mufex.com/hc/en-us/articles/900000394403-Introduction-to-Auto-Margin-Replenishment-USDT-Contract-),">auto-margin replenishment</a> is enabled
   row_comment_position_margin: Position margin
   row_comment_effective_leverage: Effective leverage
   row_comment_liq_price: Liquidation price
-  row_comment_bust_price: <a href="https://help.bybit.com/hc/en-us/articles/360039749813-What-is-Bankruptcy-Price-Inverse-Contract-">Bankruptcy price</a>
+  row_comment_bust_price: <a href="https://help.mufex.com/hc/en-us/articles/360039749813-What-is-Bankruptcy-Price-Inverse-Contract-">Bankruptcy price</a>
   row_comment_occ_closing_fee: Position closing fee occupied (your opening fee + expected maximum closing fee)
   row_comment_occ_funding_fee: |
     Pre-occupied funding fee: calculated from position qty and current funding fee
@@ -111,18 +111,18 @@ en:
   row_comment_coin_type: Coin type
   row_comment_risk_limit: Risk limit
   row_comment_maintain_margin: Maintain margin
-  row_comment_starting_margin_inverse: Starting margin. The same as the "Initial Margin %" shown <a href="https://help.bybit.com/hc/en-us/articles/360039749753-Risk-Limit-Inverse-Contract-">in the risk limit tables</a>
-  row_comment_starting_margin_linear: Starting margin. The same as the "Initial Margin %" shown <a href="https://help.bybit.com/hc/en-us/articles/900000170023-Risk-Limit-USDT-Contract-">in the risk limit tables</a>
+  row_comment_starting_margin_inverse: Starting margin. The same as the "Initial Margin %" shown <a href="https://help.mufex.com/hc/en-us/articles/360039749753-Risk-Limit-Inverse-Contract-">in the risk limit tables</a>
+  row_comment_starting_margin_linear: Starting margin. The same as the "Initial Margin %" shown <a href="https://help.mufex.com/hc/en-us/articles/900000170023-Risk-Limit-USDT-Contract-">in the risk limit tables</a>
   row_comment_section: Section
   row_comment_is_lowest_risk: |
     Is lowest risk. <code>0</code>: No; <code>1</code>: Yes
-  row_comment_funding_rate: <a href="https://help.bybit.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding rate</a>
-  row_comment_funding_rate_timestamp: <a href="https://help.bybit.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding rate</a> timestamp
+  row_comment_funding_rate: <a href="https://help.mufex.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding rate</a>
+  row_comment_funding_rate_timestamp: <a href="https://help.mufex.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding rate</a> timestamp
   row_comment_funding_side: Your position side at the time of settlement
   row_comment_funding_position_size: Your position size at the time of settlement
   row_comment_funding_exec_fee: Funding fee
   row_comment_funding_exec_timestamp: Funding fee execution timestamp
-  row_comment_predicted_funding_rate: <a href="https://help.bybit.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Predicted funding rate</a>
+  row_comment_predicted_funding_rate: <a href="https://help.mufex.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Predicted funding rate</a>
   row_comment_predicted_funding_fee: Predicted funding fee
   row_comment_api_key: API key
   row_comment_type: Key type
@@ -448,7 +448,7 @@ en:
   row_comment_stopOrderPrice: Execution price for conditional order. <b>Required</b> if you make limit price order
   row_comment_basePrice: It will be used to compare with the value of <code>stop_px</code>, to decide whether your conditional order will be triggered by crossing trigger price from upper side or lower side. Mainly used to identify the expected direction of the current conditional order.
   row_comment_stopPx: Trigger price. If you're expecting the price to rise to trigger your conditional order, make sure stop_px > max(market price, base_price) else, stop_px < min(market price, base_price)
-  row_comment_timeInForce: <a href="https://www.bybit.com/en-US/help-center/bybitHC_Article?language=en_US&id=000001044">Time in force</a>
+  row_comment_timeInForce: <a href="https://www.mufex.com/en-US/help-center/bybitHC_Article?language=en_US&id=000001044">Time in force</a>
   row_comment_triggerBy: Trigger price type. Default <code>LastPrice</code>
   row_comment_linear_triggerBy: Trigger price type
   row_comment_tp_size: Take profit quantity (when in <a href="#t-switchmode">partial mode</a>)
@@ -456,8 +456,8 @@ en:
   row_comment_takeProfit: Take profit price, only take effect upon opening the position
   row_comment_stopLoss: Stop loss price, only take effect upon opening the position
   row_comment_trailingStop: Trailing stop
-  row_comment_reduceOnly: <a href="https://help.bybit.com/hc/en-us/articles/360039260574-What-is-a-reduce-only-order-"> What is a reduce-only order?</a> True means your position can only reduce in size if this order is triggered
-  row_comment_closeOnTrigger: <a href="https://help.bybit.com/hc/en-us/articles/360039260534-What-is-a-close-on-trigger-Order-">  What is a close on trigger order?</a> For a closing order. It can only reduce your position, not increase it. If the account has insufficient available balance when the closing order is triggered, then other active orders of similar contracts will be cancelled or reduced. It can be used to ensure your stop loss reduces your position regardless of current available margin.
+  row_comment_reduceOnly: <a href="https://help.mufex.com/hc/en-us/articles/360039260574-What-is-a-reduce-only-order-"> What is a reduce-only order?</a> True means your position can only reduce in size if this order is triggered
+  row_comment_closeOnTrigger: <a href="https://help.mufex.com/hc/en-us/articles/360039260534-What-is-a-close-on-trigger-Order-">  What is a close on trigger order?</a> For a closing order. It can only reduce your position, not increase it. If the account has insufficient available balance when the closing order is triggered, then other active orders of similar contracts will be cancelled or reduced. It can be used to ensure your stop loss reduces your position regardless of current available margin.
   row_comment_orderLinkId: Unique user-set order ID. Maximum length of 36 characters
   row_comment_page: Page. By default, gets first page of data.
   row_comment_page_max50: Page. By default, gets first page of data. Maximum of 50 pages
@@ -469,7 +469,7 @@ en:
   row_comemnt_pRTriggerPrice: New conditional order's trigger price or TP/SL order price, also known as stop_px. Do not pass this field if you don't want modify it
   row_comemnt_replace_take_profit: New take_profit price. Do not pass this field if you don't want modify it
   row_comemnt_replace_stop_loss: New stop_loss price. Do not pass this field if you don't want modify it
-  row_comment_leverage_old: Must be greater than 0 and less than the <a href="https://help.bybit.com/hc/en-us/articles/360039749753-What-is-Risk-Limit-What-effect-does-the-Risk-Limit-have-on-Margin-Inverse-Contract-">risk limit leverage</a>. If you need to switch to cross margin please see the <a href="#t-marginswitch">Cross/Isolated Margin Switch</a> endpoint
+  row_comment_leverage_old: Must be greater than 0 and less than the <a href="https://help.mufex.com/hc/en-us/articles/360039749753-What-is-Risk-Limit-What-effect-does-the-Risk-Limit-have-on-Margin-Inverse-Contract-">risk limit leverage</a>. If you need to switch to cross margin please see the <a href="#t-marginswitch">Cross/Isolated Margin Switch</a> endpoint
   row_comment_leverage_only: Use this parameter to set leverage while in cross margin mode.
     <br>If this field is set to <code>false</code>, when <code>leverage</code> is equal to <code>0</code> the position will use cross margin; when <code>leverage</code> is greater than <code>0</code> the position will use isolated margin.
     <br>If this field is set to <code>true</code>, you can set leverage in cross margin with <code>leverage</code>. <code>leverage</code> must be greater than <code>0</code>.
@@ -560,11 +560,11 @@ en:
   row_comment_resp_total_volume_e8: Total volume * 10^8
   row_comment_resp_volume_24h: Trading volume in the last 24 hours
   row_comment_resp_volume_24h_e8: Trading volume in the last 24 hours * 10^8
-  row_comment_resp_funding_rate: <a href="https://help.bybit.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding rate</a>
-  row_comment_resp_funding_rate_e6: <a href="https://help.bybit.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding rate</a> * 10^6
-  row_comment_resp_predicted_funding_rate: <a href="https://help.bybit.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Predicted funding rate</a>
-#  row_comment_resp_funding_rate_e6: <a href="https://help.bybit.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding rate</a> * 10^6
-  row_comment_resp_predicted_funding_rate_e6: <a href="https://help.bybit.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Predicted funding rate</a> * 10^6
+  row_comment_resp_funding_rate: <a href="https://help.mufex.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding rate</a>
+  row_comment_resp_funding_rate_e6: <a href="https://help.mufex.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding rate</a> * 10^6
+  row_comment_resp_predicted_funding_rate: <a href="https://help.mufex.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Predicted funding rate</a>
+#  row_comment_resp_funding_rate_e6: <a href="https://help.mufex.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding rate</a> * 10^6
+  row_comment_resp_predicted_funding_rate_e6: <a href="https://help.mufex.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Predicted funding rate</a> * 10^6
   row_comment_resp_next_funding_time: Next settlement time of capital cost
   row_comment_resp_countdown_hour: Countdown of settlement capital cost
   row_comment_resp_funding_rate_interval: funding rate time interval, unit hour
@@ -843,7 +843,7 @@ en:
   faq_exchange_assets: Can I exchange assets with the API?
   faq_exchange_assets_para: |
     <ul>
-      <li>There is no endpoint to exchange assets. This can only be done on the <a href="https://testnet.bybit.com/app/assets/assets-exchange">website</a>.</li>
+      <li>There is no endpoint to exchange assets. This can only be done on the <a href="https://testnet.mufex.com/app/assets/assets-exchange">website</a>.</li>
       <li>However, it is possible to access your <a href="#t-assetexchangerecords">Asset Exchange Records</a> with the API.</li>
     </ul>
 
@@ -855,7 +855,7 @@ en:
   ## How do I get funds for testnet?
   faq_testnet_funds: How do I get funds for testnet?
   faq_testnet_funds_para: |
-    To get testnet funds, please contact the website's customer support using the yellow support button <a href="https://testnet.bybit.com">shown in the bottom-right corner</a>.
+    To get testnet funds, please contact the website's customer support using the yellow support button <a href="https://testnet.mufex.com">shown in the bottom-right corner</a>.
 
   ## Why are my Closed PNL prices inaccurate?
   faq_closed_pnl_price: Why are my Closed PNL prices inaccurate?
@@ -876,7 +876,7 @@ en:
       <li>For example, you received <code>11.969999</code> but you expected <code>11.97</code>.
       <li>Some values are returned to too many decimal places, or a fraction too high or low, due to a float precision problem.</li>
       <li>For now, we recommend rounding the received value to the correct decimal place. This can be done with reference to the <a href="#t-querysymbol">Query Symbol</a> endpoint.</li>
-      <li><b>This issue <strike>will be</strike> has been fixed in the latest major version of the API: v3.</b> You can see the documentation for the v3 websocket <a href="https://bybit-exchange.github.io/docs-legacy/derivativesV3/contract/#t-websocket">here</a>.</li>
+      <li><b>This issue <strike>will be</strike> has been fixed in the latest major version of the API: v3.</b> You can see the documentation for the v3 websocket <a href="https://mufex-exchange.github.io/docs-legacy/derivativesV3/contract/#t-websocket">here</a>.</li>
     </ul>
 
   faq_data_resilience: How can I ensure I am using up-to-date data?
@@ -934,7 +934,7 @@ en:
       </p>
       <p>
         <li>Mainnet (please choose one based on your network status):<br/>
-          <span id="mainnet_1">https://api.bybit.com</span>
+          <span id="mainnet_1">https://api.mufex.com</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_1"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           <br/>
           <span id="mainnet_2">https://api.bytick.com</span>
@@ -950,7 +950,7 @@ en:
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
       <li>
-        <span id=mainnet><a href="https://api.bybit.com">https://api.bybit.com</a></span>
+        <span id=mainnet><a href="https://api.mufex.com">https://api.mufex.com</a></span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
     </ul>
@@ -1013,9 +1013,9 @@ en:
   auth_para_construct3_dv3:
     <p>3. Append the sign parameter to request header, and send the HTTP request. Note that the message format for GET and POST requests is different. Please refer to the examples.</p>
   auth_aside_signature:
-    Example signature algorithms can be found <a href="https://github.com/bybit-exchange/api-usage-examples">here</a>.
+    Example signature algorithms can be found <a href="https://github.com/mufex-exchange/api-usage-examples">here</a>.
   spot_auth_aside_signature:
-    Examples of signing algorithms can be found <a href="https://github.com/bybit-exchange/api-usage-examples">here</a>.
+    Examples of signing algorithms can be found <a href="https://github.com/mufex-exchange/api-usage-examples">here</a>.
   spot_auth_codequote_construct1a:
     An example for balance query
   spot_auth_codequote_construct1b:
@@ -1052,11 +1052,11 @@ en:
   ### Public Trading Records
   publictradingrecords: Public Trading Records
   dv_publictradingrecords: Get Public Trading History
-  market_para_records: Get recent trades. You can find a complete history of trades on Bybit <a href="https://public.bybit.com">here</a>.
+  market_para_records: Get recent trades. You can find a complete history of trades on Bybit <a href="https://public.mufex.com">here</a>.
   ### Get the Last Funding Rate
   fundingRate: Get the Last Funding Rate
   market_para_fundingRate: The funding rate is generated every 8 hours at 00:00 UTC, 08:00 UTC and 16:00 UTC. For example, if a request is sent at 12:00 UTC, the funding rate generated earlier that day at 08:00 UTC will be sent.
-  fundingRate_notice: Historical funding rates are not available through the API. However, you can obtain a CSV of this data by using the "Export" button <a href="https://www.bybit.com/data/basic/inverse/funding-history?symbol=BTCUSD">here</a>.
+  fundingRate_notice: Historical funding rates are not available through the API. However, you can obtain a CSV of this data by using the "Export" button <a href="https://www.mufex.com/data/basic/inverse/funding-history?symbol=BTCUSD">here</a>.
   ### Query Symbol
   querysymbol: Query Symbol
   market_para_querySymbol: Get symbol info.
@@ -1180,7 +1180,7 @@ en:
 
   linear_private_setrisklimit_v3: |
     <p><b>Interface:</b></p>
-    <p>For risk limit, click <a href="https://www.bybit.com/en-US/help-center/HelpCenterKnowledge/bybitHC_Article?language=en_US&id=000001164">here</a> to learn more.</p></p>
+    <p>For risk limit, click <a href="https://www.mufex.com/en-US/help-center/HelpCenterKnowledge/bybitHC_Article?language=en_US&id=000001164">here</a> to learn more.</p></p>
 
   account_para_tradingStop_v3: |
     <p><b>Interface:</b></p>
@@ -1327,7 +1327,7 @@ en:
       <li><code>ext_code</code> means please refer to <a href="#t-errors">Errors</a></li>
     </ul>
   getOrderList_warning: |
-    This interface only supports to query <b>10k</b> orders per symbol for userId. If you need to get historical orders, please refer to the <a href="https://bybit-exchange.github.io/docs-legacy/derivativesV3/contract/#t-contract_getorder">api</a> from contract v3, which enables to get all status orders in recent 7days, and <b>FILLED</b> orders over 7 days
+    This interface only supports to query <b>10k</b> orders per symbol for userId. If you need to get historical orders, please refer to the <a href="https://mufex-exchange.github.io/docs-legacy/derivativesV3/contract/#t-contract_getorder">api</a> from contract v3, which enables to get all status orders in recent 7days, and <b>FILLED</b> orders over 7 days
 
   ### Get Conditional Order
   getcond: Get Conditional Order
@@ -1377,7 +1377,7 @@ en:
   ### Change Margin
   changemargin: Change Margin
   account_para_changeMargin: Update margin.
-  account_aside_changeMargin: You cannot change margin when your position is in Cross Margin mode, and margin can't be less than <a href="https://help.bybit.com/hc/en-us/articles/360039261174-Initial-Margin-Inverse-Contract-">Initial Margin</a>. See the <a href="#t-setleverage">Change User Leverage</a> endpoint for more.
+  account_aside_changeMargin: You cannot change margin when your position is in Cross Margin mode, and margin can't be less than <a href="https://help.mufex.com/hc/en-us/articles/360039261174-Initial-Margin-Inverse-Contract-">Initial Margin</a>. See the <a href="#t-setleverage">Change User Leverage</a> endpoint for more.
   ### Set Trading-Stop
   tradingstop: Set Trading-Stop
   account_para_tradingStop: Set take profit, stop loss, and trailing stop for your open position.
@@ -1406,10 +1406,10 @@ en:
   funding: Funding
   ### My Last Funding Fee
   mylastfundingfee: My Last Funding Fee
-  account_para_myLastFunding: <a href="https://help.bybit.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding settlement occurs</a> every 8 hours at 00:00 UTC, 08:00 UTC and 16:00 UTC. The current interval's fund fee settlement is based on the current interval's fund rate. For example, at 16:00, the settlement is based on the fund rate generated at 16:00.
+  account_para_myLastFunding: <a href="https://help.mufex.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding settlement occurs</a> every 8 hours at 00:00 UTC, 08:00 UTC and 16:00 UTC. The current interval's fund fee settlement is based on the current interval's fund rate. For example, at 16:00, the settlement is based on the fund rate generated at 16:00.
   ### Predicted Funding Rate and My Funding Fee
   predictedfunding: Predicted Funding Rate and My Funding Fee
-  account_para_predictedFunding: Get <a href="https://help.bybit.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">predicted funding rate</a> and my predicted funding fee.
+  account_para_predictedFunding: Get <a href="https://help.mufex.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">predicted funding rate</a> and my predicted funding fee.
   ## API Key Info
   key: API Key Info
   account_para_key: Get user's API key info.
@@ -1427,18 +1427,18 @@ en:
   wallet_para_walletBalance: Get wallet balance info.
   wallet_para_tradingHistory: Query Trading History.
   wallet_aside_walletBalance: |
-    <code>position_margin</code> in this endpoint is not same as <a href="https://www.bybit.com/app/wallet/money">position margin on website</a>
+    <code>position_margin</code> in this endpoint is not same as <a href="https://www.mufex.com/app/wallet/money">position margin on website</a>
     <p>The formula of position margin on website: <code>position_margin</code> + <code>occ_funding_fee</code> + loss(when your <code>available_balance</code> is insufficient)</p>
   ### Wallet Fund Records
   walletrecords: Wallet Fund Records
   dv_walletrecords: Get Wallet Fund Records
   wallet_para_walletRecords: |
-    <p>Get wallet fund records. This endpoint also shows exchanges from the <a href="https://testnet.bybit.com/app/assets/assets-exchange">Asset Exchange</a>, where the <code>type</code>s for the exchange are <code>ExchangeOrderWithdraw</code> and <code>ExchangeOrderDeposit</code>.</p>
-    <p>This endpoint returns incomplete information for transfers involving the derivatives wallet. Use the <a href="https://bybit-exchange.github.io/docs-legacy/account_asset/v3/#t-transfer_api">account asset API</a> for creating and querying internal transfers.
+    <p>Get wallet fund records. This endpoint also shows exchanges from the <a href="https://testnet.mufex.com/app/assets/assets-exchange">Asset Exchange</a>, where the <code>type</code>s for the exchange are <code>ExchangeOrderWithdraw</code> and <code>ExchangeOrderDeposit</code>.</p>
+    <p>This endpoint returns incomplete information for transfers involving the derivatives wallet. Use the <a href="https://mufex-exchange.github.io/docs-legacy/account_asset/v3/#t-transfer_api">account asset API</a> for creating and querying internal transfers.
   wallet_aside_walletRecords: |
     Find more detail for types <code>Withdraw</code> and <code>Refund</code> in the <a href="#t-withdrawrecords">Withdraw Records</a> endpoint.
   wallet_aside_walletRecords1: USDT records will not be returned unless you pass <code>USDT</code> with the <code>coin</code> parameter.
-  wallet_aside_walletRecords2: Deposit or withdrawal records which occurred after 2021-07-15 will not be shown by this endpoint. To fetch records after this date you should call the <a href="https://bybit-exchange.github.io/docs-legacy/account_asset/v3/#t-depositsrecordquery">Query Deposit Records</a> and <a href="https://bybit-exchange.github.io/docs-legacy/account_asset/v3/#t-withdrawrecordquery">Query Withdraw Records</a> endpoints. This is due to the introduction of the spot wallet at this time.
+  wallet_aside_walletRecords2: Deposit or withdrawal records which occurred after 2021-07-15 will not be shown by this endpoint. To fetch records after this date you should call the <a href="https://mufex-exchange.github.io/docs-legacy/account_asset/v3/#t-depositsrecordquery">Query Deposit Records</a> and <a href="https://mufex-exchange.github.io/docs-legacy/account_asset/v3/#t-withdrawrecordquery">Query Withdraw Records</a> endpoints. This is due to the introduction of the spot wallet at this time.
   ### Withdraw Records
   withdrawrecords: Withdraw Records
   wallet_para_withdrawRecords: |
@@ -1460,14 +1460,14 @@ en:
   ### User Trade Records
   usertraderecords: Get User Trade Records
   userhistorytraderecords: Extended User Trade Records
-  wallet_para_tradeRecords: Get user's trading records. The results are ordered in ascending order (the first item is the oldest). If you want to get the records up to 2 years old, please refer to contract v3 <a href="https://bybit-exchange.github.io/docs-legacy/derivativesV3/contract/#t-usertraderecords">endpoint</a>
+  wallet_para_tradeRecords: Get user's trading records. The results are ordered in ascending order (the first item is the oldest). If you want to get the records up to 2 years old, please refer to contract v3 <a href="https://mufex-exchange.github.io/docs-legacy/derivativesV3/contract/#t-usertraderecords">endpoint</a>
   wallet_aside_tradeRecords: One order may have multiple trade records.
   wallet_row_comment_orderId: OrderID. If not provided, will return user's trading records
   ## Get Risk Limit
   getrisklimit: Get Risk Limit
   account_para_getRisk: Get risk limit. <b>This endpoint does not require authentication.</b>
-  account_aside_getRisk_inverse: Read more about the risk limit <a href="https://www.bybit.com/en-US/help-center/bybitHC_Article/?language=zh_MY&id=000001095">here</a>.
-  account_aside_getRisk_linear: Read more about the risk limit <a href="https://www.bybit.com/en-US/help-center/HelpCenterKnowledge/bybitHC_Article?language=en_US&id=000001164">here</a>.
+  account_aside_getRisk_inverse: Read more about the risk limit <a href="https://www.mufex.com/en-US/help-center/bybitHC_Article/?language=zh_MY&id=000001095">here</a>.
+  account_aside_getRisk_linear: Read more about the risk limit <a href="https://www.mufex.com/en-US/help-center/HelpCenterKnowledge/bybitHC_Article?language=en_US&id=000001164">here</a>.
 ## Set Risk Limit
   setrisklimit: Set Risk Limit
   account_para_setRisk: Set risk limit.
@@ -1612,7 +1612,7 @@ en:
   rate_para_raise: |
     <ul>
     <li>Please refer to <a href="#t-liquidity">Understanding Bybit&#39;s Liquidity System</a> regarding how our system automatically allocates rate limits for users who place over 2,000 orders per day.</li>
-    <li>Please email <a href="mailto:api@bybit.com">api@bybit.com</a> with the following information. We will reply within 1-4 working days:</li>
+    <li>Please email <a href="mailto:api@mufex.com">api@mufex.com</a> with the following information. We will reply within 1-4 working days:</li>
       <ol>
         <li>Your name and your company details</li>
         <li>Your Bybit UID or registered email, and the assets you are trading</li>
@@ -1623,7 +1623,7 @@ en:
     </ul>
   rate_para_raise_v3: |
     <ul>
-    Please email <a href="mailto:api@bybit.com">api@bybit.com</a> with the following information. We will reply within 1-4 working days:
+    Please email <a href="mailto:api@mufex.com">api@mufex.com</a> with the following information. We will reply within 1-4 working days:
       <ol>
         <li>Your name and your company details</li>
         <li>Your Bybit UID or registered email, and the assets you are trading</li>
@@ -1757,29 +1757,29 @@ en:
     Second method: Apply for authentication after establishing a connection through auth request.
   websocket_codequote_auth_spot: |
     <p>Apply for authentication when establishing a connection.</p>
-    <p>Note: if you're using <a href="https://github.com/bybit-exchange/pybit">pybit</a> or another high-level library, you can ignore this code - as authentication is handled for you.</p>
+    <p>Note: if you're using <a href="https://github.com/mufex-exchange/pybit">pybit</a> or another high-level library, you can ignore this code - as authentication is handled for you.</p>
   websocket_endpoints_aside: |
     <b>Note that the following endpoints only apply to <i>Inverse Perpetual/Futures</i></b>. To listen to other websockets, go to:
     <ul>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/linear/#t-websocketauthentication">USDT (Linear) Perpetual</a></li>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/spot/v3/#t-websocketauthentication">Spot</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/linear/#t-websocketauthentication">USDT (Linear) Perpetual</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/spot/v3/#t-websocketauthentication">Spot</a></li>
     </ul>
   websocket_endpoints_aside_copytrading: |
     <b>Note that currently Copy Trading only supports USDT perpetual and the following endpoints only apply to <i>USDT (Linear) Perpetual</i></b>. To listen to other websockets, go to:
     <ul>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/inverse/#t-websocketauthentication">Inverse Perpetual</a></li>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/spot/v3/#t-websocketauthentication">Spot</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/inverse/#t-websocketauthentication">Inverse Perpetual</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/spot/v3/#t-websocketauthentication">Spot</a></li>
     </ul>
   websocket_para_endpoint: |
     <p>Base endpoints:</p>
     <ul>
       <li>Testnet:
-        <span id="testnet_address">wss://stream-testnet.bybit.com/realtime</span>
+        <span id="testnet_address">wss://stream-testnet.mufex.com/realtime</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
       <li>Mainnet (both endpoints are available):
         <ul>
-        <li><span id="mainnet_address">wss://stream.bybit.com/realtime</span>
+        <li><span id="mainnet_address">wss://stream.mufex.com/realtime</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
         <li><span id="mainnet_address_2">wss://stream.bytick.com/realtime</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
@@ -1790,12 +1790,12 @@ en:
     <p>Base endpoints:</p>
         <ul>
           <li>Testnet:
-            <span id="testnet_address">wss://stream-testnet.bybit.com/realtime</span>
+            <span id="testnet_address">wss://stream-testnet.mufex.com/realtime</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           </li>
           <li>Mainnet (both endpoints are available):
             <ul>
-            <li><span id="mainnet_address">wss://stream.bybit.com/realtime</span>
+            <li><span id="mainnet_address">wss://stream.mufex.com/realtime</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
             <li><span id="mainnet_address_2">wss://stream.bytick.com/realtime</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
@@ -1807,16 +1807,16 @@ en:
        <ul>
        <p>
        <li>TestNet:<br/>
-           <span id="usdt_testnet_address">USDT Perpetual: wss://stream-testnet.bybit.com/contract/usdt/public/v3</span>
+           <span id="usdt_testnet_address">USDT Perpetual: wss://stream-testnet.mufex.com/contract/usdt/public/v3</span>
            <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#usdt_testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
            <br/>
-           <span id="inverse_testnet_address">inverse Perpetual: wss://stream-testnet.bybit.com/contract/inverse/public/v3</span>
+           <span id="inverse_testnet_address">inverse Perpetual: wss://stream-testnet.mufex.com/contract/inverse/public/v3</span>
            <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#inverse_testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
        </li>
        </p>
        <p>
          <li>MainNet:<br/>
-           <span id="usdt_mainnet_address">USDT Perpetual: wss://stream.bybit.com/contract/usdt/public/v3</span>
+           <span id="usdt_mainnet_address">USDT Perpetual: wss://stream.mufex.com/contract/usdt/public/v3</span>
            <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#usdt_mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
            <br/>
            <span id="inverse_mainnet_address">inverse Perpetual: wss://stream.bytick.com/contract/inverse/public/v3</span>
@@ -1827,8 +1827,8 @@ en:
   spot_websocket_endpoints_aside: |
     <b>Note that the following endpoints only apply to <i>Spot</i></b>. To listen to other websockets, go to:
     <ul>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/inverse/#t-websocketauthentication">Inverse Perpetual/Futures</a></li>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/linear/#t-websocketauthentication">USDT (Linear) Perpetual</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/inverse/#t-websocketauthentication">Inverse Perpetual/Futures</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/linear/#t-websocketauthentication">USDT (Linear) Perpetual</a></li>
     </ul>
   spot_websocket_para_endpoint: |
     Base endpoints:
@@ -1836,15 +1836,15 @@ en:
       <li>Testnet:
         <ul>
           <li>
-            Public Topics: <span id="testnet_address">wss://stream-testnet.bybit.com/spot/quote/ws/v1</span>
+            Public Topics: <span id="testnet_address">wss://stream-testnet.mufex.com/spot/quote/ws/v1</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           </li>
           <li>
-            Public Topics v2: <span id="testnet_address_2">wss://stream-testnet.bybit.com/spot/quote/ws/v2</span>
+            Public Topics v2: <span id="testnet_address_2">wss://stream-testnet.mufex.com/spot/quote/ws/v2</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           </li>
           <li>
-            Private Topics: <span id="testnet_address_3">wss://stream-testnet.bybit.com/spot/ws</span>
+            Private Topics: <span id="testnet_address_3">wss://stream-testnet.mufex.com/spot/ws</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address_3"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           </li>
         </ul>
@@ -1852,15 +1852,15 @@ en:
       <li>Mainnet:
         <ul>
           <li>
-            Public Topics: <span id="mainnet_address">wss://stream.bybit.com/spot/quote/ws/v1</span>
+            Public Topics: <span id="mainnet_address">wss://stream.mufex.com/spot/quote/ws/v1</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           </li>
           <li>
-            Public Topics v2: <span id="mainnet_address_2">wss://stream.bybit.com/spot/quote/ws/v2</span>
+            Public Topics v2: <span id="mainnet_address_2">wss://stream.mufex.com/spot/quote/ws/v2</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           </li>
           <li>
-            Private Topics: <span id="mainnet_address_3">wss://stream.bybit.com/spot/ws</span>
+            Private Topics: <span id="mainnet_address_3">wss://stream.mufex.com/spot/ws</span>
             <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address_3"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           </li>
         </ul>
@@ -1871,18 +1871,18 @@ en:
         <ul>
         <p>
           <li><b>Testnet</b>:</br>
-              Public Topics: <span id="testnet_address">wss://stream-testnet.bybit.com/spot/public/v3</span>
+              Public Topics: <span id="testnet_address">wss://stream-testnet.mufex.com/spot/public/v3</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
               </br>
-              Private Topics: <span id="testnet_private_address">wss://stream-testnet.bybit.com/spot/private/v3</span>
+              Private Topics: <span id="testnet_private_address">wss://stream-testnet.mufex.com/spot/private/v3</span>
               <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_private_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           </li>
           </br>
           <li><b>Mainnet</b>:</br>
-                Public Topics: <span id="mainnet_address">wss://stream.bybit.com/spot/public/v3</span>
+                Public Topics: <span id="mainnet_address">wss://stream.mufex.com/spot/public/v3</span>
                 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
                 </br>
-                Private Topics: <span id="mainnet_private_address">wss://stream.bybit.com/spot/private/v3</span>
+                Private Topics: <span id="mainnet_private_address">wss://stream.mufex.com/spot/private/v3</span>
                 <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_private_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           </li>
         </ul>
@@ -1890,7 +1890,7 @@ en:
   websocket_aside_push_trigger: Typically, websocket messages will only be pushed when a change occurs. You won't receive a snapshot message immediately upon subscription unless otherwise stated. This means that when subscribing to your <code>position</code>, you won't receive any position messages until (for example) your position size changes.
   websocket_para_methods: Authentication examples are shown in the code block.
   spot_websocket_para_methods: There are two authentication methods. Example of signing algorithms can be found here.
-  websocket_aside_signature: Example signature algorithms can be found <a href="https://github.com/bybit-exchange/api-usage-examples">here</a>.
+  websocket_aside_signature: Example signature algorithms can be found <a href="https://github.com/mufex-exchange/api-usage-examples">here</a>.
   websocket_best_practices: Due to network complexity, your may get disconnected at any time. Please follow the instructions below to ensure that you receive WebSocket messages on time:</span>
     <p>1. Keep connection alive by <a href="#t-heartbeat">sending heartbeat packet</a></p>
     <p>2. Reconnect as soon as possible if disconnected</p>
@@ -2048,7 +2048,7 @@ en:
   privatetopics: Private Topics
   ### position
   websocketposition: position
-  websocketposition_aside: Note that changes to <code>unrealised_pnl</code> won't trigger new message pushes as it changes constantly with the last traded price. You can calculate the unrealised PNL yourself by referring to <a href ="https://help.bybit.com/hc/en-us/articles/900000404726-P-L-calculations-Inverse-Contracts-">these formulas</a>.
+  websocketposition_aside: Note that changes to <code>unrealised_pnl</code> won't trigger new message pushes as it changes constantly with the last traded price. You can calculate the unrealised PNL yourself by referring to <a href ="https://help.mufex.com/hc/en-us/articles/900000404726-P-L-calculations-Inverse-Contracts-">these formulas</a>.
   ### execution
   websocketexecution: execution
   websocket_execution_aside: This topic pushes all executions <i>except</i> <a href="#exec-type-exec_type"><code>Funding</code></a>.
@@ -2071,7 +2071,7 @@ en:
   # Archive Data
   archivedata: Archive Data
   historicalmarketdata: Historical Market Data
-  archive_data_intro: You can get Bybit's <a href="https://public.bybit.com">historical market data here</a>.
+  archive_data_intro: You can get Bybit's <a href="https://public.mufex.com">historical market data here</a>.
 
 
   # Error Definitions
@@ -2343,7 +2343,7 @@ en:
   account_asset_err_38002: Unable to transfer
   account_asset_err_90001: The transfer amount is less than 0
   account_asset_err_90002: The transfer amount accuracy is greater than 8
-  account_asset_err_90003: Transfer error, please contact customer service (upper limit of transfer amount exceeded. please refer to <a href="https://help.bybit.com/hc/en-us/articles/4411635457177-Over-the-counter-OTC-Lending">Over the counter (OTC) Lending</a>)
+  account_asset_err_90003: Transfer error, please contact customer service (upper limit of transfer amount exceeded. please refer to <a href="https://help.mufex.com/hc/en-us/articles/4411635457177-Over-the-counter-OTC-Lending">Over the counter (OTC) Lending</a>)
   account_asset_err_90004: Account not found
   account_asset_err_90005: Check balance error
   account_asset_err_90006: Query transfer error
@@ -2578,7 +2578,7 @@ en:
   spotV3_err_12012: ETP_NAV_IS_ABNORMAL
   spotV3_err_12017: CROSS_MARGIN_PRE_BUY_QUOTA_FAILED
   spotV3_err_10020: CROSS_MARGIN_PRE_SELL_QUOTA_FAILED
-  spotV3_err_12019: Your account has been restricted for trades. If you have any questions, please email us at support@bybit.com
+  spotV3_err_12019: Your account has been restricted for trades. If you have any questions, please email us at support@mufex.com
   spotV3_err_12124: Order amount is too big
   spotV3_err_12031: The feature has been suspended
   spotV3_err_12105: Empty parameter.
@@ -2878,7 +2878,7 @@ en:
   err_34039: Update position status not modified.
   err_34040: Set TP/SL/TS not modified.
 
-  err_35014: <a href="https://www.bybit.com/en-US/help-center/HelpCenterKnowledge/bybitHC_Article?language=en_US&id=000001086">Open interest</code> exceeded.</a>
+  err_35014: <a href="https://www.mufex.com/en-US/help-center/HelpCenterKnowledge/bybitHC_Article?language=en_US&id=000001086">Open interest</code> exceeded.</a>
 
   err_37001: Both side positions tp_sl_mode is equal.
   err_37002: Same tp_sl_mode.
@@ -3204,8 +3204,8 @@ en:
 
   ### Linear Cancel Active Order
   linear_row_comment_qty: Order quantity in cryptocurrency
-  linear_row_comment_reduceOnly: <a href="https://help.bybit.com/hc/en-us/articles/360039260574-What-is-a-reduce-only-order-"> What is a reduce-only order?</a> True means your position can only reduce in size if this order is triggered. When <code>reduce_only</code> is true, take profit/stop loss cannot be set
-  linear_row_comment_closeOnTrigger: <a href="https://help.bybit.com/hc/en-us/articles/360039260534-What-is-a-close-on-trigger-Order-">  What is a close on trigger order?</a> For a closing order. It can only reduce your position, not increase it. If the account has insufficient available balance when the closing order is triggered, then other active orders of similar contracts will be cancelled or reduced. It can be used to ensure your stop loss reduces your position regardless of current available margin.
+  linear_row_comment_reduceOnly: <a href="https://help.mufex.com/hc/en-us/articles/360039260574-What-is-a-reduce-only-order-"> What is a reduce-only order?</a> True means your position can only reduce in size if this order is triggered. When <code>reduce_only</code> is true, take profit/stop loss cannot be set
+  linear_row_comment_closeOnTrigger: <a href="https://help.mufex.com/hc/en-us/articles/360039260534-What-is-a-close-on-trigger-Order-">  What is a close on trigger order?</a> For a closing order. It can only reduce your position, not increase it. If the account has insufficient available balance when the closing order is triggered, then other active orders of similar contracts will be cancelled or reduced. It can be used to ensure your stop loss reduces your position regardless of current available margin.
   placeactive: Place Active Order
   placeactive_notice_v3: Do not use the duplicate <b>orderLinkId</b> in normal order & TP/SL order
   linear_account_para_placeActive: |
@@ -3220,11 +3220,11 @@ en:
   linear_row_comment_stopPx: Trigger price. If you're expecting the price to rise to trigger your conditional order, make sure stop_px > max(market price, base_price) else, stop_px < min(market price, base_price)
 
   setautoaddmargin: Set Auto Add Margin
-  linear_account_para_setAutoAddMargin: Set auto add margin, or <a href="https://help.bybit.com/hc/en-us/articles/900000394403-Introduction-to-Auto-Margin-Replenishment-USDT-Contract-">Auto-Margin Replenishment</a>.
+  linear_account_para_setAutoAddMargin: Set auto add margin, or <a href="https://help.mufex.com/hc/en-us/articles/900000394403-Introduction-to-Auto-Margin-Replenishment-USDT-Contract-">Auto-Margin Replenishment</a>.
   linear_row_comment_set_auto_margin: Auto add margin button
 
   linear_account_para_setLeverage: Set Leverage
-  linear_row_comment_leverage: Must be greater than 0 and less than the <a href="https://help.bybit.com/hc/en-us/articles/360039749753-What-is-Risk-Limit-What-effect-does-the-Risk-Limit-have-on-Margin-Inverse-Contract-">risk limit leverage</a>.
+  linear_row_comment_leverage: Must be greater than 0 and less than the <a href="https://help.mufex.com/hc/en-us/articles/360039749753-What-is-Risk-Limit-What-effect-does-the-Risk-Limit-have-on-Margin-Inverse-Contract-">risk limit leverage</a>.
   queryfeerate: Query Trading Fee Rate
   marginswitch: Cross/Isolated Margin Switch
   dv_marginswitch: Switch Cross/Isolated Margin
@@ -3278,7 +3278,7 @@ en:
 
   row_comment_positionmode: |
     Position Mode. <code>0</code><span>:</span> One-Way Mode; <code>3</code><span>:</span> Hedge Mode
-  futures_row_comment_leverage: Must be greater than 0 and less than the <a href="https://help.bybit.com/hc/en-us/articles/360039749753-What-is-Risk-Limit-What-effect-does-the-Risk-Limit-have-on-Margin-Inverse-Contract-">risk limit leverage</a>.
+  futures_row_comment_leverage: Must be greater than 0 and less than the <a href="https://help.mufex.com/hc/en-us/articles/360039749753-What-is-Risk-Limit-What-effect-does-the-Risk-Limit-have-on-Margin-Inverse-Contract-">risk limit leverage</a>.
   inverse_row_comment_leverage: When switching from cross to isolated, the value of <code>buy_leverage</code> must be equal to <code>sell_leverage</code>.
   futures_account_para_switchIsolated: Switch Cross/Isolated; must set leverage value when switching from Cross to Isolated
   futures_row_comment_switch_isolated: Cross/Isolated<span>:</span> true is Isolated; false is Cross
@@ -3287,26 +3287,26 @@ en:
   linear_websocket_endpoints_aside: |
     <b>Note that the following endpoints only apply to <i>USDT (Linear) Perpetual</i></b>. To listen to other websockets, go to:
     <ul>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/inverse/#t-websocketauthentication">Inverse Perpetual/Futures</a></li>
-      <li><a href="https://bybit-exchange.github.io/docs-legacy/spot/v3/#t-websocketauthentication">Spot</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/inverse/#t-websocketauthentication">Inverse Perpetual/Futures</a></li>
+      <li><a href="https://mufex-exchange.github.io/docs-legacy/spot/v3/#t-websocketauthentication">Spot</a></li>
     </ul>
   linear_websocket_para_endpoint: |
     Base endpoints:
     <ul>
     <p>
       <li>Testnet public:
-        <span id="testnet_public_address">wss://stream-testnet.bybit.com/realtime_public</span>
+        <span id="testnet_public_address">wss://stream-testnet.mufex.com/realtime_public</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_public_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
       <li>Testnet private:
-        <span id="testnet_private_address">wss://stream-testnet.bybit.com/realtime_private</span>
+        <span id="testnet_private_address">wss://stream-testnet.mufex.com/realtime_private</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_private_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
       </li>
     </p>
     <p>
       <li>Mainnet public (both endpoints are available):<br/>
         <ul>
-        <li><span id="mainnet_public_address">wss://stream.bybit.com/realtime_public</span>
+        <li><span id="mainnet_public_address">wss://stream.mufex.com/realtime_public</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_public_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
         <li><span id="mainnet_public_address_2">wss://stream.bytick.com/realtime_public</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_public_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
@@ -3316,7 +3316,7 @@ en:
     <p>
       <li>Mainnet private (both endpoints are available):<br/>
         <ul>
-        <li><span id="mainnet_private_address">wss://stream.bybit.com/realtime_private</span>
+        <li><span id="mainnet_private_address">wss://stream.mufex.com/realtime_private</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_private_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
         <li><span id="mainnet_private_address_2">wss://stream.bytick.com/realtime_private</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_private_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
@@ -3534,7 +3534,7 @@ en:
     Replaced by: <code>/v2/private/funding/prev-funding</code>
   restapi_update_20201231_9_9: |
     Replaced by: <code>/v2/private/funding/predicted-funding</code>
-  restapi_update_20210201_0_1: Upgrade <b>Tiered Margin</b> to <a href="https://help.bybit.com/hc/en-us/articles/900000170023-Risk-Limit-USDT-Contract-">Risk Limit</a>, add below endpoint<span>:</span>
+  restapi_update_20210201_0_1: Upgrade <b>Tiered Margin</b> to <a href="https://help.mufex.com/hc/en-us/articles/900000170023-Risk-Limit-USDT-Contract-">Risk Limit</a>, add below endpoint<span>:</span>
 
   restapi_update_20210125_0: <code>/v2/private/funding/prev-funding-rate</code> - <b>Not recommended</b>
   restapi_update_20210125_0_1: |
@@ -3601,7 +3601,7 @@ en:
   restapi_update_20210315: Prior to December 31, 2020, order price of a market order was returned as the last traded price as of the moment of order placement. On and after December 31, 2020, order price of a market order is returned as a revised limit price. For more information, please refer to  <a href="#t-activeorders">description of market order</a>.
   restapi_update_20210402: Add comment of errcode 10016,10018,30074,30075
   linear_restapi_update_20210402: Add comment of errcode 10016,10018,130145
-  restapi_update_20210407: Fix value of <code>price</code> of <a href="#t-query_liqrecords">Liquidated Orders</a> from <code>liq_price</code> to <code>bust_price</code>, you can find more about liquidation <a href="https://help.bybit.com/hc/en-us/articles/360039261474-Liquidation-process-Inverse-Contract-">here</a>
+  restapi_update_20210407: Fix value of <code>price</code> of <a href="#t-query_liqrecords">Liquidated Orders</a> from <code>liq_price</code> to <code>bust_price</code>, you can find more about liquidation <a href="https://help.mufex.com/hc/en-us/articles/360039261474-Liquidation-process-Inverse-Contract-">here</a>
   restapi_update_20210414_1: Add <code>position_idx</code> for <a href="#t-getcond">Get Conditional Order</a>,<a href="#t-querycond">Query Conditional Order (real-time)</a>,<a href="#t-getactive">Get Active Order</a>,<a href="#t-queryactive">Query Active Order (real-time)</a>
   restapi_update_20210414_2: Fix data of position list when request without request parameter <code>symbol</code> if the position is under both side mode
   restapi_update_20210415: Fix value of <code>used_margin, order_margin, position_margin, occ_closing_fee, unrealised_pnl</code> of <a href="#t-balance">Get Wallet Balance</a> endpoint not contains Inverse Futures positions
@@ -3631,7 +3631,7 @@ en:
   restapi_update_20210617_1: <code>is_isolated</code> illustrates if position is Isolated Margin or Cross Margin
   restapi_update_20210617_2: Deprecate to use <code>auto_add_margin</code> to determine if position is Isolated Margin or Cross Margin
   restapi_update_20210617_3: Not recommend to use <a href="#t-setleverage">Set Leverage</a> endpoint switch Isolated Margin or Cross Margin
-  restapi_update_20210618_1: After June 24, 2021 do not use <code>leverage</code> to determine if position is Isolated Margin or Cross Margin. <code>leverage</code> must be greater than 0 and less than the <a href="https://help.bybit.com/hc/en-us/articles/360039749753-What-is-Risk-Limit-What-effect-does-the-Risk-Limit-have-on-Margin-Inverse-Contract-">risk limit leverage</a>.
+  restapi_update_20210618_1: After June 24, 2021 do not use <code>leverage</code> to determine if position is Isolated Margin or Cross Margin. <code>leverage</code> must be greater than 0 and less than the <a href="https://help.mufex.com/hc/en-us/articles/360039749753-What-is-Risk-Limit-What-effect-does-the-Risk-Limit-have-on-Margin-Inverse-Contract-">risk limit leverage</a>.
   restapi_update_20210712: Optimize the input and output parameters of some interfaces
   restapi_update_20220314: Add <code>m</code> (is maker) to the <code>ticketInfo</code> topic
   restapi_update_20210823: |
@@ -3650,8 +3650,8 @@ en:
 
   markpricekline: Query Mark Price Kline
   dv_markpricekline: Get Mark Price Kline
-  linear_query_mark_price_kline: Query mark price kline (like <a href="#t-querykline">Query Kline</a> but for <a href="https://help.bybit.com/hc/en-us/articles/360039261074-What-is-Dual-Price-mechanism-">mark price</a>).
-  linear_query_mark_price_kline_v3: Query mark price kline (like <a href="#t-dv_querykline">Query Kline</a> but for <a href="https://help.bybit.com/hc/en-us/articles/360039261074-What-is-Dual-Price-mechanism-">mark price</a>).
+  linear_query_mark_price_kline: Query mark price kline (like <a href="#t-querykline">Query Kline</a> but for <a href="https://help.mufex.com/hc/en-us/articles/360039261074-What-is-Dual-Price-mechanism-">mark price</a>).
+  linear_query_mark_price_kline_v3: Query mark price kline (like <a href="#t-dv_querykline">Query Kline</a> but for <a href="https://help.mufex.com/hc/en-us/articles/360039261074-What-is-Dual-Price-mechanism-">mark price</a>).
   linear_resp_field_last_exec_price: Last execution price
   linear_resp_field_cum_exec_qty: Cumulative qty of trading
   linear_resp_field_cum_exec_value: Cumulative value of trading
@@ -3676,8 +3676,8 @@ en:
   linear_resp_field_fill_count: The number of fills in a single order
   linear_row_comment_recent_trading_records_limit: Number of results. Default 500; max 1000
 
-  inverse_query_index_price_kline: Index price kline. Tracks BTC spot prices, with a frequency of every second (learn more <a href="https://www.bybit.com/app/contracts">here</a>).
-  inverse_query_premium_indices_kline: Premium index kline. Tracks the premium / discount of BTC perpetual contracts relative to the mark price per minute (learn more <a href="https://www.bybit.com/app/contracts">here</a>).
+  inverse_query_index_price_kline: Index price kline. Tracks BTC spot prices, with a frequency of every second (learn more <a href="https://www.mufex.com/app/contracts">here</a>).
+  inverse_query_premium_indices_kline: Premium index kline. Tracks the premium / discount of BTC perpetual contracts relative to the mark price per minute (learn more <a href="https://www.mufex.com/app/contracts">here</a>).
 
   linear_testnet_only: testnet only
 
@@ -3703,7 +3703,7 @@ en:
   spotAccountId: Account ID
   spotExchangeId: Exchange ID
   spotOrderLinkId: User-generated order ID
-  spotv3_orderCategory: Order category. <code>0</code>：normal order by default; <code>1</code>：<a href="https://www.bybit.com/en-US/help-center/bybitHC_Article?language=us_EN&id=000001736">TP/SL order</a>, <b>Required</b> for TP/SL order.
+  spotv3_orderCategory: Order category. <code>0</code>：normal order by default; <code>1</code>：<a href="https://www.mufex.com/en-US/help-center/bybitHC_Article?language=us_EN&id=000001736">TP/SL order</a>, <b>Required</b> for TP/SL order.
   spotv3_triggerPrice: Trigger price
   spot_Alias: Alias
   spotBaseCurrency: Base currency
@@ -3721,7 +3721,7 @@ en:
   spot_trading_symbol_comment: You can get all symbols with the <a href="#t-spot_querysymbol">Query Symbol</a> endpoint.
   spotV3_trading_symbol_comment: You can get all symbols with the <a href="#t-getsymbols">Query Symbol</a> endpoint.
   spotSymbol: Name of the trading pair
-  spotId: Irrelevant for API usage. This field reflects the "Transaction ID" from the <a href="https://www.bybit.com/user/assets/order/spot-history/active">Trade History</a> section of the website
+  spotId: Irrelevant for API usage. This field reflects the "Transaction ID" from the <a href="https://www.mufex.com/user/assets/order/spot-history/active">Trade History</a> section of the website
   spotQty: Order quantity
   spotQtyPlaceOrder: |
     Order quantity (<b>for market orders: when <code>side</code> is <code>Buy</code>, this is in the quote currency. Otherwise, qty is in the base currency. For example, on BTCUSDT a <code>Buy</code> order is in USDT, otherwise it's in BTC.</b> For limit orders, the qty is always in the base currency.)
@@ -3969,7 +3969,7 @@ en:
   spot_websocket_lt_nav_desc_v1: Leveraged Token Net Value Push. Pushes data at a frequency of 300ms. Message received with a maximum delay of 400ms.
   spot_websocket_orderbook_delta_desc_v1: |
     <p>Changes (if any) in the bid–ask spread of the order book will be pushed. The first message pushes a depth of 200 per side. The following messages act as delta messages, which represent updates to the order book relative to the last response.</p>
-    <p>For a Python example of the logic to maintain a local order book with this topic, see <a href="https://github.com/bybit-exchange/pybit/blob/8a647208dbdce1519de3fbce172d3dcf2141ccaf/pybit/__init__.py#L2279">here</a>.</p>
+    <p>For a Python example of the logic to maintain a local order book with this topic, see <a href="https://github.com/mufex-exchange/pybit/blob/8a647208dbdce1519de3fbce172d3dcf2141ccaf/pybit/__init__.py#L2279">here</a>.</p>
     <p>If the quantity=0, it indicates that there are no longer any orders at this price level. If the quantity>0, the quantity for this price has changed.</p>
     <p>Assume the response includes the following:</p>
     <p>&nbsp;&nbsp;> ["0.00181860", "155.92000000"]// price, quantity</p>
@@ -4503,14 +4503,14 @@ en:
     <p>
       <li>Testnet Public:
         <ul>
-          <li><span id="testnet_option_public_address">wss://stream-testnet.bybit.com/trade/option/usdc/public/v1</span>
+          <li><span id="testnet_option_public_address">wss://stream-testnet.mufex.com/trade/option/usdc/public/v1</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_option_public_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
         </ul>
       </li>
       <li>
         Testnet Private:
         <ul>
-          <li><span id="testnet_option_private_address">wss://stream-testnet.bybit.com/trade/option/usdc/private/v1</span>
+          <li><span id="testnet_option_private_address">wss://stream-testnet.mufex.com/trade/option/usdc/private/v1</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_option_private_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
         </ul>
       </li>
@@ -4518,7 +4518,7 @@ en:
     <p>
       <li>Mainnet public (both endpoints are available):<br/>
         <ul>
-          <li><span id="mainnet_option_public_address">wss://stream.bybit.com/trade/option/usdc/public/v1</span>
+          <li><span id="mainnet_option_public_address">wss://stream.mufex.com/trade/option/usdc/public/v1</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_option_public_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
           <li><span id="mainnet_option_public_address_2">wss://stream.bytick.com/trade/option/usdc/public/v1</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_option_public_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
@@ -4528,7 +4528,7 @@ en:
     <p>
       <li>Mainnet private (both endpoints are available):<br/>
         <ul>
-          <li><span id="mainnet_option_private_address">wss://stream.bybit.com/trade/option/usdc/private/v1</span>
+          <li><span id="mainnet_option_private_address">wss://stream.mufex.com/trade/option/usdc/private/v1</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_option_private_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           <li><span id="mainnet_option_private_address_2">wss://stream.bytick.com/trade/option/usdc/private/v1</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_option_private_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
@@ -5052,14 +5052,14 @@ en:
     <p>
       <li>Testnet Public:
         <ul>
-          <li><span id="testnet_address">wss://stream-testnet.bybit.com/perpetual/ws/v1/realtime_public</span>
+          <li><span id="testnet_address">wss://stream-testnet.mufex.com/perpetual/ws/v1/realtime_public</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
         </ul>
       </li>
       <li>
         Testnet Private:
         <ul>
-          <li><span id="testnet_address_2">wss://stream-testnet.bybit.com/trade/option/usdc/private/v1</span>
+          <li><span id="testnet_address_2">wss://stream-testnet.mufex.com/trade/option/usdc/private/v1</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#testnet_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
         </ul>
       </li>
@@ -5067,7 +5067,7 @@ en:
     <p>
       <li>Mainnet public (both endpoints are available):<br/>
         <ul>
-          <li><span id="mainnet_perpetual_public_address">wss://stream.bybit.com/perpetual/ws/v1/realtime_public</span>
+          <li><span id="mainnet_perpetual_public_address">wss://stream.mufex.com/perpetual/ws/v1/realtime_public</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_perpetual_public_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
           <li><span id="mainnet_perpetual_public_address_2">wss://stream.bytick.com/perpetual/ws/v1/realtime_public</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_perpetual_public_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
@@ -5077,7 +5077,7 @@ en:
     <p>
       <li>Mainnet private (both endpoints are available):<br/>
         <ul>
-          <li><span id="mainnet_perpetual_private_address">wss://stream.bybit.com/trade/option/usdc/private/v1</span>
+          <li><span id="mainnet_perpetual_private_address">wss://stream.mufex.com/trade/option/usdc/private/v1</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_perpetual_private_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
           <li><span id="mainnet_perpetual_private_address_2">wss://stream.bytick.com/trade/option/usdc/private/v1</span>
           <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#mainnet_perpetual_private_address_2"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button></li>
@@ -5102,7 +5102,7 @@ en:
     <p>and new orders tagged as MMP will be rejected for a specific duration — known as the frozen period — so that MM can reassess the market and modify the quotes.</p>
   enableMmp: How to Enable MMP
   enableMmpDesc: |
-    <p>Send an email to Bybit (financial.inst@bybit.com) or contact your business development (BD) manager to apply for MMP.</p>
+    <p>Send an email to Bybit (financial.inst@mufex.com) or contact your business development (BD) manager to apply for MMP.</p>
   setUpMmp: How to Set Up MMP
   setUpMmpDesc: |
     <p>The configuration parameters are as follows</p>
@@ -5208,7 +5208,7 @@ en:
 
   #copytrade
   copy_trading: Copy Trading
-  copy_trading_user_notice: Bybit's Copy Trading API is only available to <a href="https://www.bybit.com/en-US/help-center/bybitHC_Article?language=en_US&id=000001554">principal traders</a>. Currently, there is no API for followers.
+  copy_trading_user_notice: Bybit's Copy Trading API is only available to <a href="https://www.mufex.com/en-US/help-center/bybitHC_Article?language=en_US&id=000001554">principal traders</a>. Currently, there is no API for followers.
   ct_symbol_list: Symbol List
   ct_order: Order
   ct_order_list: Order List
@@ -5247,7 +5247,7 @@ en:
   spotCrossMarginTradingEndpoint: |
     Cross Margin Trading Endpoints support below currency:
   spotCrossMarginCoins: |
-    You could find all supported coins of margin trade <a href="https://www.bybit.com/en-US/trade/spot/leverage/vip">here</a>.
+    You could find all supported coins of margin trade <a href="https://www.mufex.com/en-US/trade/spot/leverage/vip">here</a>.
   spotCurrency: currency
   spotBorrowQty: Amount To Borrow
   spotResult: Loan order id
@@ -5525,11 +5525,11 @@ en:
     <ul>
     <p>
     <li><b>Mainnet</b>:<br/>
-        Contract account: <span id="ca_mainnet_address">wss://stream.bybit.com/contract/private</span>
+        Contract account: <span id="ca_mainnet_address">wss://stream.mufex.com/contract/private</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#ca_mainnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
     </li>
     <li><b>Testnet</b>:<br/>
-        Contract account: <span id="ca_testnet_address">wss://stream-testnet.bybit.com/contract/private</span>
+        Contract account: <span id="ca_testnet_address">wss://stream-testnet.mufex.com/contract/private</span>
         <button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#ca_testnet_address"><img src="/images/copy_to_clipboard.png" height=15 width=15></img></button>
     </li>
      </p>
@@ -5541,7 +5541,7 @@ en:
     Once subscribe successfully, you will receive a snapshot. The data is ordered by order price, which from lowest buy order to highest sell order.
     Websocket will keep pushing delta message when orderbook is changed. If you receive a new snapshot data, it's necessary to reset your local orderbook.<br><br>
     <b>type</b>: <code>snapshot</code>=Full orderbook, <code>delta</code>=delta orderbook<br>
-    If there is a problem in bybit end, it will re-send a snapshot, which is promised the latest and accurate.<br><br>
+    If there is a problem in mufex end, it will re-send a snapshot, which is promised the latest and accurate.<br><br>
     <b>Linear perpetual:</b><br/>
     1 level data, push frequency: <b>10ms</b> <br>
     50 level data, push frequency: <b>20ms</b> <br>
@@ -5561,7 +5561,7 @@ en:
     Once subscribe successfully, you will receive a snapshot. The data is ordered by order price, which bids is from highest to lowest and asks is from lowest to highest.
     Websocket will keep pushing delta message when orderbook is changed. If you receive a new snapshot data, it's necessary to reset your local orderbook.<br><br>
     <b>type</b>: <code>snapshot</code>=Full orderbook, <code>delta</code>=delta orderbook<br> <code>reset</code>=reset orderbook<br>
-    If there is a problem in bybit end, it will re-send a snapshot, which is promised the latest and accurate.<br><br>
+    If there is a problem in mufex end, it will re-send a snapshot, which is promised the latest and accurate.<br><br>
     25 level data, push frequency: <b>20ms</b> <br>
     200 level data, push frequency: <b>100ms</b> <br>
   
@@ -5572,7 +5572,7 @@ en:
 
   predicatedFundingRate_v3: Predicated funding rate. usdt perp, inverse perp and inverse futures is <code>""</code>
   row_comment_resp_next_funding_time_v3: Next settlement time of capital cost (ms). Inverse futures is <code>""</code>
-  row_comment_resp_funding_rate_v3: <a href="https://help.bybit.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding rate</a>. Inverse futures is <code>""</code>
+  row_comment_resp_funding_rate_v3: <a href="https://help.mufex.com/hc/en-us/articles/360039261114-What-is-funding-rate-and-predicted-rate-">Funding rate</a>. Inverse futures is <code>""</code>
   futuresResponseParameters: Future response parameters
   optionResponseParameters: Option response parameters
   codequote_option: Option snapshot data
@@ -5626,7 +5626,7 @@ en:
     Auto add margin mode. <code>0</code>: turn off, <code>1</code>: turn on. It is invalid under <b>cross margin</b> mode
   contract_position_positionBalance: Position balance
   contract_position_liqPrice: Liquidation price
-  contract_position_bustPrice: <a href="https://help.bybit.com/hc/en-us/articles/360039749813-What-is-Bankruptcy-Price-Inverse-Contract-">Bankruptcy price</a>
+  contract_position_bustPrice: <a href="https://help.mufex.com/hc/en-us/articles/360039749813-What-is-Bankruptcy-Price-Inverse-Contract-">Bankruptcy price</a>
   contract_websocketExecution: |
     <p><b>Instruction:</b></p>
     <p>Get the user's filled history ranked by time in ascending order.</p>
@@ -6229,10 +6229,10 @@ en:
   getDcp_dcpStatus: DCP status. <code>ON</code>, <code>OFF</code>
   getDcp_timeWindow: The time window to trigger DCP
   DCP_notice: <ul><li><a href="#t-usdc_disconnect_protection">What is DCP?</a></li><li>Only for Options trade</li></ul>
-  tax_v3_changelog_notice: This document will no longer update the Tax API, please move to <a href="https://bybit-exchange.github.io/docs/v3/intro">new API document</a>
-  spot_v3_changelog_notice: This document will no longer update the Spot V3 API, please move to <a href="https://bybit-exchange.github.io/docs/v3/intro">new API document</a>
-  copyTrading_changelog_notice: This document will no longer update the Copytrading API, please move to <a href="https://bybit-exchange.github.io/docs/v3/intro">new API document</a>
-  unified_v3_changelog_notice: This document will no longer update the Unified V3 API, please move to <a href="https://bybit-exchange.github.io/docs/v3/intro">new API document</a>
-  contract_v3_changelog_notice: This document will no longer update the Contract V3 API, please move to <a href="https://bybit-exchange.github.io/docs/v3/intro">new API document</a>
-  asset_v3_changelog_notice: This document will no longer update the Asset V3 API, please move to <a href="https://bybit-exchange.github.io/docs/v3/intro">new API document</a>
+  tax_v3_changelog_notice: This document will no longer update the Tax API, please move to <a href="https://mufex-exchange.github.io/docs/v3/intro">new API document</a>
+  spot_v3_changelog_notice: This document will no longer update the Spot V3 API, please move to <a href="https://mufex-exchange.github.io/docs/v3/intro">new API document</a>
+  copyTrading_changelog_notice: This document will no longer update the Copytrading API, please move to <a href="https://mufex-exchange.github.io/docs/v3/intro">new API document</a>
+  unified_v3_changelog_notice: This document will no longer update the Unified V3 API, please move to <a href="https://mufex-exchange.github.io/docs/v3/intro">new API document</a>
+  contract_v3_changelog_notice: This document will no longer update the Contract V3 API, please move to <a href="https://mufex-exchange.github.io/docs/v3/intro">new API document</a>
+  asset_v3_changelog_notice: This document will no longer update the Asset V3 API, please move to <a href="https://mufex-exchange.github.io/docs/v3/intro">new API document</a>
   account_withdraw_account_type: Select the wallet to be withdrawn from <ul><li><code>SPOT</code>：spot wallet (default)</li><li><code>FUND</code>：Funding wallet</li></ul>
