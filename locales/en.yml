@@ -717,7 +717,7 @@ en:
   row_parameter_ltStatus: <a href="#lt-status-status">status</a>
   row_parameter_ltOrderStatus: <a href="#lt-order-status-orderstatus">orderStatus</a>
   row_parameter_ltOrderType: <a href="#lt-order-type-ordertype">orderType</a>
-  spotServerTime: Bybit server time
+  spotServerTime: Mufex server time
 
 
   stop_order_trigger_price: If <code>stop_order_type</code> is <code>TrailingProfit</code>, this field is the trailing stop active price.
@@ -847,8 +847,8 @@ en:
       <li>However, it is possible to access your <a href="#t-assetexchangerecords">Asset Exchange Records</a> with the API.</li>
     </ul>
 
-  ## Where are Bybit's servers located?
-  faq_server_location: Where are Bybit's servers located?
+  ## Where are Mufex's servers located?
+  faq_server_location: Where are Mufex's servers located?
   faq_server_location_para: |
     AWS Singapore, <a href="https://docs-legacy.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-availability-zones">Availability Zone ID</a> apse1-az3.
 
@@ -968,13 +968,13 @@ en:
       <li><b>sign</b> - a signature derived from the request's parameters</li>
     </ul>
   auth_aside_timestamp: |
-    Please make sure that the timestamp parameter adheres to the following rule: server_time - recv_window <= timestamp < server_time + 1000; server_time stands for Bybit server time, which can be queried via the <a href="#t-servertime">Server Time</a> endpoint.
+    Please make sure that the timestamp parameter adheres to the following rule: server_time - recv_window <= timestamp < server_time + 1000; server_time stands for Mufex server time, which can be queried via the <a href="#t-servertime">Server Time</a> endpoint.
   auth_para_recv: |
     <p>We also provide <code>recv_window</code> (unit in millisecond and default value is 5,000) to specify how long an HTTP request is valid. It is also used to prevent replay attacks.</p>
     <p>A smaller <code>recv_window</code> is more secure, but your request may fail if the transmission time is greater than your <code>recv_window</code>.</p>
     <p>Please make sure that your <code>timestamp</code> is in sync with our server time. You can use the <a href=#t-servertime>Server Time</a> endpoint.</p>
   spot_auth_aside_timestamp: |
-    Please make sure that the timestamp parameter adheres to the following rule: serverTime - recvWindow <= timestamp < serverTime + 1000; serverTime stands for Bybit server time, which can be queried via the <a href="#t-servertime">Server Time</a> endpoint.
+    Please make sure that the timestamp parameter adheres to the following rule: serverTime - recvWindow <= timestamp < serverTime + 1000; serverTime stands for Mufex server time, which can be queried via the <a href="#t-servertime">Server Time</a> endpoint.
 
   spot_auth_para_recv: |
     <p>We also provide <code>recvWindow</code> (unit in millisecond and default value is 5,000) to specify how long an HTTP request is valid. It is also used to prevent replay attacks.</p>
@@ -1052,7 +1052,7 @@ en:
   ### Public Trading Records
   publictradingrecords: Public Trading Records
   dv_publictradingrecords: Get Public Trading History
-  market_para_records: Get recent trades. You can find a complete history of trades on Bybit <a href="https://public.mufex.com">here</a>.
+  market_para_records: Get recent trades. You can find a complete history of trades on Mufex <a href="https://public.mufex.com">here</a>.
   ### Get the Last Funding Rate
   fundingRate: Get the Last Funding Rate
   market_para_fundingRate: The funding rate is generated every 8 hours at 00:00 UTC, 08:00 UTC and 16:00 UTC. For example, if a request is sent at 12:00 UTC, the funding rate generated earlier that day at 08:00 UTC will be sent.
@@ -1070,17 +1070,17 @@ en:
   market_para_advanceddata: Get Advanced Data.
   #### Market Funding Rate
   marketfundingrate: Get Funding Rate
-  market_para_marketfundingrate: Get Bybit's recent funding rates.
+  market_para_marketfundingrate: Get Mufex's recent funding rates.
   #### Market Open Interest
   marketopeninterest: Open Interest
   dv_marketopeninterest: Get Open Interest
   market_para_marketopeninterest: Gets the total amount of unsettled contracts. In other words, the total number of contracts held in open positions.
   #### Market Account Ratio
   marketaccountratio: Long-Short Ratio
-  market_para_marketaccountratio: Gets the Bybit user accounts' long-short ratio.
+  market_para_marketaccountratio: Gets the Mufex user accounts' long-short ratio.
   #### Market Account Ratio
   marketeliteratio: Top Trader Account Long-Empty Ratio
-  market_para_marketeliteratio: Gets the Bybit top trader account long-empty ratio
+  market_para_marketeliteratio: Gets the Mufex top trader account long-empty ratio
   #### Market Big Deal
   marketbigdeal: Latest Big Deal
   market_para_marketbigdeal: |
@@ -1098,7 +1098,7 @@ en:
   activeorders: Active Orders
   account_para_placeActive: |
     <p>Market price: A traditional market price order which will be filled at the best available price. <code>price</code> is not required for this type of order.
-    <b>To protect market order from excessive slippage, Bybit converts a market order into a limit order with a spread. A market buy order is converted into a limit order at a higher than best ask price; a market sell order is converted into a limit order at a lower than best bid price.
+    <b>To protect market order from excessive slippage, Mufex converts a market order into a limit order with a spread. A market buy order is converted into a limit order at a higher than best ask price; a market sell order is converted into a limit order at a lower than best bid price.
        The converted limit price and executed price are both available in trade history.</b>.</p>
     <p>Limit price: You can set an execution price for your order. The system will fill your order once the last traded price reaches your execution price.</p>
     <p><b>Take profit/Stop loss: You may only set a TP/SL conditional order upon opening the position. Once you hold a position, any new active order requests which contain TP/SL data will be accepted but the TP/SL data will be ignored. <code>tp_trigger_by</code>/<code>sl_trigger_by</code> default to LastPrice. Passing values to the <code>take_profit</code> or <code>stop_loss</code> parameters in this endpoint will create conditional orders managed by the system, which will be be automatically cancelled if the position is closed.</b></p>
@@ -1111,10 +1111,10 @@ en:
   account_para_placeActive_v3: |
     <p><p><b>Interface:</b></p>
     <p>Market active orders: A traditional market order, which will be filled at the current optimal price. Only when the market order is selected,
-    can the price be null! To protect the market order from serious slippage, Bybit will convert the market order into a limit order with the buy order price higher than the optimal selling price, and the sell order price lower than the optimal buying price. Both the limit price and the executed price can be queried through the user's transaction history interface.</p>
+    can the price be null! To protect the market order from serious slippage, Mufex will convert the market order into a limit order with the buy order price higher than the optimal selling price, and the sell order price lower than the optimal buying price. Both the limit price and the executed price can be queried through the user's transaction history interface.</p>
     <p>Limit active orders: You can set an executed price for your order. When the market price touches the price you set, the system will fill the order for you.</p>
     <p></b>TP/SL: You can only set TP/SL conditional orders while opening positions. Once you have held positions, the TP/SL linked when you submit active orders will not take effect.</b></p>
-    <p>Order quantity: The quantity of perpetual contracts you are going to buy/sell. For the order quantity, Bybit only supports positive integers at present.</p>
+    <p>Order quantity: The quantity of perpetual contracts you are going to buy/sell. For the order quantity, Mufex only supports positive integers at present.</p>
     <p>Order price: If you are going to place a limit order, this parameter is required. When you have no position, the long order price should be higher than 10% of the market price and lower than 1 million. When you have positions, the price should be higher than the liquidation price. For the minimum unit of the price change, please refer to the priceFilter field in the <a href="#t-dv_instrhead">instrumentInfo</a> interface response.</p>
     <p>Custom conditional order ID: You can customize the active order ID. We can link this ID to the order ID in the system. Once the active order is successfully created, we will send the unique order ID in the system to you. Then, you can use this order ID to cancel active orders. Meanwhile, your customized order ID should be no longer than 36 characters and should be unique.</p>
     <p>Each account can hold a maximum of 500 active orders simultaneously. This is contract-specific, so the following situation is allowed: The same account can hold 300 BTCUSD active orders and 280 ETHUSD active orders at the same time.</p>
@@ -1308,7 +1308,7 @@ en:
     <p>Market price conditional order: A traditional market price order, will be filled at the best available price. <code>price</code> is not required for this type of order.</p>
     <p>Limit price conditional order: You can set an execution price for your order. Only when the last traded price reaches the order price will the system will fill your order.</p>
     <p>Take profit/Stop loss: You may only set a take-profit/stop-loss conditional order upon opening the position. Once you hold a position, the take profit and stop loss information you sent when placing an order will no longer be valid.</p>
-    <p>Order quantity: This parameter indicates the quantity of perpetual contracts you want to buy or sell, currently Bybit only support order quantity in an integer.</p>
+    <p>Order quantity: This parameter indicates the quantity of perpetual contracts you want to buy or sell, currently Mufex only support order quantity in an integer.</p>
     <p>Order price: If it is a stop order, this parameter is required. When there is no position, the price should be higher than 10% of market price and less than 1 million. For the minimum unit of price movement, please refer to the price_filter field in the <a href="#t-querysymbol">Query Symbol</a> endpoint.</p>
     <p>Conditional order trigger price: You may set a trigger price for your conditional order. conditional order will not enter the order book until the last price hits the trigger price. When last price hits trigger price: 1) your limit conditional order will enter order book, and wait to be executed; 2) your market conditional order will be executed immediately at the best available market price.</p>
     <p>Customize conditional order ID: You may customize order IDs for active orders. We will link it to the system order ID , and return the unique system order ID to you after the active order is created successfully. You may use this order ID to cancel your active order. The customized order ID is asked to be unique, with a maximum length of 36 characters.</p>
@@ -1417,7 +1417,7 @@ en:
   lcp: LCP Info
   account_para_lcp: |
     <p>Get user's LCP (data refreshes once an hour). Only supports inverse perpetual at present.</p>
-    <p>See <a href="#t-liquidity">Understanding Bybit's Liquidity System</a> to learn more.
+    <p>See <a href="#t-liquidity">Understanding Mufex's Liquidity System</a> to learn more.
 
   # Wallet Data Endpoints
   wallet: Wallet Data Endpoints
@@ -1477,10 +1477,10 @@ en:
   api_para: The following API data endpoints do not require authentication.
   ### Server time
   servertime: Server Time
-  api_para_time: Get Bybit server time.
+  api_para_time: Get Mufex server time.
   ### Announcement
   announcement: Announcement
-  api_para_announcement: Get Bybit OpenAPI announcements in the last 30 days in reverse order.
+  api_para_announcement: Get Mufex OpenAPI announcements in the last 30 days in reverse order.
 
   # API Rate Limits
   ratelimits: Rate Limits
@@ -1492,7 +1492,7 @@ en:
     <aside class="warning">
     If you receive an <b>HTTP 403</b> (Access Denied) response, your IP has been either temporarily or permanently banned. <b>You should immediately review the below guidelines to ensure your application does not continue to violate the limit.</b> If you are still banned after 30 minutes, you likely have a permanent ban.
     </aside>
-    <p>Bybit has different IP frequency limits depending on the request method. We do not recommend running your application at the very edge of these limits in case abnormal network activity results in an unexpected violation.</p>
+    <p>Mufex has different IP frequency limits depending on the request method. We do not recommend running your application at the very edge of these limits in case abnormal network activity results in an unexpected violation.</p>
     <ul>
     <li>
       <code>GET</code> & <code>DELETE</code> methods (shared):
@@ -1541,7 +1541,7 @@ en:
     <p>After violating the limit your IP will be banned for a set period of time (usually 30 minutes). Continually violating the limit will result in a permanent ban. We cannot undo permanent bans or shorten temporary bans.</p>
   ip_rate_para_understanding_testnet: |
     <p>The IP limits are shared across all endpoints: futures, spot, and account asset.</p>
-    <p>Bybit has different IP frequency limits depending on the request method. We do not recommend running your application at the very edge of these limits in case abnormal network activity results in an unexpected violation.</p>
+    <p>Mufex has different IP frequency limits depending on the request method. We do not recommend running your application at the very edge of these limits in case abnormal network activity results in an unexpected violation.</p>
     <ul>
     <li>
       <code>GET</code> & <code>DELETE</code> methods (shared):
@@ -1560,7 +1560,7 @@ en:
     </ul>
 
   spot_ip_rate_para_understanding: |
-        <p>Bybit has rate limits based on IP which is 200 per second</p>
+        <p>Mufex has rate limits based on IP which is 200 per second</p>
   ### Account rate limit
   understandingratelimits: API Rate Limit
   rate_para_understanding: |
@@ -1611,11 +1611,11 @@ en:
   raisemylimit: How to Increase API Limits
   rate_para_raise: |
     <ul>
-    <li>Please refer to <a href="#t-liquidity">Understanding Bybit&#39;s Liquidity System</a> regarding how our system automatically allocates rate limits for users who place over 2,000 orders per day.</li>
+    <li>Please refer to <a href="#t-liquidity">Understanding Mufex&#39;s Liquidity System</a> regarding how our system automatically allocates rate limits for users who place over 2,000 orders per day.</li>
     <li>Please email <a href="mailto:api@mufex.com">api@mufex.com</a> with the following information. We will reply within 1-4 working days:</li>
       <ol>
         <li>Your name and your company details</li>
-        <li>Your Bybit UID or registered email, and the assets you are trading</li>
+        <li>Your Mufex UID or registered email, and the assets you are trading</li>
         <li>General description of your trading strategy and reasons for higher rate limits</li>
         <li>Screenshot of previous monthly trading volume (maker/taker) on other platforms</li>
         <li>Optional: your order history in CSV format</li>
@@ -1626,29 +1626,29 @@ en:
     Please email <a href="mailto:api@mufex.com">api@mufex.com</a> with the following information. We will reply within 1-4 working days:
       <ol>
         <li>Your name and your company details</li>
-        <li>Your Bybit UID or registered email, and the assets you are trading</li>
+        <li>Your Mufex UID or registered email, and the assets you are trading</li>
         <li>General description of your trading strategy and reasons for higher rate limits</li>
         <li>Screenshot of previous monthly trading volume (maker/taker) on other platforms</li>
         <li>Optional: your order history in CSV format</li>
       </ol>
     </ul>
-  ### Understanding Bybit's Liquidity System
-  liquidity: Understanding Bybit's Liquidity System
+  ### Understanding Mufex's Liquidity System
+  liquidity: Understanding Mufex's Liquidity System
   rate_para_liquidity: |
-    <p>Bybit uses <code>Order Fill Ratio (OFR)</code> and <code>Liquidity Contribution Points (LCP)</code> to measure customers&#39; contribution to our executable liquidity.</p>
+    <p>Mufex uses <code>Order Fill Ratio (OFR)</code> and <code>Liquidity Contribution Points (LCP)</code> to measure customers&#39; contribution to our executable liquidity.</p>
     <p>The <code>LCP</code> and <code>OFR</code> of different assets are calculated separately.</p>
   #### Order Fill Ratio (OFR) Threshold
   ofrthreshold: Order Fill Ratio (OFR) Threshold
   rate_para_threshold: |
-    If you place more than <code>2000</code> orders per day on Bybit, please make sure that your 7-day OFR is above a <code>Minimum OFR threshold</code>. Otherwise, Bybit may reduce the rate limits for your API request.
+    If you place more than <code>2000</code> orders per day on Mufex, please make sure that your 7-day OFR is above a <code>Minimum OFR threshold</code>. Otherwise, Mufex may reduce the rate limits for your API request.
   ##### Order Fill Ratio (OFR)
   ofrratio: Order Fill Ratio (OFR)
   rate_para_ratio: |
     <ul>
-    <li><code>Order Fill Ratio (OFR)</code>: <code>Orders Filled</code> to <code>Orders Submitted to Bybit</code> to Bybit.</li>
-    <li><code>Orders Submitted to Bybit</code>: any order submitted to Bybit.</li>
+    <li><code>Order Fill Ratio (OFR)</code>: <code>Orders Filled</code> to <code>Orders Submitted to Mufex</code> to Mufex.</li>
+    <li><code>Orders Submitted to Mufex</code>: any order submitted to Mufex.</li>
     <li><code>Orders Filled</code>: any order that has been filled (regardless of filled quantity).</li>
-    <li><code>OFR = (number of orders filled / number of orders submitted to Bybit)</code></li>
+    <li><code>OFR = (number of orders filled / number of orders submitted to Mufex)</code></li>
     </ul>
   ##### Order Fill Ratio Example
   ofrratioExample: Order Fill Ratio Example
@@ -1659,12 +1659,12 @@ en:
   rate_pre_ratioExampleA: |
     User A:
     Orders Filled = 2
-    Orders Submitted to Bybit = 8
+    Orders Submitted to Mufex = 8
     OFR = 2/8 = 25%
   rate_pre_ratioExampleB: |
     User B:
     Orders Filled = 1
-    Orders Submitted to Bybit = 1
+    Orders Submitted to Mufex = 1
     OFR = 1/1 = 100%
   ##### Minimum OFR Threshold
   ofrminimum: Minimum OFR Threshold
@@ -1712,7 +1712,7 @@ en:
     <ul>
     <li><code>POU</code>: The size of your orders that fall within the <code>effective price range</code> in proportion to the total size of your orders in the order book.</li>
     </ul>
-    <p>Bybit calculates the size of your orders that fall within the <code>effective price range</code> / the total size of your orders in the order book per second, and then computes the time-weighted-average of the day.</p>
+    <p>Mufex calculates the size of your orders that fall within the <code>effective price range</code> / the total size of your orders in the order book per second, and then computes the time-weighted-average of the day.</p>
   ###### POU example
   pouExample: POU Example
   rate_para_POUExample: User C bids 2000 contracts for $9995 and bids 8000 contracts for $9999, while effective price range is [9999,10002]
@@ -1727,14 +1727,14 @@ en:
     <ul>
     <li><code>POA</code>: the proportion of your orders within <code>effective price range</code> to all orders within <code>effective price range</code> in orderbook.</li>
     </ul>
-    <p>Bybit calculates your amount of orders within <code>effective price range</code> / amount of all orders within <code>effective price range</code> in orderbook, and then performs a 1-Day Time-Weighted-Average over the series of seconds rates.</p>
+    <p>Mufex calculates your amount of orders within <code>effective price range</code> / amount of all orders within <code>effective price range</code> in orderbook, and then performs a 1-Day Time-Weighted-Average over the series of seconds rates.</p>
   ### spot
   spot_poa: POA
   spot_rate_para_POA: |
     <ul>
     <li><code>POA</code>: The size of your orders that fall within the <code>effective price range</code> to the total size of orders in the order book that falls within the <code>effective price range</code>.</li>
     </ul>
-    <p>Bybit calculates the size of your orders that fall within the <code>effective price range</code> / the total size of orders in the order book that falls within the <code>effective price range</code> per second, and then computes the time-weighted-average of the day.</p>
+    <p>Mufex calculates the size of your orders that fall within the <code>effective price range</code> / the total size of orders in the order book that falls within the <code>effective price range</code> per second, and then computes the time-weighted-average of the day.</p>
   ###### POA example
   poaExample: POA example
   rate_para_POAExample: The size of user C's orders that fall within the effective price range is 8,000, while the total size of orders in the order book that fall within the effective price range is 200,000.
@@ -1743,7 +1743,7 @@ en:
     Total size of orders within effective price range = 200000
     POA = 8000 / 200000 = 0.04
   rate_aside_POAExample: Prior notice will be given via the website if we update this mechanism.
-  spot_rate_aside_POAExample: Bybit will notify all users in advance if the mechanism is updated.
+  spot_rate_aside_POAExample: Mufex will notify all users in advance if the mechanism is updated.
 
   # WebSocket Data
   websocket: WebSocket Data
@@ -2071,7 +2071,7 @@ en:
   # Archive Data
   archivedata: Archive Data
   historicalmarketdata: Historical Market Data
-  archive_data_intro: You can get Bybit's <a href="https://public.mufex.com">historical market data here</a>.
+  archive_data_intro: You can get Mufex's <a href="https://public.mufex.com">historical market data here</a>.
 
 
   # Error Definitions
@@ -2320,7 +2320,7 @@ en:
   offline: ""
 
   # Error Code
-  errors_intro: The Bybit API uses the following HTTP codes and error codes<span>:</span>
+  errors_intro: The Mufex API uses the following HTTP codes and error codes<span>:</span>
 
   http_200: Request is valid -- Your request is valid
   http_403: Access denied -- You request too many times (refer to the <a href="#t-ipratelimits">IP rate limit</a>)
@@ -2658,7 +2658,7 @@ en:
   err_6006: Repayment Failed
   err_6007: User not found
   err_6008: You haven't enabled Cross Margin Trading yet. To do so, please head to the PC trading site
-  err_6009: You haven't enabled Cross Margin Trading yet. To do so, please head to the PC trading site or the Bybit app
+  err_6009: You haven't enabled Cross Margin Trading yet. To do so, please head to the PC trading site or the Mufex app
   err_6010: Failed to locate the coins to borrow
   err_6011: Cross Margin Trading not yet supported by the selected coin
   err_6012: Pair not available
@@ -2677,7 +2677,7 @@ en:
   err_6025: Amount to borrow cannot be lower than the min. amount to borrow (per transaction)
   err_6026: Amount to borrow cannot be larger than the max. amount to borrow (per transaction)
   err_6027: Amount to borrow cannot be higher than the max. amount to borrow per user
-  err_6028: Amount to borrow has exceeded Bybit's max. amount to borrow
+  err_6028: Amount to borrow has exceeded Mufex's max. amount to borrow
   err_6029: Amount to borrow has exceeded the user's estimated max. amount to borrow
   err_6030: Query user loan info error
   err_6031: Loan precision has exceeded the maximum precision
@@ -2711,7 +2711,7 @@ en:
   cm_error_12625: Amount to borrow cannot be lower than the min. amount to borrow (per transaction)
   cm_error_12626: Amount to borrow cannot be larger than the max. amount to borrow (per transaction)
   cm_error_12627: Amount to borrow cannot be higher than the max. amount to borrow per user
-  cm_error_12628: Amount to borrow has exceeded Bybit's max. amount to borrow
+  cm_error_12628: Amount to borrow has exceeded Mufex's max. amount to borrow
   cm_error_12629: Amount to borrow has exceeded the user's estimated max. amount to borrow
   cm_error_12630: Query user loan info error
   cm_error_12631: Number of decimals has exceeded the maximum precision
@@ -4298,7 +4298,7 @@ en:
 
   withdraw_info: Withdraw
   withdraw_info_para: <ul><li>Currently we are upgrading the funding account, if your funding account has been upgraded, you can select the wallet to be withdrawn from.</li><li>If your funding account has not been upgraded, the API will still use <b>spot wallet</b> to withdraw cash, but you cannot select the wallet to be withdrawn from.</li></ul>
-  withdraw_hint: For <b>UTA</b> users, please note that Bybit will merge SPOT account into UNIFIED account (est.end of Feb), so please adjust your withdrawal logic by transferring funds to FUND account first, then call withdraw API.
+  withdraw_hint: For <b>UTA</b> users, please note that Mufex will merge SPOT account into UNIFIED account (est.end of Feb), so please adjust your withdrawal logic by transferring funds to FUND account first, then call withdraw API.
   withdraw_addr: address. Address verification whether there is a whitelist of withdrawal addresses
   withdraw_tag: Need to fill in if there is a tag
   withdraw_amount: |
@@ -4571,7 +4571,7 @@ en:
     <p>Such as delta.orderbook100.BTC-5NOV21-30000-P</p>
 
   usdc_current_24_total: |
-    <p>Fetch the transaction data on Bybit in the last 24 hours.</p>
+    <p>Fetch the transaction data on Mufex in the last 24 hours.</p>
     <p>After a successful subscription, any changes in the transaction data will be pushed in real-time or once every second. The number of pushes depends on the number of new transaction records within the time frame.</p>
     <p>Subscribe according to the dimension of the currency, such as BTC or ETH</p>
     <p>topic format:</p>
@@ -4811,14 +4811,14 @@ en:
   usdcLimitMax500: default 500
 
   websocket_aside_heartbeat_option: |
-    <p>The client needs to periodically send a "ping" to Bybit, and the Bybit server returns a heartbeat "pong" to show that the connection between the client and the server is normal. It is recommended to send at least every <b>20s</b>. WSS will actively trigger to break the connection without heartbeat "ping" received in 30s.</p>
+    <p>The client needs to periodically send a "ping" to Mufex, and the Mufex server returns a heartbeat "pong" to show that the connection between the client and the server is normal. It is recommended to send at least every <b>20s</b>. WSS will actively trigger to break the connection without heartbeat "ping" received in 30s.</p>
     <p>If the client does not receive the heartbeat feedback normally, it needs to check the network connection status and reconnect to the server.</p>
 
   usdc_disconnect_protection: Disconnection Protection
   usdc_disconnect_protection_para: ONLY VIP clients are allowed to turn on/off DCP
   websocket_aside_dcp_usdc: |
-    <p>Based on the heartbeat mechanism, Bybit provides disconnection protection function. If you need to turn it on/off, you can contact your client manager for consultation and application.</p>
-    <p>The timing starts from the first disconnection. If the Bybit server does not receive the reconnection from the client for more than <b>10 seconds</b> and resumes the heartbeat "ping", and the client is in the state of "disconnection protection", all the active orders of the client will be canceled all automatically.</p>
+    <p>Based on the heartbeat mechanism, Mufex provides disconnection protection function. If you need to turn it on/off, you can contact your client manager for consultation and application.</p>
+    <p>The timing starts from the first disconnection. If the Mufex server does not receive the reconnection from the client for more than <b>10 seconds</b> and resumes the heartbeat "ping", and the client is in the state of "disconnection protection", all the active orders of the client will be canceled all automatically.</p>
     <p>If within <b>10 seconds</b>, the client reconnects and resumes the heartbeat "ping", the timing will be reset and restarted at the next disconnection.</p>
 
   usdc_auth_para_construct1: <p>1.The parameters are in json format</p>
@@ -4999,7 +4999,7 @@ en:
     <p>topic format: orderBookL2_25.{symbol} or orderBook_200.100ms.{symbol}</p>
     <p>orderBookL2_25.BTCPERP or orderBook_200.100ms.BTCPERP</p>
   usdc_current_24_total_perp: |
-    <p>Fetch the transaction data on Bybit in the last 24 hours.</p>
+    <p>Fetch the transaction data on Mufex in the last 24 hours.</p>
     <p>topic format: trade.{symbol}</p>
     <p>trade.BTCPERP</p>
 
@@ -5102,7 +5102,7 @@ en:
     <p>and new orders tagged as MMP will be rejected for a specific duration — known as the frozen period — so that MM can reassess the market and modify the quotes.</p>
   enableMmp: How to Enable MMP
   enableMmpDesc: |
-    <p>Send an email to Bybit (financial.inst@mufex.com) or contact your business development (BD) manager to apply for MMP.</p>
+    <p>Send an email to Mufex (financial.inst@mufex.com) or contact your business development (BD) manager to apply for MMP.</p>
   setUpMmp: How to Set Up MMP
   setUpMmpDesc: |
     <p>The configuration parameters are as follows</p>
@@ -5208,7 +5208,7 @@ en:
 
   #copytrade
   copy_trading: Copy Trading
-  copy_trading_user_notice: Bybit's Copy Trading API is only available to <a href="https://www.mufex.com/en-US/help-center/bybitHC_Article?language=en_US&id=000001554">principal traders</a>. Currently, there is no API for followers.
+  copy_trading_user_notice: Mufex's Copy Trading API is only available to <a href="https://www.mufex.com/en-US/help-center/bybitHC_Article?language=en_US&id=000001554">principal traders</a>. Currently, there is no API for followers.
   ct_symbol_list: Symbol List
   ct_order: Order
   ct_order_list: Order List
@@ -5985,7 +5985,7 @@ en:
   taxAvgExitPrice: Average exit price
   taxClosedPNL: Closed Profit and Loss
   taxFillCount: The number of fills in a single order
-  taxAssetStakedCoin: Coin that was used to staked in the Bybit Savings Product
+  taxAssetStakedCoin: Coin that was used to staked in the Mufex Savings Product
   taxStakingType: Type of Staking. Flexible and Fixed Term
   taxAssetEarnedCoin: Coin that the Interest is given out in
   taxEffectiveStakingAmount: Total amount staked with the Asset Staked coin
@@ -6014,7 +6014,7 @@ en:
   taxDepositType: Type of Deposit. On-chain Deposit
   taxChainType: Chain name
   taxFinalAmount: Quantity of Crypto
-  taxCompletedTime: UNIX Time. This is in milliseconds. Time that the Crypto is received in Bybit platform.
+  taxCompletedTime: UNIX Time. This is in milliseconds. Time that the Crypto is received in Mufex platform.
   taxP2PSide: For P2P Buyer, this represents the buyer bought the respective Coin and using Fiat currency. For P2P Seller, this represents the buyer sold the respective Coin and receive Fiat currency in return.
   taxFiat: Fiat type
   taxFiatAmount: Fiat deposited
@@ -6179,14 +6179,14 @@ en:
   ability_2: Support one-way ONLY
   ability_3: N/A
   dv_insurance: Get Insurance Data
-  insurance_para: Query Bybit insurance data, including all insurance coins. Data is updated at UTC 00:00
+  insurance_para: Query Mufex insurance data, including all insurance coins. Data is updated at UTC 00:00
   insurance_resp_updatedTime: Data updated time (ms)
   insurance_resp_coin: coin
   insurance_resp_balance: Quantity of coin in the insurance pool
   insurance_resp_value: USD value of coin, formula：the snapshot index price(USD) of the coin * qty of coin
   row_comment_set_margin_mode: REGULAR_MARGIN, PORTFOLIO_MARGIN
   websocketliquidation_para: |
-    Query recent liquidation orders in Bybit. Support：USDT Perpetual, Inverse Perpetual, Inverse Future, USDC Perpetual<br/>
+    Query recent liquidation orders in Mufex. Support：USDT Perpetual, Inverse Perpetual, Inverse Future, USDC Perpetual<br/>
     <br/>
     Push frequency：<b>real-time</b><br/>
     <br/>

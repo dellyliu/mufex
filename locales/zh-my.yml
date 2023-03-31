@@ -684,10 +684,10 @@ zh-my:
   # introduction in index.html.md
   introduction: 中文社區和參考資料
   intro_para:
-    <p>歡迎使用 <a href="https://www.mufex.com/">Bybit</a> APIs 和 Websocket官方文檔！</p>
+    <p>歡迎使用 <a href="https://www.mufex.com/">Mufex</a> APIs 和 Websocket官方文檔！</p>
     <p>如果您在使用API的過程中遇到問題需要幫助，請加入我們的 <a href="https://t.me/Bybitapi">官方Telegram API討論群</a>！</p>
   spot_intro_para:
-    <p>歡迎使用 <a href="https://www.mufex.com/">Bybit</a> APIs 和 Websocket官方文檔！</p>
+    <p>歡迎使用 <a href="https://www.mufex.com/">Mufex</a> APIs 和 Websocket官方文檔！</p>
     <p>該文檔旨在提供指導，以幫助您快速訪問Bybit的API接口，了解參數說明和常見錯誤碼等。
     若您有任何疑問或需要幫助，請加入我們的 <a href="https://t.me/Bybitapi">官方Telegram API討論群</a>！</p>
   resources: 中文社區和參考資料
@@ -700,7 +700,7 @@ zh-my:
       <li><img src="/images/telegram_logo_icon.png" height="14", width="14"> <a href="https://t.me/BybitAPI"><strong>API Discussion Group</strong></a> - <strong>API英文討論群</strong>
       <li><img src="/images/telegram_logo_icon.png" height="14", width="14"> <a href="https://t.me/BybitChineseAPI"><strong>Chinese API Discussion Group</strong></a> - <strong>API中文討論群</strong>
       <li><img src="/images/telegram_logo_icon.png" height="14", width="14"> <a href="https://t.me/Bybit_API_Announcements"><strong>API Announcements Channel</strong></a> - <strong>API公告群</strong>
-      <li><img src="/images/survey_ico.png" height="14", width="14"> <a href="https://forms.gle/ZfCKRTVen1VExj478"><strong>Bybit Open API 的調研問卷</strong></a> - <strong>希望您能用 5 分鐘的時間填寫 Bybit Open API 的調研問卷</strong>
+      <li><img src="/images/survey_ico.png" height="14", width="14"> <a href="https://forms.gle/ZfCKRTVen1VExj478"><strong>Mufex Open API 的調研問卷</strong></a> - <strong>希望您能用 5 分鐘的時間填寫 Mufex Open API 的調研問卷</strong>
     </ul>
 
   shared_endpoint_desc: 請點擊查看接口描述。
@@ -1456,10 +1456,10 @@ zh-my:
       <li>如果可以，請提供您的成交記錄csv文檔</li>
     </ol>
     </ul>
-  ### Understanding Bybit's Liquidity System
+  ### Understanding Mufex's Liquidity System
   liquidity: Bybit流動性貢獻系統
   rate_para_liquidity: |
-    <p>Bybit 使用<code>報單成交率</code> 和 <code>流動性貢獻打分</code>來評價用戶對改善bybit可執行流動性作出的貢獻。</p>
+    <p>Mufex 使用<code>報單成交率</code> 和 <code>流動性貢獻打分</code>來評價用戶對改善bybit可執行流動性作出的貢獻。</p>
     <p>不同symbol的<code>貢獻分</code>和<code>報單成交率</code>是獨立計算的。</p>
   #### Order Fill Ratio (OFR) Threshold
   ofrthreshold: 報單成交率
@@ -5577,7 +5577,7 @@ zh-my:
   taxDepositType: 存款類型。鏈上存款
   taxChainType: 鏈名
   taxFinalAmount: 加密貨幣的數量
-  taxCompletedTime: UNIX 時間。這是以毫秒為單位。 Bybit 平台收到加密貨幣的時間。
+  taxCompletedTime: UNIX 時間。這是以毫秒為單位。 Mufex 平台收到加密貨幣的時間。
   taxP2PSide: 對於 P2P 買家，這代表買家購買了相應的硬幣並使用法定貨幣。對於 P2P 賣家，這代表買家出售相應的硬幣並獲得法定貨幣作為回報。
   taxFiat: 法定貨幣類型
   taxFiatAmount: 法幣存入
