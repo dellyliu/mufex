@@ -90,6 +90,102 @@ POST
 | orderId |string |t(:row_comment_order_id) |
 |orderLinkId |string |t(:row_comment_orderLinkId)  |
 
+### t(:dv_batchPlaceOrder)
+> t(:codequote_curlExample)
+
+```console
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/trade/batch-orders' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: f02a18137c25c40d64b2c474f575c01a62ba076124946d38619238e19c86a2f2' \
+--header 'MF-ACCESS-API-KEY: XXXXXXXXXX' \
+--header 'MF-ACCESS-TIMESTAMP: 1658884339826' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "symbol": "ETHUSDT",
+    "side": "Buy",
+    "positionIdx": 2,
+    "orderType": "Limit",
+    "qty": "0.5",
+    "price": "1450",
+    "timeInForce": "GoodTillCancel",
+    "orderLinkId": "a003",
+    "reduce_only": false,
+    "closeOnTrigger": false
+}'
+```
+
+```python--pybit
+
+```
+
+> t(:codequote_responseExample)
+
+```javascript
+{
+    "code": 0,
+        "message": "OK",
+        "data": {
+        "batchResp": [
+            {
+                "category": "",
+                "symbol": "",
+                "orderId": "9476763d-5faf-4a59-ba75-e2659c91fb33",
+                "orderLinkId": "",
+                "code": 0,
+                "createdAt": "1687761917147"
+            },
+            {
+                "category": "",
+                "symbol": "",
+                "orderId": "78c4d3be-916d-4170-94ea-5256b2ad6e10",
+                "orderLinkId": "",
+                "code": 0,
+                "createdAt": "1687761917147"
+            }
+        ]
+    },
+    "ext_info": {},
+    "time": 1687761917148
+}
+```
+
+t(:contract_batch_order_para)
+
+<aside class="notice">
+t(:account_aside_placeOrder_positionIdx)
+</aside>
+
+<p class="fake_header">t(:httprequest)</p>
+POST
+<code><span id=vpoCreate>/private/v1/trade/batch-orders</span></code>
+<button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpoCreate"><img src="/images/copy_to_clipboard.png" height=zh5 width=15></img></button>
+
+<p class="fake_header">t(:requestparameters)</p>
+|t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
+|:----- |:-------|:-----|----- |
+|symbol |<b>true</b> |string |t(:row_comment_symbol)   |
+|side |<b>true</b> |string |t(:row_comment_side)    |
+|positionIdx |false |integer |t(:row_comment_position_idx_create_order_v3)  |
+|t(:contract_param_orderType) |<b>true</b> |string |t(:row_comment_activeOrderType)   |
+|qty |<b>true</b> |string |t(:contract_comment_qty) |
+|price |false |string |t(:contract_comment_price) |
+|t(:row_parameter_timeInForce) |<b>true</b> |string |t(:row_comment_timeInForce) |
+|orderLinkId |false |string |t(:row_comment_orderLinkId) |
+|reduceOnly |false |bool |t(:linear_row_comment_reduceOnly) |
+|closeOnTrigger |false |bool |t(:linear_row_comment_closeOnTrigger)
+
+
+<p class="fake_header">t(:responseparameters)</p>
+|t(:column_parameter)|t(:column_type)|t(:column_comments)|
+|:----- |:-----|----- |
+| orderId |string |t(:row_comment_order_id) |
+| orderLinkId |string |t(:row_comment_orderLinkId)  |
+| category |string |t(:row_comment_category_v3) |
+| createdAt |string |t(:row_comment_created_at)  |
+| code |integer |t(:row_comment_code_response_v3)  |
+
+
 
 ### t(:contract_getOrder)
 > t(:codequote_curlExample)
