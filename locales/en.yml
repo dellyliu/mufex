@@ -5319,7 +5319,6 @@ en:
   dv_queryExchangeRecords: Exchange Coins
   dv_interestBillStatement: Get Borrow History
   dv_queryLoanInterest: Get Borrow Rate
-  dv_batchPlaceOrder: Batch Place Orders
   dv_batchReplaceOrders: Batch Replace Orders
   dv_batchCancelOrders: Batch Cancel Orders
   dv_cancelAllOrders: Cancel All Orders
@@ -5595,6 +5594,20 @@ en:
 
   contract_batch_order_para: |
     <p>This endpoint provides the batch order mode to place a bunch of orders.</p>
+    <p><ul>
+      <li>Make sure you have sufficient funds in your account when place an order. Once an order is placed, according to the funds required by the order, the funds in your account will be frozen by the corresponding amount during the life cycle of the order.</li>
+      <li>The same request can only contain orders of the same contract type. Only Limit / Market active order is supported, the conditional order is not supported.</li>
+      <li>The maximum number of orders included in each request is <b>20</b> orders.</li>
+    </ul></p>
+
+  contract_batch_cancel_order_para: |
+    <p>This endpoint provides the batch order mode to cancel a bunch of open orders.</p
+    <p><ul>
+      <li>You must specify orderId or orderLinkId.</li>
+      <li>If there is a mismatch between orderId and orderLinkId, the system will prioritize orderId</li>
+      <li>You can only cancel unfilled and partially filled orders.</li>
+      <li>The maximum number of orders included in each request is <b>20</b> orders.</li>
+    </ul></p>
 
   # Contract Account >> Account
   contract_account: Account

@@ -102,16 +102,28 @@ curl --location --request POST 'https://api-testnet.betterbitfinance.com/private
 --header 'MF-ACCESS-RECV-WINDOW: 5000' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "symbol": "ETHUSDT",
-    "side": "Buy",
-    "positionIdx": 2,
-    "orderType": "Limit",
-    "qty": "0.5",
-    "price": "1450",
-    "timeInForce": "GoodTillCancel",
-    "orderLinkId": "a003",
-    "reduce_only": false,
-    "closeOnTrigger": false
+  "creates": [
+        {
+            "symbol": "BTCUSDT",
+            "side": "Buy",
+            "positionIdx": 0,
+            "orderType": "Limit",
+            "qty": "0.01",
+            "price": "28300",
+            "timeInForce": "GoodTillCancel",
+            "orderLinkId": "delly062603"
+        },
+        {
+            "symbol": "BTCUSDT",
+            "side": "Buy",
+            "positionIdx": 0,
+            "orderType": "Limit",
+            "qty": "0.01",
+            "price": "28300",
+            "timeInForce": "GoodTillCancel",
+            "orderLinkId": "delly062604"
+        }
+    ]
 }'
 ```
 
@@ -124,8 +136,8 @@ curl --location --request POST 'https://api-testnet.betterbitfinance.com/private
 ```javascript
 {
     "code": 0,
-        "message": "OK",
-        "data": {
+    "message": "OK",
+    "data": {
         "batchResp": [
             {
                 "category": "",
@@ -164,26 +176,29 @@ POST
 <p class="fake_header">t(:requestparameters)</p>
 |t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
 |:----- |:-------|:-----|----- |
-|symbol |<b>true</b> |string |t(:row_comment_symbol)   |
-|side |<b>true</b> |string |t(:row_comment_side)    |
-|positionIdx |false |integer |t(:row_comment_position_idx_create_order_v3)  |
-|t(:contract_param_orderType) |<b>true</b> |string |t(:row_comment_activeOrderType)   |
-|qty |<b>true</b> |string |t(:contract_comment_qty) |
-|price |false |string |t(:contract_comment_price) |
-|t(:row_parameter_timeInForce) |<b>true</b> |string |t(:row_comment_timeInForce) |
-|orderLinkId |false |string |t(:row_comment_orderLinkId) |
-|reduceOnly |false |bool |t(:linear_row_comment_reduceOnly) |
-|closeOnTrigger |false |bool |t(:linear_row_comment_closeOnTrigger)
+|creates |<b>true</b> |array | Object   |
+|>symbol |<b>true</b> |string |t(:row_comment_symbol)   |
+|>side |<b>true</b> |string |t(:row_comment_side)    |
+|>positionIdx |false |integer |t(:row_comment_position_idx_create_order_v3)  |
+|>t(:contract_param_orderType) |<b>true</b> |string |t(:row_comment_activeOrderType)   |
+|>qty |<b>true</b> |string |t(:contract_comment_qty) |
+|>price |false |string |t(:contract_comment_price) |
+|>t(:row_parameter_timeInForce) |<b>true</b> |string |t(:row_comment_timeInForce) |
+|>orderLinkId |false |string |t(:row_comment_orderLinkId) |
+|>reduceOnly |false |bool |t(:linear_row_comment_reduceOnly) |
+|>closeOnTrigger |false |bool |t(:linear_row_comment_closeOnTrigger)
 
 
 <p class="fake_header">t(:responseparameters)</p>
 |t(:column_parameter)|t(:column_type)|t(:column_comments)|
 |:----- |:-----|----- |
-| orderId |string |t(:row_comment_order_id) |
-| orderLinkId |string |t(:row_comment_orderLinkId)  |
-| category |string |t(:row_comment_category_v3) |
-| createdAt |string |t(:row_comment_created_at)  |
-| code |integer |t(:row_comment_code_response_v3)  |
+| data | Object | |
+| batchResp | array | Object |
+| >orderId |string |t(:row_comment_order_id) |
+| >orderLinkId |string |t(:row_comment_orderLinkId)  |
+| >category |string |t(:row_comment_category_v3) |
+| >createdAt |string |t(:row_comment_created_at)  |
+| >code |integer |t(:row_comment_code_response_v3)  |
 
 
 
@@ -357,6 +372,94 @@ POST
 |:----- |:-----|----- |
 |orderId |string |t(:account_row_comment_orderId) |
 |orderLinkId |string |t(:misc_row_comment_orderLinkIdNotOrderId) |
+
+### t(:dv_batchCancelOrder)
+> t(:codequote_curlExample)
+
+```console
+curl --location --request POST 'https://api-testnet.betterbitfinance.com/private/v1/trade/batch-cancel-orders' \
+--header 'MF-ACCESS-SIGN-TYPE: 2' \
+--header 'MF-ACCESS-SIGN: f02a18137c25c40d64b2c474f575c01a62ba076124946d38619238e19c86a2f2' \
+--header 'MF-ACCESS-API-KEY: XXXXXXXXXX' \
+--header 'MF-ACCESS-TIMESTAMP: 1658884339826' \
+--header 'MF-ACCESS-RECV-WINDOW: 5000' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "cancels": [
+        {
+            "symbol": "BTCUSDT",
+            "orderId": "",
+            "orderLinkId": "test001"
+        },
+        {
+            "symbol": "BTCUSDT",
+            "orderId": "dc4e0e85-b510-47f1-a2bb-df02b544eafc",
+            "orderLinkId": ""
+        }
+    ]
+}'
+```
+
+```python--pybit
+
+```
+
+> t(:codequote_responseExample)
+
+```javascript
+{
+    "code":0,
+    "message":"OK",
+    "data":{
+        "batchResp":[
+            {
+                "orderId":"bc8005cf-6d88-448b-a05f-8a1a4e923435",
+                "orderLinkId":"delly062603",
+                "code":0,
+                "msg":""
+            },
+            {
+                "orderId":"dc4e0e85-b510-47f1-a2bb-df02b544eafc",
+                "orderLinkId":"delly062604",
+                "code":0,
+                "msg":""
+            }
+        ]
+    },
+    "ext_info":{},
+    "time":1687771998388
+}
+```
+
+t(:contract_batch_cancel_order_para)
+
+<aside class="notice">
+t(:account_aside_placeOrder_positionIdx)
+</aside>
+
+<p class="fake_header">t(:httprequest)</p>
+POST
+<code><span id=vpoCreate>/private/v1/trade/batch-cancel-orders</span></code>
+<button class="clipboard_button" data-clipboard-action="copy" data-clipboard-target="#vpoCreate"><img src="/images/copy_to_clipboard.png" height=zh5 width=15></img></button>
+
+<p class="fake_header">t(:requestparameters)</p>
+|t(:column_parameter)|t(:column_required)|t(:column_type)|t(:column_comments)|
+|:----- |:-------|:-----|----- |
+|cancels |<b>true</b> |array | Object   |
+|>symbol |<b>true</b> |string |t(:row_comment_symbol)   |
+|>orderId |false |string |t(:account_row_comment_orderId) |
+|>orderLinkId |false |string |t(:misc_row_comment_orderLinkIdNotOrderId) |
+
+
+
+<p class="fake_header">t(:responseparameters)</p>
+|t(:column_parameter)|t(:column_type)|t(:column_comments)|
+|:----- |:-----|----- |
+| data | Object | |
+| batchResp | array | Object |
+| >orderId |string |t(:row_comment_order_id) |
+| >orderLinkId |string |t(:row_comment_orderLinkId)  |
+| >code |integer |t(:row_comment_code_response_v3)  |
 
 
 ### t(:contract_cancelAllOrders)

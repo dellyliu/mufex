@@ -5187,6 +5187,22 @@ zh-my:
     <p><b>每個賬戶最多可同時持有500個活動訂單。這是針對合約的，因此可以允許出現例如：賬戶同時持有300個BTCUSDT的活動單、280個ETHUSDT合約的活動單。</b></p>
     <p><b>當您達到訂單上限的時候的時候，仍然可以下單設置了參數<code>reduceOnly</code> 或 <code>closeOnTrigger</code>的訂單。</b></p>
 
+  contract_batch_order_para: |
+    <p>該接口支持批量創建委託單</p>
+    <p><ul>
+      <li>下單時需確保帳戶內有足夠的資金。一旦下單，根據訂單所需資金，您的帳戶資金將在訂單生命週期內凍結相應額度，被凍結的資金額度取決於訂單屬性。</li>
+      <li>同一個請求中只能包含同一種合約的訂單。僅支持Limit / Market order，不支持條件單。</li>
+      <li>每個請求包含的訂單數最大20筆訂單。</li>
+    </ul></p>
+
+  contract_batch_cancel_order_para: |
+    <p>該接口可以批量撤銷多筆訂單</p>
+    <p><ul>
+      <li>您必須指定orderId或者orderLinkId.</li>
+      <li>若orderId和orderLinkId之間不匹配, 系統將會優先處理orderId</li>
+      <li>您只能撤銷未成交和部分成交的訂單.</li>
+      <li>每個請求包含的訂單數最大20筆訂單。</li>
+    </ul></p>
 
   contract_account: 帳戶
   contract_accountPara: 帳戶相關接口需要認證.
