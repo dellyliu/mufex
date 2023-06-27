@@ -373,7 +373,7 @@ POST
 |orderId |string |t(:account_row_comment_orderId) |
 |orderLinkId |string |t(:misc_row_comment_orderLinkIdNotOrderId) |
 
-### t(:dv_batchCancelOrder)
+### t(:dv_batchCancelOrders)
 > t(:codequote_curlExample)
 
 ```console
